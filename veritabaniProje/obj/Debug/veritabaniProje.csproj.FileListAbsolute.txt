@@ -18,3 +18,14 @@ C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Deb
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.pdb
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csprojAssemblyReference.cache
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.anaArayüz.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Properties.Resources.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.raporlamaArayuzu.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.GenerateResource.cache
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb

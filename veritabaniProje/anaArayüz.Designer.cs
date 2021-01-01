@@ -28,61 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.satisArayuzu = new System.Windows.Forms.Button();
+            this.musteriArayuzu = new System.Windows.Forms.Button();
+            this.stokArayuzu = new System.Windows.Forms.Button();
+            this.raporlamaArayuzu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // satisArayuzu
             // 
-            this.button1.Location = new System.Drawing.Point(89, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 123);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.satisArayuzu.Location = new System.Drawing.Point(108, 61);
+            this.satisArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.satisArayuzu.Name = "satisArayuzu";
+            this.satisArayuzu.Size = new System.Drawing.Size(232, 93);
+            this.satisArayuzu.TabIndex = 0;
+            this.satisArayuzu.Text = "Satış Arayüzü";
+            this.satisArayuzu.UseVisualStyleBackColor = true;
+            this.satisArayuzu.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // musteriArayuzu
             // 
-            this.button2.Location = new System.Drawing.Point(440, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(256, 123);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.musteriArayuzu.Location = new System.Drawing.Point(467, 61);
+            this.musteriArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musteriArayuzu.Name = "musteriArayuzu";
+            this.musteriArayuzu.Size = new System.Drawing.Size(253, 93);
+            this.musteriArayuzu.TabIndex = 1;
+            this.musteriArayuzu.Text = "Müşteri Arayüzü";
+            this.musteriArayuzu.UseVisualStyleBackColor = true;
+            this.musteriArayuzu.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // stokArayuzu
             // 
-            this.button3.Location = new System.Drawing.Point(89, 242);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(256, 123);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.stokArayuzu.Location = new System.Drawing.Point(108, 198);
+            this.stokArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.stokArayuzu.Name = "stokArayuzu";
+            this.stokArayuzu.Size = new System.Drawing.Size(232, 98);
+            this.stokArayuzu.TabIndex = 2;
+            this.stokArayuzu.Text = "Stok Arayüzü";
+            this.stokArayuzu.UseVisualStyleBackColor = true;
+            this.stokArayuzu.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // raporlamaArayuzu
             // 
-            this.button4.Location = new System.Drawing.Point(440, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(256, 123);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.raporlamaArayuzu.Location = new System.Drawing.Point(467, 200);
+            this.raporlamaArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.raporlamaArayuzu.Name = "raporlamaArayuzu";
+            this.raporlamaArayuzu.Size = new System.Drawing.Size(253, 94);
+            this.raporlamaArayuzu.TabIndex = 3;
+            this.raporlamaArayuzu.Text = "Raporlama Arayüzü";
+            this.raporlamaArayuzu.UseVisualStyleBackColor = true;
+            this.raporlamaArayuzu.Click += new System.EventHandler(this.button4_Click);
             // 
             // anaArayüz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(754, 442);
+            this.Controls.Add(this.raporlamaArayuzu);
+            this.Controls.Add(this.stokArayuzu);
+            this.Controls.Add(this.musteriArayuzu);
+            this.Controls.Add(this.satisArayuzu);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "anaArayüz";
             this.Text = "anaArayüz";
             this.ResumeLayout(false);
@@ -91,9 +96,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button satisArayuzu;
+        private System.Windows.Forms.Button musteriArayuzu;
+        private System.Windows.Forms.Button stokArayuzu;
+        private System.Windows.Forms.Button raporlamaArayuzu;
     }
 }

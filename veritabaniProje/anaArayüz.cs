@@ -34,7 +34,8 @@ namespace veritabaniProje
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            raporlamaArayuzu raporA = new raporlamaArayuzu();
+            raporA.Show();
         }
     }
 }
