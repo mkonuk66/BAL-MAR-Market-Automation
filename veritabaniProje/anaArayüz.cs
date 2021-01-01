@@ -25,7 +25,8 @@ namespace veritabaniProje
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            musteriArayuzu mta = new musteriArayuzu();
+            mta.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
