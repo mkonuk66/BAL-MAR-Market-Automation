@@ -8,3 +8,4 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.anaArayüz.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources

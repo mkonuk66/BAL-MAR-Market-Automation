@@ -19,7 +19,8 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            stokEkle stk = new stokEkle();
+            stk.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
