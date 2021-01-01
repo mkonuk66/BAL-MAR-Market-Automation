@@ -60,6 +60,12 @@
     <Compile Include="raporlamaArayuzu.Designer.cs">
       <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
     </Compile>
+    <Compile Include="satisArayuzu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisArayuzu.Designer.cs">
+      <DependentUpon>satisArayuzu.cs</DependentUpon>
+    </Compile>
     <Compile Include="stokEkle.cs">
       <SubType>Form</SubType>
     </Compile>
