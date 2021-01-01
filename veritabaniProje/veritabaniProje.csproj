@@ -52,6 +52,12 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="musteriArayuzu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriArayuzu.Designer.cs">
+      <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="raporlamaArayuzu.cs">
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriArayuzu.resx">
+      <DependentUpon>musteriArayuzu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
