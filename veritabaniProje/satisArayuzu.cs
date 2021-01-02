@@ -14,6 +14,8 @@ namespace veritabaniProje
     {
         public satisArayuzu()
         {
+            //güncelleme
+
             InitializeComponent();
         }
     }
