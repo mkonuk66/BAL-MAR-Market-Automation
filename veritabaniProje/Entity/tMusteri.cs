@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace veritabaniProje.Entity
 {
-    class Context : DbContext
+    class tMusteri
     {
-        public DbSet<tUrun> tUruns { get; set; }
-        public DbSet<tMusteri> tMusteris { get; set; }
+        [Key]
+        public int musteriId { get; set; }
+        public string musteriAdi { get; set; }
     }
 }
