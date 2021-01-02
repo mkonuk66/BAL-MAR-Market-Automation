@@ -53,11 +53,23 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="bilgileriDogrula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgileriDogrula.Designer.cs">
+      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    </Compile>
     <Compile Include="birMusterininBorcDurumu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="birMusterininBorcDurumu.Designer.cs">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3satis.Designer.cs">
+      <DependentUpon>Form3satis.cs</DependentUpon>
     </Compile>
     <Compile Include="karzararDurum.cs">
       <SubType>Form</SubType>
@@ -90,6 +102,12 @@
     </Compile>
     <Compile Include="satisArayuzu.Designer.cs">
       <DependentUpon>satisArayuzu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisEkrani.Designer.cs">
+      <DependentUpon>satisEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="satisRapor.cs">
       <SubType>Form</SubType>
@@ -130,6 +148,9 @@
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bilgileriDogrula.resx">
+      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="birMusterininBorcDurumu.resx">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +174,12 @@
     </Compile>
     <EmbeddedResource Include="raporlamaArayuzu.resx">
       <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisArayuzu.resx">
+      <DependentUpon>satisArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisEkrani.resx">
+      <DependentUpon>satisEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="satisRapor.resx">
       <DependentUpon>satisRapor.cs</DependentUpon>
@@ -224,6 +251,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alinanUrunler.txt" />
     <Content Include="yeniMusteriKaydı.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

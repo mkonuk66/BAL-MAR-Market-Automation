@@ -65,3 +65,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satılanUrunListesi.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.TarihliKarZarar.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.yeniMusteriEkleme.resources
+C:\Users\mmhas\source\repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisArayuzu.resources
+C:\Users\mmhas\source\repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisEkrani.resources
+C:\Users\mmhas\source\repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.bilgileriDogrula.resources
