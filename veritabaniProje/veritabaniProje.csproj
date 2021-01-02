@@ -148,6 +148,9 @@
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bilgileriDogrula.resx">
+      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="birMusterininBorcDurumu.resx">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
     </EmbeddedResource>
