@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using veritabaniProje.Entity;
 
 namespace veritabaniProje
 {
@@ -39,6 +40,12 @@ namespace veritabaniProje
         {
             raporlamaArayuzu raporA = new raporlamaArayuzu();
             raporA.Show();
+        }
+
+        private void anaArayüz_Load(object sender, EventArgs e)
+        {
+            Context c = new Context();
+            //c.Database.Create();
         }
     }
 }

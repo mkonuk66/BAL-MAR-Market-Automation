@@ -85,6 +85,7 @@
             this.Controls.Add(this.satisArayuzu);
             this.Name = "anaArayüz";
             this.Text = "anaArayüz";
+            this.Load += new System.EventHandler(this.anaArayüz_Load);
             this.ResumeLayout(false);
 
         }
