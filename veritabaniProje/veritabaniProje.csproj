@@ -77,6 +77,7 @@
     </Compile>
     <Compile Include="Entity\Context.cs" />
     <Compile Include="Entity\tMusteri.cs" />
+    <Compile Include="Entity\tSatis.cs" />
     <Compile Include="Entity\tUrun.cs" />
     <Compile Include="Form3satis.cs">
       <SubType>Form</SubType>

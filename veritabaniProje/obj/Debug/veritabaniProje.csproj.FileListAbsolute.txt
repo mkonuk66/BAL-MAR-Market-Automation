@@ -97,3 +97,9 @@ C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.yeniMusteriEkleme.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CopyComplete
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Migrations.InitialCreate.resources
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.dll
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.xml
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Migrations.InitialCreate.resources
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CopyComplete
