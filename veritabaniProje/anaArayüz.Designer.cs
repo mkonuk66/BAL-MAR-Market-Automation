@@ -36,10 +36,9 @@
             // 
             // satisArayuzu
             // 
-            this.satisArayuzu.Location = new System.Drawing.Point(108, 61);
-            this.satisArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.satisArayuzu.Location = new System.Drawing.Point(64, 65);
             this.satisArayuzu.Name = "satisArayuzu";
-            this.satisArayuzu.Size = new System.Drawing.Size(232, 93);
+            this.satisArayuzu.Size = new System.Drawing.Size(174, 76);
             this.satisArayuzu.TabIndex = 0;
             this.satisArayuzu.Text = "Satış Arayüzü";
             this.satisArayuzu.UseVisualStyleBackColor = true;
@@ -47,10 +46,9 @@
             // 
             // musteriArayuzu
             // 
-            this.musteriArayuzu.Location = new System.Drawing.Point(467, 61);
-            this.musteriArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musteriArayuzu.Location = new System.Drawing.Point(315, 65);
             this.musteriArayuzu.Name = "musteriArayuzu";
-            this.musteriArayuzu.Size = new System.Drawing.Size(253, 93);
+            this.musteriArayuzu.Size = new System.Drawing.Size(190, 76);
             this.musteriArayuzu.TabIndex = 1;
             this.musteriArayuzu.Text = "Müşteri Arayüzü";
             this.musteriArayuzu.UseVisualStyleBackColor = true;
@@ -58,21 +56,19 @@
             // 
             // stokArayuzu
             // 
-            this.stokArayuzu.Location = new System.Drawing.Point(108, 198);
-            this.stokArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.stokArayuzu.Location = new System.Drawing.Point(64, 195);
             this.stokArayuzu.Name = "stokArayuzu";
-            this.stokArayuzu.Size = new System.Drawing.Size(232, 98);
+            this.stokArayuzu.Size = new System.Drawing.Size(174, 80);
             this.stokArayuzu.TabIndex = 2;
-            this.stokArayuzu.Text = "Stok Arayüzü";
+            this.stokArayuzu.Text = "Stok Ekleme Arayüzü";
             this.stokArayuzu.UseVisualStyleBackColor = true;
             this.stokArayuzu.Click += new System.EventHandler(this.button3_Click);
             // 
             // raporlamaArayuzu
             // 
-            this.raporlamaArayuzu.Location = new System.Drawing.Point(467, 200);
-            this.raporlamaArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.raporlamaArayuzu.Location = new System.Drawing.Point(315, 195);
             this.raporlamaArayuzu.Name = "raporlamaArayuzu";
-            this.raporlamaArayuzu.Size = new System.Drawing.Size(253, 94);
+            this.raporlamaArayuzu.Size = new System.Drawing.Size(190, 76);
             this.raporlamaArayuzu.TabIndex = 3;
             this.raporlamaArayuzu.Text = "Raporlama Arayüzü";
             this.raporlamaArayuzu.UseVisualStyleBackColor = true;
@@ -80,14 +76,13 @@
             // 
             // anaArayüz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 442);
+            this.ClientSize = new System.Drawing.Size(566, 359);
             this.Controls.Add(this.raporlamaArayuzu);
             this.Controls.Add(this.stokArayuzu);
             this.Controls.Add(this.musteriArayuzu);
             this.Controls.Add(this.satisArayuzu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "anaArayüz";
             this.Text = "anaArayüz";
             this.ResumeLayout(false);
