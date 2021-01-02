@@ -1,5 +1,4 @@
-﻿
-namespace veritabaniProje
+﻿namespace veritabaniProje
 {
     partial class Form3satis
     {
