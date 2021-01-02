@@ -46,3 +46,12 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.musteriArayuzu.resources
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.raporlamaArayuzu.resources
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.musteriArayuzu.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriBorcDurum.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.ResolveComReference.cache
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisRapor.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.karzararDurum.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisTrendiGrafik.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satılanUrunListesi.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.TarihliKarZarar.resources
