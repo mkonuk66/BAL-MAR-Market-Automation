@@ -76,6 +76,7 @@
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
     </Compile>
     <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\tMusteri.cs" />
     <Compile Include="Entity\tUrun.cs" />
     <Compile Include="Form3satis.cs">
       <SubType>Form</SubType>
@@ -95,6 +96,11 @@
     <Compile Include="kayitliMusteri.Designer.cs">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101022005354_InitialCreate.cs" />
+    <Compile Include="Migrations\202101022005354_InitialCreate.designer.cs">
+      <DependentUpon>202101022005354_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="musteriArayuzu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="kayitliMusteri.resx">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101022005354_InitialCreate.resx">
+      <DependentUpon>202101022005354_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="musteriArayuzu.resx">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
