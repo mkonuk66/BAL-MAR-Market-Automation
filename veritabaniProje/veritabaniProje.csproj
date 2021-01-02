@@ -175,6 +175,9 @@
     <EmbeddedResource Include="satisArayuzu.resx">
       <DependentUpon>satisArayuzu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="satisEkrani.resx">
+      <DependentUpon>satisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="satisRapor.resx">
       <DependentUpon>satisRapor.cs</DependentUpon>
     </EmbeddedResource>

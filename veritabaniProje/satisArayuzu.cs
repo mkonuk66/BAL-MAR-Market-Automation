@@ -44,8 +44,8 @@ namespace veritabaniProje
         {
             if(usernameText.Text == "Muhammet" || passwordText.Text == "123456")
             {
-                satisEkrani sta = new satisEkrani();
-                sta.Show();
+                satisEkrani stk = new satisEkrani();
+                stk.Show();
                 this.Close();
             }
         }
