@@ -45,7 +45,7 @@ namespace veritabaniProje
         private void anaArayüz_Load(object sender, EventArgs e)
         {
             Context c = new Context();
-            //c.Database.Create();
+           // c.Database.Create();
         }
     }
 }
