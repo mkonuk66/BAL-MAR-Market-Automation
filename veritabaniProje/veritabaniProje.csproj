@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,11 +53,23 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="karzararDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="karzararDurum.Designer.cs">
+      <DependentUpon>karzararDurum.cs</DependentUpon>
+    </Compile>
     <Compile Include="musteriArayuzu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="musteriArayuzu.Designer.cs">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriBorcDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriBorcDurum.Designer.cs">
+      <DependentUpon>MusteriBorcDurum.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,17 +85,47 @@
     <Compile Include="satisArayuzu.Designer.cs">
       <DependentUpon>satisArayuzu.cs</DependentUpon>
     </Compile>
+    <Compile Include="satisRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisRapor.Designer.cs">
+      <DependentUpon>satisRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisTrendiGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisTrendiGrafik.Designer.cs">
+      <DependentUpon>satisTrendiGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satılanUrunListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satılanUrunListesi.Designer.cs">
+      <DependentUpon>satılanUrunListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="stokEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="stokEkle.Designer.cs">
       <DependentUpon>stokEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="TarihliKarZarar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarihliKarZarar.Designer.cs">
+      <DependentUpon>TarihliKarZarar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="karzararDurum.resx">
+      <DependentUpon>karzararDurum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="musteriArayuzu.resx">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriBorcDurum.resx">
+      <DependentUpon>MusteriBorcDurum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,8 +139,20 @@
     <EmbeddedResource Include="raporlamaArayuzu.resx">
       <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="satisRapor.resx">
+      <DependentUpon>satisRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisTrendiGrafik.resx">
+      <DependentUpon>satisTrendiGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satılanUrunListesi.resx">
+      <DependentUpon>satılanUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="stokEkle.resx">
       <DependentUpon>stokEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TarihliKarZarar.resx">
+      <DependentUpon>TarihliKarZarar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +166,44 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

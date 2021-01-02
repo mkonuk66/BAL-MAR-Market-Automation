@@ -16,5 +16,28 @@ namespace veritabaniProje
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musteriRaporu_Click(object sender, EventArgs e)
+        {
+            MusteriBorcDurum musteriDurum = new MusteriBorcDurum();
+            musteriDurum.Show();
+        }
+
+        private void musteriSatis_Click(object sender, EventArgs e)
+        {
+            satisRapor satisRaporu = new satisRapor();
+            satisRaporu.Show();
+        }
+
+        private void karzararDurum_Click(object sender, EventArgs e)
+        {
+            TarihliKarZarar karzarar = new TarihliKarZarar();
+            karzarar.Show();
+        }
     }
 }

@@ -29,87 +29,58 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.musteriRaporu = new System.Windows.Forms.Button();
+            this.musteriSatis = new System.Windows.Forms.Button();
+            this.karzararDurum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // musteriRaporu
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 318);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 22);
-            this.textBox1.TabIndex = 0;
+            this.musteriRaporu.Location = new System.Drawing.Point(438, 104);
+            this.musteriRaporu.Name = "musteriRaporu";
+            this.musteriRaporu.Size = new System.Drawing.Size(249, 93);
+            this.musteriRaporu.TabIndex = 3;
+            this.musteriRaporu.Text = "Müşteri Borç Durum Raporu";
+            this.musteriRaporu.UseVisualStyleBackColor = true;
+            this.musteriRaporu.Click += new System.EventHandler(this.musteriRaporu_Click);
             // 
-            // textBox2
+            // musteriSatis
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(273, 22);
-            this.textBox2.TabIndex = 1;
+            this.musteriSatis.Location = new System.Drawing.Point(119, 104);
+            this.musteriSatis.Name = "musteriSatis";
+            this.musteriSatis.Size = new System.Drawing.Size(249, 93);
+            this.musteriSatis.TabIndex = 4;
+            this.musteriSatis.Text = "Müşteri Bazlı Satış Raporu";
+            this.musteriSatis.UseVisualStyleBackColor = true;
+            this.musteriSatis.Click += new System.EventHandler(this.musteriSatis_Click);
             // 
-            // textBox3
+            // karzararDurum
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(273, 22);
-            this.textBox3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(559, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(559, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(559, 318);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.karzararDurum.Location = new System.Drawing.Point(275, 261);
+            this.karzararDurum.Name = "karzararDurum";
+            this.karzararDurum.Size = new System.Drawing.Size(249, 93);
+            this.karzararDurum.TabIndex = 5;
+            this.karzararDurum.Text = "Belirlenen Tarihlerde Kar-Zarar Durum Raporu";
+            this.karzararDurum.UseVisualStyleBackColor = true;
+            this.karzararDurum.Click += new System.EventHandler(this.karzararDurum_Click);
             // 
             // raporlamaArayuzu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.karzararDurum);
+            this.Controls.Add(this.musteriSatis);
+            this.Controls.Add(this.musteriRaporu);
             this.Name = "raporlamaArayuzu";
-            this.Text = "raporlamaArayuzu";
+            this.Text = "Raporlama Arayüzü";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button musteriRaporu;
+        private System.Windows.Forms.Button musteriSatis;
+        private System.Windows.Forms.Button karzararDurum;
     }
 }
