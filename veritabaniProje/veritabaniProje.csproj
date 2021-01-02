@@ -53,11 +53,23 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="bilgileriDogrula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgileriDogrula.Designer.cs">
+      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    </Compile>
     <Compile Include="birMusterininBorcDurumu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="birMusterininBorcDurumu.Designer.cs">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3satis.Designer.cs">
+      <DependentUpon>Form3satis.cs</DependentUpon>
     </Compile>
     <Compile Include="karzararDurum.cs">
       <SubType>Form</SubType>
@@ -84,6 +96,12 @@
     </Compile>
     <Compile Include="raporlamaArayuzu.Designer.cs">
       <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisEkrani.Designer.cs">
+      <DependentUpon>satisEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="satisArayuzu.cs">
       <SubType>Form</SubType>
@@ -153,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="raporlamaArayuzu.resx">
       <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisArayuzu.resx">
+      <DependentUpon>satisArayuzu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="satisRapor.resx">
       <DependentUpon>satisRapor.cs</DependentUpon>

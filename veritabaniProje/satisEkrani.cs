@@ -14,6 +14,8 @@ namespace veritabaniProje
     {
         public satisEkrani()
         {
+            //güncelleme
+
             InitializeComponent();
         }
     }
