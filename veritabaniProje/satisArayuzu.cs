@@ -42,11 +42,15 @@ namespace veritabaniProje
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if(usernameText.Text == "Muhammet" || passwordText.Text == "123456")
+            if(usernameText.Text == "Muhammet" && passwordText.Text == "123456")
             {
                 satisEkrani stk = new satisEkrani();
                 stk.Show();
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen geçerli parola veya kullanıcı adını giriniz");
             }
         }
     }
