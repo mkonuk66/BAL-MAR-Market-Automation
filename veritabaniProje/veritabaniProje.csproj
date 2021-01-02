@@ -53,11 +53,23 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="birMusterininBorcDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="birMusterininBorcDurumu.Designer.cs">
+      <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
+    </Compile>
     <Compile Include="karzararDurum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="karzararDurum.Designer.cs">
       <DependentUpon>karzararDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitliMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitliMusteri.Designer.cs">
+      <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </Compile>
     <Compile Include="musteriArayuzu.cs">
       <SubType>Form</SubType>
@@ -115,11 +127,23 @@
     <Compile Include="TarihliKarZarar.Designer.cs">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
     </Compile>
+    <Compile Include="yeniMusteriEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniMusteriEkleme.Designer.cs">
+      <DependentUpon>yeniMusteriEkleme.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="birMusterininBorcDurumu.resx">
+      <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="karzararDurum.resx">
       <DependentUpon>karzararDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitliMusteri.resx">
+      <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="musteriArayuzu.resx">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
@@ -153,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TarihliKarZarar.resx">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniMusteriEkleme.resx">
+      <DependentUpon>yeniMusteriEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -204,6 +231,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="yeniMusteriKaydı.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,23 +10,26 @@ using System.Windows.Forms;
 
 namespace veritabaniProje
 {
-    public partial class musteriArayuzu : Form
+    public partial class birMusterininBorcDurumu : Form
     {
-        public musteriArayuzu()
+        public birMusterininBorcDurumu()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void birMusterininBorcDurumu_Load(object sender, EventArgs e)
         {
-            yeniMusteriEkleme yme = new yeniMusteriEkleme();
-            yme.Show();
+            label2.Text = kayitliMusteri.gonderilecekveri;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            kayitliMusteri km = new kayitliMusteri();
-            km.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
