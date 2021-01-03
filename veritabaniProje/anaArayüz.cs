@@ -32,7 +32,7 @@ namespace veritabaniProje
 
         private void button3_Click(object sender, EventArgs e)
         {
-            stokEkle stk = new stokEkle();
+            stokAnaArayuz stk = new stokAnaArayuz();
             stk.Show();
         }
 
