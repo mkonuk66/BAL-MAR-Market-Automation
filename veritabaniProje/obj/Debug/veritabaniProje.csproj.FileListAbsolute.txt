@@ -104,3 +104,5 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\De
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Migrations.InitialCreate.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CopyComplete
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Migrations.InitialCreate.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources

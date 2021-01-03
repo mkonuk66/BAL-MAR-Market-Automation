@@ -147,6 +147,18 @@
     <Compile Include="satılanUrunListesi.Designer.cs">
       <DependentUpon>satılanUrunListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="stokAnaArayuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokAnaArayuz.Designer.cs">
+      <DependentUpon>stokAnaArayuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokDurum.Designer.cs">
+      <DependentUpon>stokDurum.cs</DependentUpon>
+    </Compile>
     <Compile Include="stokEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="satılanUrunListesi.resx">
       <DependentUpon>satılanUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokAnaArayuz.resx">
+      <DependentUpon>stokAnaArayuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokDurum.resx">
+      <DependentUpon>stokDurum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stokEkle.resx">
       <DependentUpon>stokEkle.cs</DependentUpon>
