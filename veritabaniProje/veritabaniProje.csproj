@@ -76,6 +76,7 @@
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
     </Compile>
     <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\tIrsaliye.cs" />
     <Compile Include="Entity\tMusteri.cs" />
     <Compile Include="Entity\tSatis.cs" />
     <Compile Include="Entity\tUrun.cs" />
