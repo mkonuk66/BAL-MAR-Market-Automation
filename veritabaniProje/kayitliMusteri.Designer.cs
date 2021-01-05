@@ -30,8 +30,8 @@ namespace veritabaniProje
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,17 +45,11 @@ namespace veritabaniProje
             this.label1.Text = "Müşterinin mevcut borçlarını görebilmek için \r\n         lütfen müşteri numarasını" +
     " giriniz";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(97, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.Sienna;
             this.button1.Location = new System.Drawing.Point(182, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 33);
@@ -64,16 +58,27 @@ namespace veritabaniProje
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(107, 109);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(236, 22);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
             // kayitliMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(460, 259);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "kayitliMusteri";
-            this.Text = "kayitliMusteri";
+            this.Text = "Kayıtlı Müşteri";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,7 +87,7 @@ namespace veritabaniProje
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

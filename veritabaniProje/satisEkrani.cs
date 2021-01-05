@@ -62,6 +62,9 @@ namespace veritabaniProje
 
         }
 
-        
+        private void addID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,38 +84,48 @@ namespace veritabaniProje
             // 
             // satisTrendButton
             // 
+            this.satisTrendButton.BackColor = System.Drawing.SystemColors.Control;
+            this.satisTrendButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.satisTrendButton.ForeColor = System.Drawing.Color.Sienna;
             this.satisTrendButton.Location = new System.Drawing.Point(550, 51);
             this.satisTrendButton.Name = "satisTrendButton";
             this.satisTrendButton.Size = new System.Drawing.Size(204, 45);
             this.satisTrendButton.TabIndex = 6;
             this.satisTrendButton.Text = "Belirli Tarih Aralığında Satış Trendi";
-            this.satisTrendButton.UseVisualStyleBackColor = true;
+            this.satisTrendButton.UseVisualStyleBackColor = false;
             this.satisTrendButton.Click += new System.EventHandler(this.satisTrendButton_Click);
             // 
             // ürünListeButton
             // 
+            this.ürünListeButton.BackColor = System.Drawing.SystemColors.Control;
+            this.ürünListeButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ürünListeButton.ForeColor = System.Drawing.Color.Sienna;
             this.ürünListeButton.Location = new System.Drawing.Point(550, 306);
             this.ürünListeButton.Name = "ürünListeButton";
             this.ürünListeButton.Size = new System.Drawing.Size(204, 52);
             this.ürünListeButton.TabIndex = 7;
             this.ürünListeButton.Text = "Belirli Tarih Aralığında Satılan Ürün Listesi";
-            this.ürünListeButton.UseVisualStyleBackColor = true;
+            this.ürünListeButton.UseVisualStyleBackColor = false;
             this.ürünListeButton.Click += new System.EventHandler(this.ürünListeButton_Click);
             // 
             // karzararButton
             // 
+            this.karzararButton.BackColor = System.Drawing.SystemColors.Control;
+            this.karzararButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.karzararButton.ForeColor = System.Drawing.Color.Sienna;
             this.karzararButton.Location = new System.Drawing.Point(550, 176);
             this.karzararButton.Name = "karzararButton";
             this.karzararButton.Size = new System.Drawing.Size(204, 44);
             this.karzararButton.TabIndex = 8;
             this.karzararButton.Text = "Belirli Tarih Aralığında Kar-Zarar Durumu";
-            this.karzararButton.UseVisualStyleBackColor = true;
+            this.karzararButton.UseVisualStyleBackColor = false;
             this.karzararButton.Click += new System.EventHandler(this.karzararButton_Click);
             // 
             // TarihliKarZarar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.karzararButton);
             this.Controls.Add(this.ürünListeButton);

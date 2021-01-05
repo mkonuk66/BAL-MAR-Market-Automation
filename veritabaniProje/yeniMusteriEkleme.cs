@@ -28,10 +28,7 @@ namespace veritabaniProje
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-          
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -45,6 +42,16 @@ namespace veritabaniProje
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char character = e.KeyChar;
+            if (!Char.IsDigit(character))
+            {
+                e.Handled = true;
+                MessageBox.Show("Sadece sayı giriniz");
+            }
         }
     }
 }

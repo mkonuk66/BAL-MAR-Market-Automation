@@ -48,36 +48,40 @@ namespace veritabaniProje
             // musteriıd
             // 
             this.musteriıd.AutoSize = true;
-            this.musteriıd.Location = new System.Drawing.Point(46, 37);
+            this.musteriıd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteriıd.Location = new System.Drawing.Point(24, 37);
             this.musteriıd.Name = "musteriıd";
-            this.musteriıd.Size = new System.Drawing.Size(79, 17);
+            this.musteriıd.Size = new System.Drawing.Size(91, 17);
             this.musteriıd.TabIndex = 0;
             this.musteriıd.Text = "Müşteri ID :";
             // 
             // toplamtu
             // 
             this.toplamtu.AutoSize = true;
-            this.toplamtu.Location = new System.Drawing.Point(46, 181);
+            this.toplamtu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplamtu.Location = new System.Drawing.Point(24, 184);
             this.toplamtu.Name = "toplamtu";
-            this.toplamtu.Size = new System.Drawing.Size(105, 17);
+            this.toplamtu.Size = new System.Drawing.Size(120, 17);
             this.toplamtu.TabIndex = 1;
             this.toplamtu.Text = "Toplam Tutar : ";
             // 
             // toplamsat
             // 
             this.toplamsat.AutoSize = true;
-            this.toplamsat.Location = new System.Drawing.Point(46, 135);
+            this.toplamsat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplamsat.Location = new System.Drawing.Point(24, 135);
             this.toplamsat.Name = "toplamsat";
-            this.toplamsat.Size = new System.Drawing.Size(143, 17);
+            this.toplamsat.Size = new System.Drawing.Size(165, 17);
             this.toplamsat.TabIndex = 2;
             this.toplamsat.Text = "Toplam Satış Miktarı :";
             // 
             // urunad
             // 
             this.urunad.AutoSize = true;
-            this.urunad.Location = new System.Drawing.Point(46, 83);
+            this.urunad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.urunad.Location = new System.Drawing.Point(24, 83);
             this.urunad.Name = "urunad";
-            this.urunad.Size = new System.Drawing.Size(71, 17);
+            this.urunad.Size = new System.Drawing.Size(81, 17);
             this.urunad.TabIndex = 3;
             this.urunad.Text = "Ürün Adı :";
             // 
@@ -112,6 +116,7 @@ namespace veritabaniProje
             // 
             // satisListe
             // 
+            this.satisListe.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.satisListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.satisListe.Location = new System.Drawing.Point(349, 37);
             this.satisListe.Name = "satisListe";
@@ -123,16 +128,20 @@ namespace veritabaniProje
             // 
             // sutunEkle
             // 
+            this.sutunEkle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sutunEkle.ForeColor = System.Drawing.Color.Sienna;
             this.sutunEkle.Location = new System.Drawing.Point(195, 227);
             this.sutunEkle.Name = "sutunEkle";
             this.sutunEkle.Size = new System.Drawing.Size(125, 57);
             this.sutunEkle.TabIndex = 9;
-            this.sutunEkle.Text = "Sutün Ekle";
+            this.sutunEkle.Text = "Sütun Ekle";
             this.sutunEkle.UseVisualStyleBackColor = true;
             this.sutunEkle.Click += new System.EventHandler(this.sutunEkle_Click);
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.Color.Sienna;
             this.button2.Location = new System.Drawing.Point(49, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 57);
@@ -143,6 +152,8 @@ namespace veritabaniProje
             // 
             // veriSil
             // 
+            this.veriSil.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.veriSil.ForeColor = System.Drawing.Color.Sienna;
             this.veriSil.Location = new System.Drawing.Point(195, 300);
             this.veriSil.Name = "veriSil";
             this.veriSil.Size = new System.Drawing.Size(125, 57);
@@ -153,6 +164,8 @@ namespace veritabaniProje
             // 
             // veriEkle
             // 
+            this.veriEkle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.veriEkle.ForeColor = System.Drawing.Color.Sienna;
             this.veriEkle.Location = new System.Drawing.Point(49, 300);
             this.veriEkle.Name = "veriEkle";
             this.veriEkle.Size = new System.Drawing.Size(130, 57);
@@ -165,6 +178,7 @@ namespace veritabaniProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(696, 386);
             this.Controls.Add(this.veriEkle);
             this.Controls.Add(this.veriSil);

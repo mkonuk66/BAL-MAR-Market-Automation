@@ -26,9 +26,14 @@ namespace veritabaniProje
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            char character = e.KeyChar;
+            if (!Char.IsDigit(character))
+            {
+                e.Handled = true;
+                MessageBox.Show("Sadece sayı giriniz");
+            }
         }
     }
 }
