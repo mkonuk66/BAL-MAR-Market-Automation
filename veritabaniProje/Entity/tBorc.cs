@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace veritabaniProje.Entity
 {
-    class tMusteri
+    class tBorc
     {
         [Key]
         public int musteriId { get; set; }
-        public string musteriAdi { get; set; }
-        public string musteriSoyadi { get; set; }
-        public string musteriGSM { get; set; }
-        public DateTime kayitTarihi { get; set; }
+        public DateTime borcTarihi { get; set; }
+        public int borcMiktar { get; set; }
     }
 }

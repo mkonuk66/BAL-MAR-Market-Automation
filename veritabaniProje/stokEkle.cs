@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using veritabaniProje.Entity;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace veritabaniProje
 {
@@ -19,7 +21,7 @@ namespace veritabaniProje
         {
             InitializeComponent();
         }
-
+        //SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL;Database=veritabaniProje;Trusted_Connection=True;");
         private void button1_Click(object sender, EventArgs e)
         {
             //try catch ile path değişkeni null döndüğünde hata vermesini engelledik

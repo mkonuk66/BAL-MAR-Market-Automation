@@ -33,10 +33,12 @@ namespace veritabaniProje
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.musteriadi = new System.Windows.Forms.TextBox();
+            this.musterisoyad = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.telno = new System.Windows.Forms.TextBox();
+            this.kayittarihi = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@ namespace veritabaniProje
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(12, 179);
+            this.label2.Location = new System.Drawing.Point(12, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 24);
             this.label2.TabIndex = 1;
@@ -64,7 +66,7 @@ namespace veritabaniProje
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(12, 230);
+            this.label3.Location = new System.Drawing.Point(12, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 2;
@@ -74,38 +76,38 @@ namespace veritabaniProje
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(12, 283);
+            this.label4.Location = new System.Drawing.Point(12, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(188, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefon Numarası :";
             // 
-            // textBox1
+            // musteriadi
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(208, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.musteriadi.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.musteriadi.ForeColor = System.Drawing.SystemColors.Window;
+            this.musteriadi.Location = new System.Drawing.Point(208, 138);
+            this.musteriadi.Name = "musteriadi";
+            this.musteriadi.Size = new System.Drawing.Size(195, 22);
+            this.musteriadi.TabIndex = 4;
+            this.musteriadi.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // musterisoyad
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(208, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 22);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.musterisoyad.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.musterisoyad.ForeColor = System.Drawing.SystemColors.Window;
+            this.musterisoyad.Location = new System.Drawing.Point(208, 195);
+            this.musterisoyad.Name = "musterisoyad";
+            this.musterisoyad.Size = new System.Drawing.Size(195, 22);
+            this.musterisoyad.TabIndex = 5;
+            this.musterisoyad.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(615, 364);
+            this.button1.Location = new System.Drawing.Point(522, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 52);
             this.button1.TabIndex = 7;
@@ -113,15 +115,34 @@ namespace veritabaniProje
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // telno
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(207, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 22);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            this.telno.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.telno.ForeColor = System.Drawing.SystemColors.Window;
+            this.telno.Location = new System.Drawing.Point(208, 256);
+            this.telno.Name = "telno";
+            this.telno.Size = new System.Drawing.Size(195, 22);
+            this.telno.TabIndex = 8;
+            this.telno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            // 
+            // kayittarihi
+            // 
+            this.kayittarihi.CalendarMonthBackground = System.Drawing.SystemColors.WindowFrame;
+            this.kayittarihi.Location = new System.Drawing.Point(208, 307);
+            this.kayittarihi.Name = "kayittarihi";
+            this.kayittarihi.Size = new System.Drawing.Size(195, 22);
+            this.kayittarihi.TabIndex = 9;
+            this.kayittarihi.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 10.5F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(12, 307);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(190, 21);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Müşteri Kayıt Tarihi :";
             // 
             // yeniMusteriEkleme
             // 
@@ -129,16 +150,19 @@ namespace veritabaniProje
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.kayittarihi);
+            this.Controls.Add(this.telno);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.musterisoyad);
+            this.Controls.Add(this.musteriadi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "yeniMusteriEkleme";
             this.Text = "Yeni Müşteri Kaydı";
+            this.Load += new System.EventHandler(this.yeniMusteriEkleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +174,11 @@ namespace veritabaniProje
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox musteriadi;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox telno;
+        private System.Windows.Forms.DateTimePicker kayittarihi;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox musterisoyad;
     }
 }

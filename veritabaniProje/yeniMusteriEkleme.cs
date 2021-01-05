@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace veritabaniProje
 {
@@ -17,7 +19,8 @@ namespace veritabaniProje
         {
             InitializeComponent();
         }
-
+        //static string musteriEkle = "Server=DESKTOP-HU112LL;Database=veritabaniProje;Trusted_Connection=True;";
+        //SqlConnection musekleme = new SqlConnection(musteriEkle);
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -32,11 +35,20 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter ekle = File.AppendText("c:/yeniMusteriKayd.txt");
-            ekle.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text);
-            ekle.Close();
-
-            this.Close();
+            //StreamWriter ekle = File.AppendText("c:/yeniMusteriKayd.txt");
+            //ekle.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text);
+            //ekle.Close();
+            /*    if (musekleme.State == ConnectionState.Closed) {
+                    musekleme.Open();
+                    SqlCommand cmd = new SqlCommand("insert into tMusteris(musteriAdi,musteriSoyadi,musteriGSM,kayitTarihi)values(@adi,@soyadi,@tel,@kayittarih)", musekleme);
+                    cmd.Parameters.AddWithValue("@adi", musteriadi.Text);
+                    cmd.Parameters.AddWithValue("@soyadi", musterisoyad.Text);
+                    cmd.Parameters.AddWithValue("@tel", telno.Text);
+                    cmd.Parameters.AddWithValue("@kayittarih", kayittarihi.Value);
+                    cmd.ExecuteNonQuery();
+                    musekleme.Close();
+                    MessageBox.Show("Başarıyla Eklendi", "Bilgi");
+                } */
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -52,6 +64,16 @@ namespace veritabaniProje
                 e.Handled = true;
                 MessageBox.Show("Sadece sayı giriniz");
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yeniMusteriEkleme_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
