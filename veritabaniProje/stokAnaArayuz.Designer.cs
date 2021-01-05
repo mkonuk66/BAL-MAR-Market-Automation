@@ -39,9 +39,10 @@ namespace veritabaniProje
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 22F);
             this.label1.ForeColor = System.Drawing.Color.Sienna;
-            this.label1.Location = new System.Drawing.Point(140, 45);
+            this.label1.Location = new System.Drawing.Point(187, 55);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 35);
+            this.label1.Size = new System.Drawing.Size(474, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stok Arayüzüne Hoşgeldiniz";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -51,9 +52,10 @@ namespace veritabaniProje
             this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.Font = new System.Drawing.Font("Arial", 18F);
             this.button1.ForeColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(26, 208);
+            this.button1.Location = new System.Drawing.Point(35, 256);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(280, 79);
+            this.button1.Size = new System.Drawing.Size(373, 97);
             this.button1.TabIndex = 1;
             this.button1.Text = "Stok Görüntüle";
             this.button1.UseVisualStyleBackColor = false;
@@ -64,9 +66,10 @@ namespace veritabaniProje
             this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.Font = new System.Drawing.Font("Arial", 18F);
             this.button2.ForeColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(354, 208);
+            this.button2.Location = new System.Drawing.Point(472, 256);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(280, 79);
+            this.button2.Size = new System.Drawing.Size(373, 97);
             this.button2.TabIndex = 2;
             this.button2.Text = "Stok Ekle";
             this.button2.UseVisualStyleBackColor = false;
@@ -74,14 +77,16 @@ namespace veritabaniProje
             // 
             // stokAnaArayuz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 316);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(875, 389);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "stokAnaArayuz";
-            this.Text = "stokAnaArayüz";
+            this.Text = "Stok Arayüzü";
             this.Load += new System.EventHandler(this.stokAnaArayuz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

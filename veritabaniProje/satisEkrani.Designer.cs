@@ -45,6 +45,7 @@ namespace veritabaniProje
             this.addID.Name = "addID";
             this.addID.Size = new System.Drawing.Size(196, 22);
             this.addID.TabIndex = 1;
+            this.addID.TextChanged += new System.EventHandler(this.addID_TextChanged);
             this.addID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addID_KeyPress);
             // 
             // showIDText

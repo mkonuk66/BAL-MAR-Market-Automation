@@ -36,6 +36,8 @@ namespace veritabaniProje
             // 
             // musteriRaporu
             // 
+            this.musteriRaporu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteriRaporu.ForeColor = System.Drawing.Color.Sienna;
             this.musteriRaporu.Location = new System.Drawing.Point(438, 104);
             this.musteriRaporu.Name = "musteriRaporu";
             this.musteriRaporu.Size = new System.Drawing.Size(249, 93);
@@ -46,16 +48,21 @@ namespace veritabaniProje
             // 
             // musteriSatis
             // 
+            this.musteriSatis.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.musteriSatis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteriSatis.ForeColor = System.Drawing.Color.Sienna;
             this.musteriSatis.Location = new System.Drawing.Point(119, 104);
             this.musteriSatis.Name = "musteriSatis";
             this.musteriSatis.Size = new System.Drawing.Size(249, 93);
             this.musteriSatis.TabIndex = 4;
             this.musteriSatis.Text = "Müşteri Bazlı Satış Raporu";
-            this.musteriSatis.UseVisualStyleBackColor = true;
+            this.musteriSatis.UseVisualStyleBackColor = false;
             this.musteriSatis.Click += new System.EventHandler(this.musteriSatis_Click);
             // 
             // karzararDurum
             // 
+            this.karzararDurum.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.karzararDurum.ForeColor = System.Drawing.Color.Sienna;
             this.karzararDurum.Location = new System.Drawing.Point(275, 261);
             this.karzararDurum.Name = "karzararDurum";
             this.karzararDurum.Size = new System.Drawing.Size(249, 93);
@@ -68,6 +75,7 @@ namespace veritabaniProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.karzararDurum);
             this.Controls.Add(this.musteriSatis);
