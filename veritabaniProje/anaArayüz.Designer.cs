@@ -41,7 +41,7 @@
             this.satisArayuzu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.satisArayuzu.ForeColor = System.Drawing.Color.Sienna;
             this.satisArayuzu.Location = new System.Drawing.Point(85, 96);
-            this.satisArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.satisArayuzu.Margin = new System.Windows.Forms.Padding(4);
             this.satisArayuzu.Name = "satisArayuzu";
             this.satisArayuzu.Size = new System.Drawing.Size(232, 94);
             this.satisArayuzu.TabIndex = 0;
@@ -55,11 +55,11 @@
             this.musteriArayuzu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.musteriArayuzu.ForeColor = System.Drawing.Color.Sienna;
             this.musteriArayuzu.Location = new System.Drawing.Point(420, 96);
-            this.musteriArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musteriArayuzu.Margin = new System.Windows.Forms.Padding(4);
             this.musteriArayuzu.Name = "musteriArayuzu";
             this.musteriArayuzu.Size = new System.Drawing.Size(253, 94);
             this.musteriArayuzu.TabIndex = 1;
-            this.musteriArayuzu.Text = "Müşteri Arayüzü";
+            this.musteriArayuzu.Text = "Müşteri Arayüzü /\r\n Borç Ödeme\r\n";
             this.musteriArayuzu.UseVisualStyleBackColor = false;
             this.musteriArayuzu.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -69,7 +69,7 @@
             this.stokArayuzu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.stokArayuzu.ForeColor = System.Drawing.Color.Sienna;
             this.stokArayuzu.Location = new System.Drawing.Point(85, 263);
-            this.stokArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.stokArayuzu.Margin = new System.Windows.Forms.Padding(4);
             this.stokArayuzu.Name = "stokArayuzu";
             this.stokArayuzu.Size = new System.Drawing.Size(232, 98);
             this.stokArayuzu.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.raporlamaArayuzu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.raporlamaArayuzu.ForeColor = System.Drawing.Color.Sienna;
             this.raporlamaArayuzu.Location = new System.Drawing.Point(420, 263);
-            this.raporlamaArayuzu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.raporlamaArayuzu.Margin = new System.Windows.Forms.Padding(4);
             this.raporlamaArayuzu.Name = "raporlamaArayuzu";
             this.raporlamaArayuzu.Size = new System.Drawing.Size(253, 94);
             this.raporlamaArayuzu.TabIndex = 3;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.stokArayuzu);
             this.Controls.Add(this.musteriArayuzu);
             this.Controls.Add(this.satisArayuzu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "anaArayüz";
             this.Text = "ANA MENÜ";
             this.Load += new System.EventHandler(this.anaArayüz_Load);
