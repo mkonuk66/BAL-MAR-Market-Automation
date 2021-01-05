@@ -56,5 +56,12 @@ namespace veritabaniProje
             bilgileriDogrula bgd = new bilgileriDogrula();
             bgd.Show();
         }
+
+        private void satisEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

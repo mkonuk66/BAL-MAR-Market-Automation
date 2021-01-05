@@ -58,5 +58,10 @@ namespace veritabaniProje
                 textBox2.UseSystemPasswordChar = false;
             }
         }
+
+        private void bilgileriDogrula_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

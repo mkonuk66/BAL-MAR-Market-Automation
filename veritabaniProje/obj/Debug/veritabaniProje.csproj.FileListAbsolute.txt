@@ -106,3 +106,5 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Migrations.InitialCreate.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
+C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources

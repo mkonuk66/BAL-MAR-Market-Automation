@@ -29,28 +29,19 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.addID = new System.Windows.Forms.TextBox();
             this.showIDText = new System.Windows.Forms.RichTextBox();
             this.addProductButton = new System.Windows.Forms.Button();
             this.deleteProductButton = new System.Windows.Forms.Button();
             this.cashButton = new System.Windows.Forms.Button();
             this.debtButton = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(53, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(150, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "BARKOD NO GİRİNİZ";
             // 
             // addID
             // 
-            this.addID.Location = new System.Drawing.Point(271, 57);
+            this.addID.Location = new System.Drawing.Point(249, 57);
             this.addID.Name = "addID";
             this.addID.Size = new System.Drawing.Size(196, 22);
             this.addID.TabIndex = 1;
@@ -67,6 +58,8 @@ namespace veritabaniProje
             // 
             // addProductButton
             // 
+            this.addProductButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.addProductButton.ForeColor = System.Drawing.Color.Sienna;
             this.addProductButton.Location = new System.Drawing.Point(81, 136);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(122, 53);
@@ -77,6 +70,8 @@ namespace veritabaniProje
             // 
             // deleteProductButton
             // 
+            this.deleteProductButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.deleteProductButton.ForeColor = System.Drawing.Color.Sienna;
             this.deleteProductButton.Location = new System.Drawing.Point(314, 135);
             this.deleteProductButton.Name = "deleteProductButton";
             this.deleteProductButton.Size = new System.Drawing.Size(122, 54);
@@ -87,6 +82,8 @@ namespace veritabaniProje
             // 
             // cashButton
             // 
+            this.cashButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cashButton.ForeColor = System.Drawing.Color.Sienna;
             this.cashButton.Location = new System.Drawing.Point(81, 363);
             this.cashButton.Name = "cashButton";
             this.cashButton.Size = new System.Drawing.Size(139, 47);
@@ -97,6 +94,8 @@ namespace veritabaniProje
             // 
             // debtButton
             // 
+            this.debtButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.debtButton.ForeColor = System.Drawing.Color.Sienna;
             this.debtButton.Location = new System.Drawing.Point(314, 363);
             this.debtButton.Name = "debtButton";
             this.debtButton.Size = new System.Drawing.Size(131, 47);
@@ -104,44 +103,56 @@ namespace veritabaniProje
             this.debtButton.Text = "Cari";
             this.debtButton.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // label1
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 305);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(233, 22);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "ÖDEMENİZİ NASIL YAPACAKSINIZ ?";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(40, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "BARKOD NO GİRİNİZ :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(183, 317);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "ÖDEME BİÇİMİ";
             // 
             // satisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.debtButton);
             this.Controls.Add(this.cashButton);
             this.Controls.Add(this.deleteProductButton);
             this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.showIDText);
             this.Controls.Add(this.addID);
-            this.Controls.Add(this.textBox1);
             this.Name = "satisEkrani";
-            this.Text = "Satış Ekranı";
+            this.Text = "SATIŞ EKRANI";
+            this.Load += new System.EventHandler(this.satisEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox addID;
         private System.Windows.Forms.RichTextBox showIDText;
         private System.Windows.Forms.Button addProductButton;
         private System.Windows.Forms.Button deleteProductButton;
         private System.Windows.Forms.Button cashButton;
         private System.Windows.Forms.Button debtButton;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
