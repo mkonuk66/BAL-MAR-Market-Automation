@@ -15,6 +15,7 @@ namespace veritabaniProje
 {
     public partial class yeniMusteriEkleme : Form
     {
+        Entity.Context dbcontext = new Entity.Context();
         public yeniMusteriEkleme()
         {
             InitializeComponent();
@@ -35,20 +36,17 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //StreamWriter ekle = File.AppendText("c:/yeniMusteriKayd.txt");
-            //ekle.WriteLine(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text);
-            //ekle.Close();
-            /*    if (musekleme.State == ConnectionState.Closed) {
-                    musekleme.Open();
-                    SqlCommand cmd = new SqlCommand("insert into tMusteris(musteriAdi,musteriSoyadi,musteriGSM,kayitTarihi)values(@adi,@soyadi,@tel,@kayittarih)", musekleme);
-                    cmd.Parameters.AddWithValue("@adi", musteriadi.Text);
-                    cmd.Parameters.AddWithValue("@soyadi", musterisoyad.Text);
-                    cmd.Parameters.AddWithValue("@tel", telno.Text);
-                    cmd.Parameters.AddWithValue("@kayittarih", kayittarihi.Value);
-                    cmd.ExecuteNonQuery();
-                    musekleme.Close();
-                    MessageBox.Show("Başarıyla Eklendi", "Bilgi");
-                } */
+            var musteri = new Entity.tMusteri();
+            musteri.musteriId = 0;
+            musteri.musteriAdi = musteriadi.Text;
+            musteri.musteriSoyadi = musterisoyad.Text;
+            musteri.musteriGSM = Convert.ToInt64(telno.Text);
+            musteri.kayitTarihi = kayittarihi.Value;
+            musteri.musteriBorc = 0;
+            dbcontext.tMusteris.Add(musteri);
+            dbcontext.SaveChanges();
+            MessageBox.Show("Müşteri Eklendi", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
