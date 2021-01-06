@@ -45,7 +45,7 @@ namespace veritabaniProje
             musteri.musteriBorc = 0;
             dbcontext.tMusteris.Add(musteri);
             dbcontext.SaveChanges();
-            MessageBox.Show("Müşteri Eklendi", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Müşteri Eklendi. Numarası : "+musteri.musteriId+"", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
         }
 
