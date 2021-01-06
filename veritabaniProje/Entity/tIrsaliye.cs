@@ -16,6 +16,7 @@ namespace veritabaniProje.Entity
         public double girdiFiyat { get; set; }
         public int miktar { get; set; }
         public int tedarikciId { get; set; }
+        public string urunAdi { get; set; }
 
     }
 }

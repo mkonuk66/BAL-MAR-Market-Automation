@@ -12,6 +12,7 @@ namespace veritabaniProje
 {
     public partial class stokDurum : Form
     {
+        Entity.Context dbcontext = new Entity.Context();
         public stokDurum()
         {
             InitializeComponent();
@@ -26,6 +27,18 @@ namespace veritabaniProje
         {
             stokEkle stkEkle1 = new stokEkle();
             stkEkle1.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void stokDurum_Load(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'veritabaniProjeDataSetUrun.tUruns' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tUrunsTableAdapter.Fill(this.veritabaniProjeDataSetUrun.tUruns);
+            dataGridView1.DataSource = dbcontext.tUruns.ToList();
         }
     }
 }

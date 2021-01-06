@@ -13,8 +13,7 @@ namespace veritabaniProje.Entity
         public int urunId { get; set; }
         public string urunAdi { get; set; }
         public int miktar { get; set; }
-        public int satisFiyat { get; set; }
-        public int irsaliyeNo { get; set; }
+        public double satisFiyat { get; set; }
 
     }
 }
