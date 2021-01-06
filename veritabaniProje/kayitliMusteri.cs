@@ -35,5 +35,10 @@ namespace veritabaniProje
                 MessageBox.Show("Sadece sayı giriniz");
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

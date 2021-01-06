@@ -32,13 +32,6 @@ namespace veritabaniProje
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.veritabaniProjeDataSetUrun = new veritabaniProje.veritabaniProjeDataSetUrun();
-            this.veritabaniProjeDataSetUrunBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.veritabaniProjeDataSet = new veritabaniProje.veritabaniProjeDataSet();
-            this.tIrsaliyesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tIrsaliyesTableAdapter = new veritabaniProje.veritabaniProjeDataSetTableAdapters.tIrsaliyesTableAdapter();
             this.irsaliyeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.girisTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.urunIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,11 +39,19 @@ namespace veritabaniProje
             this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tedarikciIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.urunAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tIrsaliyesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veritabaniProjeDataSet = new veritabaniProje.veritabaniProjeDataSet();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.veritabaniProjeDataSetUrunBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tIrsaliyesTableAdapter = new veritabaniProje.veritabaniProjeDataSetTableAdapters.tIrsaliyesTableAdapter();
+            this.button4 = new System.Windows.Forms.Button();
+            this.karPayi = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrun)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -58,7 +59,7 @@ namespace veritabaniProje
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(271, 34);
+            this.button1.Location = new System.Drawing.Point(271, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(258, 51);
             this.button1.TabIndex = 0;
@@ -87,56 +88,6 @@ namespace veritabaniProje
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(659, 277);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button2.ForeColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(12, 399);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 39);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "<- Geri Dönmek için Tıkla";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button3.ForeColor = System.Drawing.Color.Sienna;
-            this.button3.Location = new System.Drawing.Point(558, 399);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 39);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Stok Durumunu Görmek İçin Tıkla ->";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // veritabaniProjeDataSetUrun
-            // 
-            this.veritabaniProjeDataSetUrun.DataSetName = "veritabaniProjeDataSetUrun";
-            this.veritabaniProjeDataSetUrun.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // veritabaniProjeDataSetUrunBindingSource
-            // 
-            this.veritabaniProjeDataSetUrunBindingSource.DataSource = this.veritabaniProjeDataSetUrun;
-            this.veritabaniProjeDataSetUrunBindingSource.Position = 0;
-            // 
-            // veritabaniProjeDataSet
-            // 
-            this.veritabaniProjeDataSet.DataSetName = "veritabaniProjeDataSet";
-            this.veritabaniProjeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tIrsaliyesBindingSource
-            // 
-            this.tIrsaliyesBindingSource.DataMember = "tIrsaliyes";
-            this.tIrsaliyesBindingSource.DataSource = this.veritabaniProjeDataSet;
-            // 
-            // tIrsaliyesTableAdapter
-            // 
-            this.tIrsaliyesTableAdapter.ClearBeforeFill = true;
             // 
             // irsaliyeIDDataGridViewTextBoxColumn
             // 
@@ -181,12 +132,83 @@ namespace veritabaniProje
             this.urunAdiDataGridViewTextBoxColumn.HeaderText = "urunAdi";
             this.urunAdiDataGridViewTextBoxColumn.Name = "urunAdiDataGridViewTextBoxColumn";
             // 
+            // tIrsaliyesBindingSource
+            // 
+            this.tIrsaliyesBindingSource.DataMember = "tIrsaliyes";
+            this.tIrsaliyesBindingSource.DataSource = this.veritabaniProjeDataSet;
+            // 
+            // veritabaniProjeDataSet
+            // 
+            this.veritabaniProjeDataSet.DataSetName = "veritabaniProjeDataSet";
+            this.veritabaniProjeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button2.ForeColor = System.Drawing.Color.Sienna;
+            this.button2.Location = new System.Drawing.Point(12, 399);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(230, 39);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "<- Geri Dönmek için Tıkla";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button3.ForeColor = System.Drawing.Color.Sienna;
+            this.button3.Location = new System.Drawing.Point(558, 399);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(230, 39);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Stok Durumunu Görmek İçin Tıkla ->";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // tIrsaliyesTableAdapter
+            // 
+            this.tIrsaliyesTableAdapter.ClearBeforeFill = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.Font = new System.Drawing.Font("Arial", 7F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(294, 11);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 20);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "ONAYLA";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // karPayi
+            // 
+            this.karPayi.Location = new System.Drawing.Point(171, 11);
+            this.karPayi.Name = "karPayi";
+            this.karPayi.Size = new System.Drawing.Size(100, 20);
+            this.karPayi.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "KÂR MİKTARINI GİRİNİZ : ";
+            // 
             // stokEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.karPayi);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -195,11 +217,11 @@ namespace veritabaniProje
             this.Text = "Stok Ekleme Ekranı";
             this.Load += new System.EventHandler(this.stokEkle_Load_2);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrun)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -210,7 +232,6 @@ namespace veritabaniProje
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.BindingSource veritabaniProjeDataSetUrunBindingSource;
-        private veritabaniProjeDataSetUrun veritabaniProjeDataSetUrun;
         private veritabaniProjeDataSet veritabaniProjeDataSet;
         private System.Windows.Forms.BindingSource tIrsaliyesBindingSource;
         private veritabaniProjeDataSetTableAdapters.tIrsaliyesTableAdapter tIrsaliyesTableAdapter;
@@ -221,5 +242,8 @@ namespace veritabaniProje
         private System.Windows.Forms.DataGridViewTextBoxColumn miktarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tedarikciIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn urunAdiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox karPayi;
+        private System.Windows.Forms.Label label1;
     }
 }

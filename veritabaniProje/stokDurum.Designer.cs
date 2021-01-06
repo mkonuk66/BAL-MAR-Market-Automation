@@ -38,6 +38,7 @@ namespace veritabaniProje
             this.tUrunsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tUrunsTableAdapter = new veritabaniProje.veritabaniProjeDataSetUrunTableAdapters.tUrunsTableAdapter();
             this.urunIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barkodNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.urunAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.satisFiyatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +55,7 @@ namespace veritabaniProje
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.urunIdDataGridViewTextBoxColumn,
+            this.barkodNoDataGridViewTextBoxColumn,
             this.urunAdiDataGridViewTextBoxColumn,
             this.miktarDataGridViewTextBoxColumn,
             this.satisFiyatDataGridViewTextBoxColumn});
@@ -122,6 +124,12 @@ namespace veritabaniProje
             this.urunIdDataGridViewTextBoxColumn.Name = "urunIdDataGridViewTextBoxColumn";
             this.urunIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // barkodNoDataGridViewTextBoxColumn
+            // 
+            this.barkodNoDataGridViewTextBoxColumn.DataPropertyName = "barkodNo";
+            this.barkodNoDataGridViewTextBoxColumn.HeaderText = "barkodNo";
+            this.barkodNoDataGridViewTextBoxColumn.Name = "barkodNoDataGridViewTextBoxColumn";
+            // 
             // urunAdiDataGridViewTextBoxColumn
             // 
             this.urunAdiDataGridViewTextBoxColumn.DataPropertyName = "urunAdi";
@@ -171,6 +179,7 @@ namespace veritabaniProje
         private System.Windows.Forms.BindingSource tUrunsBindingSource;
         private veritabaniProjeDataSetUrunTableAdapters.tUrunsTableAdapter tUrunsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn urunIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn barkodNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn urunAdiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn miktarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn satisFiyatDataGridViewTextBoxColumn;

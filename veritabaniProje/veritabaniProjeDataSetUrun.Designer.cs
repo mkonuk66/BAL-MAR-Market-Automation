@@ -287,6 +287,8 @@ namespace veritabaniProje {
             
             private global::System.Data.DataColumn columnsatisFiyat;
             
+            private global::System.Data.DataColumn columnbarkodNo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public tUrunsDataTable() {
@@ -354,6 +356,14 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn barkodNoColumn {
+                get {
+                    return this.columnbarkodNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -389,13 +399,14 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow AddtUrunsRow(string urunAdi, int miktar, double satisFiyat) {
+            public tUrunsRow AddtUrunsRow(string urunAdi, int miktar, double satisFiyat, long barkodNo) {
                 tUrunsRow rowtUrunsRow = ((tUrunsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         urunAdi,
                         miktar,
-                        satisFiyat};
+                        satisFiyat,
+                        barkodNo};
                 rowtUrunsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtUrunsRow);
                 return rowtUrunsRow;
@@ -429,6 +440,7 @@ namespace veritabaniProje {
                 this.columnurunAdi = base.Columns["urunAdi"];
                 this.columnmiktar = base.Columns["miktar"];
                 this.columnsatisFiyat = base.Columns["satisFiyat"];
+                this.columnbarkodNo = base.Columns["barkodNo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -442,6 +454,8 @@ namespace veritabaniProje {
                 base.Columns.Add(this.columnmiktar);
                 this.columnsatisFiyat = new global::System.Data.DataColumn("satisFiyat", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsatisFiyat);
+                this.columnbarkodNo = new global::System.Data.DataColumn("barkodNo", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbarkodNo);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnurunId}, true));
                 this.columnurunId.AutoIncrement = true;
@@ -453,6 +467,7 @@ namespace veritabaniProje {
                 this.columnurunAdi.MaxLength = 2147483647;
                 this.columnmiktar.AllowDBNull = false;
                 this.columnsatisFiyat.AllowDBNull = false;
+                this.columnbarkodNo.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -644,6 +659,17 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public long barkodNo {
+                get {
+                    return ((long)(this[this.tabletUruns.barkodNoColumn]));
+                }
+                set {
+                    this[this.tabletUruns.barkodNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsurunAdiNull() {
                 return this.IsNull(this.tabletUruns.urunAdiColumn);
             }
@@ -818,35 +844,41 @@ namespace veritabaniProje.veritabaniProjeDataSetUrunTableAdapters {
             tableMapping.ColumnMappings.Add("urunAdi", "urunAdi");
             tableMapping.ColumnMappings.Add("miktar", "miktar");
             tableMapping.ColumnMappings.Add("satisFiyat", "satisFiyat");
+            tableMapping.ColumnMappings.Add("barkodNo", "barkodNo");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
             this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tUruns] WHERE (([urunId] = @Original_urunId) AND ([miktar] = @" +
-                "Original_miktar) AND ([satisFiyat] = @Original_satisFiyat))";
+                "Original_miktar) AND ([satisFiyat] = @Original_satisFiyat) AND ([barkodNo] = @Or" +
+                "iginal_barkodNo))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_urunId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tUruns] ([urunAdi], [miktar], [satisFiyat]) VALUES (@urunAdi, " +
-                "@miktar, @satisFiyat);\r\nSELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns W" +
-                "HERE (urunId = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tUruns] ([urunAdi], [miktar], [satisFiyat], [barkodNo]) VALUES" +
+                " (@urunAdi, @miktar, @satisFiyat, @barkodNo);\r\nSELECT urunId, urunAdi, miktar, s" +
+                "atisFiyat, barkodNo FROM tUruns WHERE (urunId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tUruns] SET [urunAdi] = @urunAdi, [miktar] = @miktar, [satisFiyat] = @satisFiyat WHERE (([urunId] = @Original_urunId) AND ([miktar] = @Original_miktar) AND ([satisFiyat] = @Original_satisFiyat));
-SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tUruns] SET [urunAdi] = @urunAdi, [miktar] = @miktar, [satisFiyat] = @satisFiyat, [barkodNo] = @barkodNo WHERE (([urunId] = @Original_urunId) AND ([miktar] = @Original_miktar) AND ([satisFiyat] = @Original_satisFiyat) AND ([barkodNo] = @Original_barkodNo));
+SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId = @urunId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_urunId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -863,7 +895,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT urunId, urunAdi, miktar, satisFiyat FROM dbo.tUruns";
+            this._commandCollection[0].CommandText = "SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM dbo.tUruns";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -924,10 +956,11 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_urunId, int Original_miktar, double Original_satisFiyat) {
+        public virtual int Delete(int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_urunId));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_miktar));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((double)(Original_satisFiyat));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((long)(Original_barkodNo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -948,7 +981,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string urunAdi, int miktar, double satisFiyat) {
+        public virtual int Insert(string urunAdi, int miktar, double satisFiyat, long barkodNo) {
             if ((urunAdi == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -957,6 +990,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
             }
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(miktar));
             this.Adapter.InsertCommand.Parameters[2].Value = ((double)(satisFiyat));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((long)(barkodNo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -977,7 +1011,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string urunAdi, int miktar, double satisFiyat, int Original_urunId, int Original_miktar, double Original_satisFiyat, int urunId) {
+        public virtual int Update(string urunAdi, int miktar, double satisFiyat, long barkodNo, int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo, int urunId) {
             if ((urunAdi == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -986,10 +1020,12 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
             }
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(miktar));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(satisFiyat));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_urunId));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_miktar));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(Original_satisFiyat));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(urunId));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((long)(barkodNo));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_urunId));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_miktar));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(Original_satisFiyat));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((long)(Original_barkodNo));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(urunId));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1010,8 +1046,8 @@ SELECT urunId, urunAdi, miktar, satisFiyat FROM tUruns WHERE (urunId = @urunId)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string urunAdi, int miktar, double satisFiyat, int Original_urunId, int Original_miktar, double Original_satisFiyat) {
-            return this.Update(urunAdi, miktar, satisFiyat, Original_urunId, Original_miktar, Original_satisFiyat, Original_urunId);
+        public virtual int Update(string urunAdi, int miktar, double satisFiyat, long barkodNo, int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo) {
+            return this.Update(urunAdi, miktar, satisFiyat, barkodNo, Original_urunId, Original_miktar, Original_satisFiyat, Original_barkodNo, Original_urunId);
         }
     }
     

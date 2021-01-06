@@ -20,17 +20,17 @@ namespace veritabaniProje {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("veritabaniProjeDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("veritabaniProjeDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class veritabaniProjeDataSet1 : global::System.Data.DataSet {
+    public partial class veritabaniProjeDataSet : global::System.Data.DataSet {
         
-        private tUrunsDataTable tabletUruns;
+        private tIrsaliyesDataTable tabletIrsaliyes;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public veritabaniProjeDataSet1() {
+        public veritabaniProjeDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace veritabaniProje {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected veritabaniProjeDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected veritabaniProjeDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace veritabaniProje {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tUruns"] != null)) {
-                    base.Tables.Add(new tUrunsDataTable(ds.Tables["tUruns"]));
+                if ((ds.Tables["tIrsaliyes"] != null)) {
+                    base.Tables.Add(new tIrsaliyesDataTable(ds.Tables["tIrsaliyes"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace veritabaniProje {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tUrunsDataTable tUruns {
+        public tIrsaliyesDataTable tIrsaliyes {
             get {
-                return this.tabletUruns;
+                return this.tabletIrsaliyes;
             }
         }
         
@@ -127,7 +127,7 @@ namespace veritabaniProje {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            veritabaniProjeDataSet1 cln = ((veritabaniProjeDataSet1)(base.Clone()));
+            veritabaniProjeDataSet cln = ((veritabaniProjeDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace veritabaniProje {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tUruns"] != null)) {
-                    base.Tables.Add(new tUrunsDataTable(ds.Tables["tUruns"]));
+                if ((ds.Tables["tIrsaliyes"] != null)) {
+                    base.Tables.Add(new tIrsaliyesDataTable(ds.Tables["tIrsaliyes"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace veritabaniProje {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletUruns = ((tUrunsDataTable)(base.Tables["tUruns"]));
+            this.tabletIrsaliyes = ((tIrsaliyesDataTable)(base.Tables["tIrsaliyes"]));
             if ((initTable == true)) {
-                if ((this.tabletUruns != null)) {
-                    this.tabletUruns.InitVars();
+                if ((this.tabletIrsaliyes != null)) {
+                    this.tabletIrsaliyes.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace veritabaniProje {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "veritabaniProjeDataSet1";
+            this.DataSetName = "veritabaniProjeDataSet";
             this.Prefix = "";
             this.Namespace = "http://tempuri.org/veritabaniProjeDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletUruns = new tUrunsDataTable();
-            base.Tables.Add(this.tabletUruns);
+            this.tabletIrsaliyes = new tIrsaliyesDataTable();
+            base.Tables.Add(this.tabletIrsaliyes);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializetUruns() {
+        private bool ShouldSerializetIrsaliyes() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace veritabaniProje {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            veritabaniProjeDataSet1 ds = new veritabaniProjeDataSet1();
+            veritabaniProjeDataSet ds = new veritabaniProjeDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,33 @@ namespace veritabaniProje {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void tUrunsRowChangeEventHandler(object sender, tUrunsRowChangeEvent e);
+        public delegate void tIrsaliyesRowChangeEventHandler(object sender, tIrsaliyesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tUrunsDataTable : global::System.Data.TypedTableBase<tUrunsRow> {
+        public partial class tIrsaliyesDataTable : global::System.Data.TypedTableBase<tIrsaliyesRow> {
+            
+            private global::System.Data.DataColumn columnirsaliyeID;
+            
+            private global::System.Data.DataColumn columngirisTarih;
             
             private global::System.Data.DataColumn columnurunId;
             
-            private global::System.Data.DataColumn columnurunAdi;
+            private global::System.Data.DataColumn columngirdiFiyat;
             
             private global::System.Data.DataColumn columnmiktar;
             
-            private global::System.Data.DataColumn columnsatisFiyat;
+            private global::System.Data.DataColumn columntedarikciId;
             
-            private global::System.Data.DataColumn columnbarkodNo;
+            private global::System.Data.DataColumn columnurunAdi;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsDataTable() {
-                this.TableName = "tUruns";
+            public tIrsaliyesDataTable() {
+                this.TableName = "tIrsaliyes";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +304,7 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal tUrunsDataTable(global::System.Data.DataTable table) {
+            internal tIrsaliyesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,9 +321,25 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected tUrunsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tIrsaliyesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn irsaliyeIDColumn {
+                get {
+                    return this.columnirsaliyeID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn girisTarihColumn {
+                get {
+                    return this.columngirisTarih;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -332,9 +352,9 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn urunAdiColumn {
+            public global::System.Data.DataColumn girdiFiyatColumn {
                 get {
-                    return this.columnurunAdi;
+                    return this.columngirdiFiyat;
                 }
             }
             
@@ -348,17 +368,17 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn satisFiyatColumn {
+            public global::System.Data.DataColumn tedarikciIdColumn {
                 get {
-                    return this.columnsatisFiyat;
+                    return this.columntedarikciId;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn barkodNoColumn {
+            public global::System.Data.DataColumn urunAdiColumn {
                 get {
-                    return this.columnbarkodNo;
+                    return this.columnurunAdi;
                 }
             }
             
@@ -373,56 +393,58 @@ namespace veritabaniProje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow this[int index] {
+            public tIrsaliyesRow this[int index] {
                 get {
-                    return ((tUrunsRow)(this.Rows[index]));
+                    return ((tIrsaliyesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tUrunsRowChangeEventHandler tUrunsRowChanging;
+            public event tIrsaliyesRowChangeEventHandler tIrsaliyesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tUrunsRowChangeEventHandler tUrunsRowChanged;
+            public event tIrsaliyesRowChangeEventHandler tIrsaliyesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tUrunsRowChangeEventHandler tUrunsRowDeleting;
+            public event tIrsaliyesRowChangeEventHandler tIrsaliyesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tUrunsRowChangeEventHandler tUrunsRowDeleted;
+            public event tIrsaliyesRowChangeEventHandler tIrsaliyesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddtUrunsRow(tUrunsRow row) {
+            public void AddtIrsaliyesRow(tIrsaliyesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow AddtUrunsRow(string urunAdi, int miktar, double satisFiyat, long barkodNo) {
-                tUrunsRow rowtUrunsRow = ((tUrunsRow)(this.NewRow()));
+            public tIrsaliyesRow AddtIrsaliyesRow(int irsaliyeID, System.DateTime girisTarih, double girdiFiyat, int miktar, int tedarikciId, string urunAdi) {
+                tIrsaliyesRow rowtIrsaliyesRow = ((tIrsaliyesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        irsaliyeID,
+                        girisTarih,
                         null,
-                        urunAdi,
+                        girdiFiyat,
                         miktar,
-                        satisFiyat,
-                        barkodNo};
-                rowtUrunsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtUrunsRow);
-                return rowtUrunsRow;
+                        tedarikciId,
+                        urunAdi};
+                rowtIrsaliyesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtIrsaliyesRow);
+                return rowtIrsaliyesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow FindByurunId(int urunId) {
-                return ((tUrunsRow)(this.Rows.Find(new object[] {
+            public tIrsaliyesRow FindByurunId(int urunId) {
+                return ((tIrsaliyesRow)(this.Rows.Find(new object[] {
                             urunId})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tUrunsDataTable cln = ((tUrunsDataTable)(base.Clone()));
+                tIrsaliyesDataTable cln = ((tIrsaliyesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -430,70 +452,78 @@ namespace veritabaniProje {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tUrunsDataTable();
+                return new tIrsaliyesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+                this.columnirsaliyeID = base.Columns["irsaliyeID"];
+                this.columngirisTarih = base.Columns["girisTarih"];
                 this.columnurunId = base.Columns["urunId"];
-                this.columnurunAdi = base.Columns["urunAdi"];
+                this.columngirdiFiyat = base.Columns["girdiFiyat"];
                 this.columnmiktar = base.Columns["miktar"];
-                this.columnsatisFiyat = base.Columns["satisFiyat"];
-                this.columnbarkodNo = base.Columns["barkodNo"];
+                this.columntedarikciId = base.Columns["tedarikciId"];
+                this.columnurunAdi = base.Columns["urunAdi"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
+                this.columnirsaliyeID = new global::System.Data.DataColumn("irsaliyeID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnirsaliyeID);
+                this.columngirisTarih = new global::System.Data.DataColumn("girisTarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columngirisTarih);
                 this.columnurunId = new global::System.Data.DataColumn("urunId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnurunId);
-                this.columnurunAdi = new global::System.Data.DataColumn("urunAdi", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnurunAdi);
+                this.columngirdiFiyat = new global::System.Data.DataColumn("girdiFiyat", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columngirdiFiyat);
                 this.columnmiktar = new global::System.Data.DataColumn("miktar", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmiktar);
-                this.columnsatisFiyat = new global::System.Data.DataColumn("satisFiyat", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsatisFiyat);
-                this.columnbarkodNo = new global::System.Data.DataColumn("barkodNo", typeof(long), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnbarkodNo);
+                this.columntedarikciId = new global::System.Data.DataColumn("tedarikciId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntedarikciId);
+                this.columnurunAdi = new global::System.Data.DataColumn("urunAdi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnurunAdi);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnurunId}, true));
+                this.columnirsaliyeID.AllowDBNull = false;
+                this.columngirisTarih.AllowDBNull = false;
                 this.columnurunId.AutoIncrement = true;
                 this.columnurunId.AutoIncrementSeed = -1;
                 this.columnurunId.AutoIncrementStep = -1;
                 this.columnurunId.AllowDBNull = false;
                 this.columnurunId.ReadOnly = true;
                 this.columnurunId.Unique = true;
-                this.columnurunAdi.MaxLength = 2147483647;
+                this.columngirdiFiyat.AllowDBNull = false;
                 this.columnmiktar.AllowDBNull = false;
-                this.columnsatisFiyat.AllowDBNull = false;
-                this.columnbarkodNo.AllowDBNull = false;
+                this.columntedarikciId.AllowDBNull = false;
+                this.columnurunAdi.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow NewtUrunsRow() {
-                return ((tUrunsRow)(this.NewRow()));
+            public tIrsaliyesRow NewtIrsaliyesRow() {
+                return ((tIrsaliyesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tUrunsRow(builder);
+                return new tIrsaliyesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tUrunsRow);
+                return typeof(tIrsaliyesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tUrunsRowChanged != null)) {
-                    this.tUrunsRowChanged(this, new tUrunsRowChangeEvent(((tUrunsRow)(e.Row)), e.Action));
+                if ((this.tIrsaliyesRowChanged != null)) {
+                    this.tIrsaliyesRowChanged(this, new tIrsaliyesRowChangeEvent(((tIrsaliyesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -501,8 +531,8 @@ namespace veritabaniProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tUrunsRowChanging != null)) {
-                    this.tUrunsRowChanging(this, new tUrunsRowChangeEvent(((tUrunsRow)(e.Row)), e.Action));
+                if ((this.tIrsaliyesRowChanging != null)) {
+                    this.tIrsaliyesRowChanging(this, new tIrsaliyesRowChangeEvent(((tIrsaliyesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -510,8 +540,8 @@ namespace veritabaniProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tUrunsRowDeleted != null)) {
-                    this.tUrunsRowDeleted(this, new tUrunsRowChangeEvent(((tUrunsRow)(e.Row)), e.Action));
+                if ((this.tIrsaliyesRowDeleted != null)) {
+                    this.tIrsaliyesRowDeleted(this, new tIrsaliyesRowChangeEvent(((tIrsaliyesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -519,14 +549,14 @@ namespace veritabaniProje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tUrunsRowDeleting != null)) {
-                    this.tUrunsRowDeleting(this, new tUrunsRowChangeEvent(((tUrunsRow)(e.Row)), e.Action));
+                if ((this.tIrsaliyesRowDeleting != null)) {
+                    this.tIrsaliyesRowDeleting(this, new tIrsaliyesRowChangeEvent(((tIrsaliyesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovetUrunsRow(tUrunsRow row) {
+            public void RemovetIrsaliyesRow(tIrsaliyesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -535,7 +565,7 @@ namespace veritabaniProje {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                veritabaniProjeDataSet1 ds = new veritabaniProjeDataSet1();
+                veritabaniProjeDataSet ds = new veritabaniProjeDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -553,7 +583,7 @@ namespace veritabaniProje {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tUrunsDataTable";
+                attribute2.FixedValue = "tIrsaliyesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -597,25 +627,80 @@ namespace veritabaniProje {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tUrunsRow : global::System.Data.DataRow {
+        public partial class tIrsaliyesRow : global::System.Data.DataRow {
             
-            private tUrunsDataTable tabletUruns;
+            private tIrsaliyesDataTable tabletIrsaliyes;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal tUrunsRow(global::System.Data.DataRowBuilder rb) : 
+            internal tIrsaliyesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletUruns = ((tUrunsDataTable)(this.Table));
+                this.tabletIrsaliyes = ((tIrsaliyesDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int irsaliyeID {
+                get {
+                    return ((int)(this[this.tabletIrsaliyes.irsaliyeIDColumn]));
+                }
+                set {
+                    this[this.tabletIrsaliyes.irsaliyeIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime girisTarih {
+                get {
+                    return ((global::System.DateTime)(this[this.tabletIrsaliyes.girisTarihColumn]));
+                }
+                set {
+                    this[this.tabletIrsaliyes.girisTarihColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int urunId {
                 get {
-                    return ((int)(this[this.tabletUruns.urunIdColumn]));
+                    return ((int)(this[this.tabletIrsaliyes.urunIdColumn]));
                 }
                 set {
-                    this[this.tabletUruns.urunIdColumn] = value;
+                    this[this.tabletIrsaliyes.urunIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double girdiFiyat {
+                get {
+                    return ((double)(this[this.tabletIrsaliyes.girdiFiyatColumn]));
+                }
+                set {
+                    this[this.tabletIrsaliyes.girdiFiyatColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int miktar {
+                get {
+                    return ((int)(this[this.tabletIrsaliyes.miktarColumn]));
+                }
+                set {
+                    this[this.tabletIrsaliyes.miktarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int tedarikciId {
+                get {
+                    return ((int)(this[this.tabletIrsaliyes.tedarikciIdColumn]));
+                }
+                set {
+                    this[this.tabletIrsaliyes.tedarikciIdColumn] = value;
                 }
             }
             
@@ -624,60 +709,27 @@ namespace veritabaniProje {
             public string urunAdi {
                 get {
                     try {
-                        return ((string)(this[this.tabletUruns.urunAdiColumn]));
+                        return ((string)(this[this.tabletIrsaliyes.urunAdiColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'tUruns\' tablosundaki \'urunAdi\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'tIrsaliyes\' tablosundaki \'urunAdi\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletUruns.urunAdiColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int miktar {
-                get {
-                    return ((int)(this[this.tabletUruns.miktarColumn]));
-                }
-                set {
-                    this[this.tabletUruns.miktarColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public double satisFiyat {
-                get {
-                    return ((double)(this[this.tabletUruns.satisFiyatColumn]));
-                }
-                set {
-                    this[this.tabletUruns.satisFiyatColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public long barkodNo {
-                get {
-                    return ((long)(this[this.tabletUruns.barkodNoColumn]));
-                }
-                set {
-                    this[this.tabletUruns.barkodNoColumn] = value;
+                    this[this.tabletIrsaliyes.urunAdiColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsurunAdiNull() {
-                return this.IsNull(this.tabletUruns.urunAdiColumn);
+                return this.IsNull(this.tabletIrsaliyes.urunAdiColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SeturunAdiNull() {
-                this[this.tabletUruns.urunAdiColumn] = global::System.Convert.DBNull;
+                this[this.tabletIrsaliyes.urunAdiColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -685,22 +737,22 @@ namespace veritabaniProje {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class tUrunsRowChangeEvent : global::System.EventArgs {
+        public class tIrsaliyesRowChangeEvent : global::System.EventArgs {
             
-            private tUrunsRow eventRow;
+            private tIrsaliyesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRowChangeEvent(tUrunsRow row, global::System.Data.DataRowAction action) {
+            public tIrsaliyesRowChangeEvent(tIrsaliyesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tUrunsRow Row {
+            public tIrsaliyesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -716,7 +768,7 @@ namespace veritabaniProje {
         }
     }
 }
-namespace veritabaniProje.veritabaniProjeDataSet1TableAdapters {
+namespace veritabaniProje.veritabaniProjeDataSetTableAdapters {
     
     
     /// <summary>
@@ -728,7 +780,7 @@ namespace veritabaniProje.veritabaniProjeDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tUrunsTableAdapter : global::System.ComponentModel.Component {
+    public partial class tIrsaliyesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -742,7 +794,7 @@ namespace veritabaniProje.veritabaniProjeDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public tUrunsTableAdapter() {
+        public tIrsaliyesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -839,46 +891,53 @@ namespace veritabaniProje.veritabaniProjeDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tUruns";
+            tableMapping.DataSetTable = "tIrsaliyes";
+            tableMapping.ColumnMappings.Add("irsaliyeID", "irsaliyeID");
+            tableMapping.ColumnMappings.Add("girisTarih", "girisTarih");
             tableMapping.ColumnMappings.Add("urunId", "urunId");
-            tableMapping.ColumnMappings.Add("urunAdi", "urunAdi");
+            tableMapping.ColumnMappings.Add("girdiFiyat", "girdiFiyat");
             tableMapping.ColumnMappings.Add("miktar", "miktar");
-            tableMapping.ColumnMappings.Add("satisFiyat", "satisFiyat");
-            tableMapping.ColumnMappings.Add("barkodNo", "barkodNo");
+            tableMapping.ColumnMappings.Add("tedarikciId", "tedarikciId");
+            tableMapping.ColumnMappings.Add("urunAdi", "urunAdi");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tUruns] WHERE (([urunId] = @Original_urunId) AND ([miktar] = @" +
-                "Original_miktar) AND ([satisFiyat] = @Original_satisFiyat) AND ([barkodNo] = @Or" +
-                "iginal_barkodNo))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tIrsaliyes] WHERE (([irsaliyeID] = @Original_irsaliyeID) AND ([girisTarih] = @Original_girisTarih) AND ([urunId] = @Original_urunId) AND ([girdiFiyat] = @Original_girdiFiyat) AND ([miktar] = @Original_miktar) AND ([tedarikciId] = @Original_tedarikciId))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_irsaliyeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "irsaliyeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_girisTarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girisTarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_urunId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_girdiFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girdiFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tedarikciId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tedarikciId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tUruns] ([urunAdi], [miktar], [satisFiyat], [barkodNo]) VALUES" +
-                " (@urunAdi, @miktar, @satisFiyat, @barkodNo);\r\nSELECT urunId, urunAdi, miktar, s" +
-                "atisFiyat, barkodNo FROM tUruns WHERE (urunId = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tIrsaliyes] ([irsaliyeID], [girisTarih], [girdiFiyat], [miktar], [tedarikciId], [urunAdi]) VALUES (@irsaliyeID, @girisTarih, @girdiFiyat, @miktar, @tedarikciId, @urunAdi);
+SELECT irsaliyeID, girisTarih, urunId, girdiFiyat, miktar, tedarikciId, urunAdi FROM tIrsaliyes WHERE (urunId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@irsaliyeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "irsaliyeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@girisTarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girisTarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@girdiFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girdiFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tedarikciId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tedarikciId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tUruns] SET [urunAdi] = @urunAdi, [miktar] = @miktar, [satisFiyat] = @satisFiyat, [barkodNo] = @barkodNo WHERE (([urunId] = @Original_urunId) AND ([miktar] = @Original_miktar) AND ([satisFiyat] = @Original_satisFiyat) AND ([barkodNo] = @Original_barkodNo));
-SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId = @urunId)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tIrsaliyes] SET [irsaliyeID] = @irsaliyeID, [girisTarih] = @girisTarih, [girdiFiyat] = @girdiFiyat, [miktar] = @miktar, [tedarikciId] = @tedarikciId, [urunAdi] = @urunAdi WHERE (([irsaliyeID] = @Original_irsaliyeID) AND ([girisTarih] = @Original_girisTarih) AND ([urunId] = @Original_urunId) AND ([girdiFiyat] = @Original_girdiFiyat) AND ([miktar] = @Original_miktar) AND ([tedarikciId] = @Original_tedarikciId));
+SELECT irsaliyeID, girisTarih, urunId, girdiFiyat, miktar, tedarikciId, urunAdi FROM tIrsaliyes WHERE (urunId = @urunId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@irsaliyeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "irsaliyeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@girisTarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girisTarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@girdiFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girdiFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tedarikciId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tedarikciId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_irsaliyeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "irsaliyeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_girisTarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girisTarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_urunId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_girdiFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "girdiFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_miktar", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "miktar", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_satisFiyat", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "satisFiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_barkodNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "barkodNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tedarikciId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tedarikciId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@urunId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "urunId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -895,7 +954,8 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM dbo.tUruns";
+            this._commandCollection[0].CommandText = "SELECT irsaliyeID, girisTarih, urunId, girdiFiyat, miktar, tedarikciId, urunAdi F" +
+                "ROM dbo.tIrsaliyes";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -903,7 +963,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(veritabaniProjeDataSet1.tUrunsDataTable dataTable) {
+        public virtual int Fill(veritabaniProjeDataSet.tIrsaliyesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -916,9 +976,9 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual veritabaniProjeDataSet1.tUrunsDataTable GetData() {
+        public virtual veritabaniProjeDataSet.tIrsaliyesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            veritabaniProjeDataSet1.tUrunsDataTable dataTable = new veritabaniProjeDataSet1.tUrunsDataTable();
+            veritabaniProjeDataSet.tIrsaliyesDataTable dataTable = new veritabaniProjeDataSet.tIrsaliyesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -926,15 +986,15 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(veritabaniProjeDataSet1.tUrunsDataTable dataTable) {
+        public virtual int Update(veritabaniProjeDataSet.tIrsaliyesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(veritabaniProjeDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "tUruns");
+        public virtual int Update(veritabaniProjeDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tIrsaliyes");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -956,11 +1016,13 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_urunId));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_miktar));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((double)(Original_satisFiyat));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((long)(Original_barkodNo));
+        public virtual int Delete(int Original_irsaliyeID, System.DateTime Original_girisTarih, int Original_urunId, double Original_girdiFiyat, int Original_miktar, int Original_tedarikciId) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_irsaliyeID));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_girisTarih));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_urunId));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((double)(Original_girdiFiyat));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_miktar));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_tedarikciId));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -981,16 +1043,18 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string urunAdi, int miktar, double satisFiyat, long barkodNo) {
+        public virtual int Insert(int irsaliyeID, System.DateTime girisTarih, double girdiFiyat, int miktar, int tedarikciId, string urunAdi) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(irsaliyeID));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(girisTarih));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((double)(girdiFiyat));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(miktar));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(tedarikciId));
             if ((urunAdi == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(urunAdi));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(urunAdi));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(miktar));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((double)(satisFiyat));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((long)(barkodNo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1011,21 +1075,25 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string urunAdi, int miktar, double satisFiyat, long barkodNo, int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo, int urunId) {
+        public virtual int Update(int irsaliyeID, System.DateTime girisTarih, double girdiFiyat, int miktar, int tedarikciId, string urunAdi, int Original_irsaliyeID, System.DateTime Original_girisTarih, int Original_urunId, double Original_girdiFiyat, int Original_miktar, int Original_tedarikciId, int urunId) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(irsaliyeID));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(girisTarih));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(girdiFiyat));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(miktar));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(tedarikciId));
             if ((urunAdi == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(urunAdi));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(urunAdi));
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(miktar));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(satisFiyat));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((long)(barkodNo));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_urunId));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_miktar));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(Original_satisFiyat));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((long)(Original_barkodNo));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(urunId));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_irsaliyeID));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_girisTarih));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_urunId));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_girdiFiyat));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_miktar));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_tedarikciId));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(urunId));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1046,8 +1114,8 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string urunAdi, int miktar, double satisFiyat, long barkodNo, int Original_urunId, int Original_miktar, double Original_satisFiyat, long Original_barkodNo) {
-            return this.Update(urunAdi, miktar, satisFiyat, barkodNo, Original_urunId, Original_miktar, Original_satisFiyat, Original_barkodNo, Original_urunId);
+        public virtual int Update(int irsaliyeID, System.DateTime girisTarih, double girdiFiyat, int miktar, int tedarikciId, string urunAdi, int Original_irsaliyeID, System.DateTime Original_girisTarih, int Original_urunId, double Original_girdiFiyat, int Original_miktar, int Original_tedarikciId) {
+            return this.Update(irsaliyeID, girisTarih, girdiFiyat, miktar, tedarikciId, urunAdi, Original_irsaliyeID, Original_girisTarih, Original_urunId, Original_girdiFiyat, Original_miktar, Original_tedarikciId, Original_urunId);
         }
     }
     
@@ -1063,7 +1131,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         
         private UpdateOrderOption _updateOrder;
         
-        private tUrunsTableAdapter _tUrunsTableAdapter;
+        private tIrsaliyesTableAdapter _tIrsaliyesTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1085,12 +1153,12 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public tUrunsTableAdapter tUrunsTableAdapter {
+        public tIrsaliyesTableAdapter tIrsaliyesTableAdapter {
             get {
-                return this._tUrunsTableAdapter;
+                return this._tIrsaliyesTableAdapter;
             }
             set {
-                this._tUrunsTableAdapter = value;
+                this._tIrsaliyesTableAdapter = value;
             }
         }
         
@@ -1113,9 +1181,9 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tUrunsTableAdapter != null) 
-                            && (this._tUrunsTableAdapter.Connection != null))) {
-                    return this._tUrunsTableAdapter.Connection;
+                if (((this._tIrsaliyesTableAdapter != null) 
+                            && (this._tIrsaliyesTableAdapter.Connection != null))) {
+                    return this._tIrsaliyesTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1130,7 +1198,7 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tUrunsTableAdapter != null)) {
+                if ((this._tIrsaliyesTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1142,14 +1210,14 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(veritabaniProjeDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(veritabaniProjeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tUrunsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tUruns.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tIrsaliyesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tIrsaliyes.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tUrunsTableAdapter.Update(updatedRows));
+                    result = (result + this._tIrsaliyesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1161,13 +1229,13 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(veritabaniProjeDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(veritabaniProjeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tUrunsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tUruns.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tIrsaliyesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tIrsaliyes.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tUrunsTableAdapter.Update(addedRows));
+                    result = (result + this._tIrsaliyesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1179,13 +1247,13 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(veritabaniProjeDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(veritabaniProjeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tUrunsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tUruns.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tIrsaliyesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tIrsaliyes.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tUrunsTableAdapter.Update(deletedRows));
+                    result = (result + this._tIrsaliyesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1221,15 +1289,15 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(veritabaniProjeDataSet1 dataSet) {
+        public virtual int UpdateAll(veritabaniProjeDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tUrunsTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tUrunsTableAdapter.Connection) == false))) {
+            if (((this._tIrsaliyesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tIrsaliyesTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
@@ -1265,13 +1333,13 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tUrunsTableAdapter != null)) {
-                    revertConnections.Add(this._tUrunsTableAdapter, this._tUrunsTableAdapter.Connection);
-                    this._tUrunsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tUrunsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tUrunsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tUrunsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tUrunsTableAdapter.Adapter);
+                if ((this._tIrsaliyesTableAdapter != null)) {
+                    revertConnections.Add(this._tIrsaliyesTableAdapter, this._tIrsaliyesTableAdapter.Connection);
+                    this._tIrsaliyesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tIrsaliyesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tIrsaliyesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tIrsaliyesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tIrsaliyesTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1332,9 +1400,9 @@ SELECT urunId, urunAdi, miktar, satisFiyat, barkodNo FROM tUruns WHERE (urunId =
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tUrunsTableAdapter != null)) {
-                    this._tUrunsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tUrunsTableAdapter]));
-                    this._tUrunsTableAdapter.Transaction = null;
+                if ((this._tIrsaliyesTableAdapter != null)) {
+                    this._tIrsaliyesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tIrsaliyesTableAdapter]));
+                    this._tIrsaliyesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

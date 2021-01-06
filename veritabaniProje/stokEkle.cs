@@ -17,6 +17,7 @@ namespace veritabaniProje
     public partial class stokEkle : Form
     {
         Entity.Context dbcontext = new Entity.Context();
+        public double karMiktari;
         public stokEkle()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace veritabaniProje
             //try catch ile path değişkeni null döndüğünde hata vermesini engelledik
             try
             {
+
                 OpenFileDialog file = new OpenFileDialog();
                 //OpenFileDialog acildiginda masaustu acılacak
                 file.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -55,20 +57,23 @@ namespace veritabaniProje
                     if (product == null)
                     {
                         urun.urunId = irsaliye.urunId;
+                        urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
                         urun.urunAdi = irsaliye.urunAdi;
                         urun.miktar = irsaliye.miktar;
-                        urun.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + 0.35);
+                        urun.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
                         MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dbcontext.tUruns.Add(urun);
                     }
                     else
                     {
                         product.miktar += irsaliye.miktar;
-                        MessageBox.Show("Ürün güncellendi", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        product.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
+                        MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     dbcontext.tIrsaliyes.Add(irsaliye);
                     dbcontext.SaveChanges();
                 }
+
             }
             catch (Exception) // Hatayı yakaladık
             {
@@ -104,13 +109,17 @@ namespace veritabaniProje
         {
             // TODO: Bu kod satırı 'veritabaniProjeDataSet.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSet.tIrsaliyes);
-
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
             stokDurum stkdurum1 = new stokDurum();
             stkdurum1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            karMiktari = Convert.ToDouble(karPayi.Text);
         }
     }
 }

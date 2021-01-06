@@ -40,5 +40,6 @@ namespace veritabaniProje
             this.tUrunsTableAdapter.Fill(this.veritabaniProjeDataSetUrun.tUruns);
             dataGridView1.DataSource = dbcontext.tUruns.ToList();
         }
+
     }
 }

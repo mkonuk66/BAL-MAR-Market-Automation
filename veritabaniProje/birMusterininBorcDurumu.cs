@@ -12,6 +12,7 @@ namespace veritabaniProje
 {
     public partial class birMusterininBorcDurumu : Form
     {
+        Entity.Context dbcontext = new Entity.Context();
         public birMusterininBorcDurumu()
         {
             InitializeComponent();
@@ -30,6 +31,11 @@ namespace veritabaniProje
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

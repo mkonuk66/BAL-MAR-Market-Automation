@@ -24,8 +24,16 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stokDurum stkDurum = new stokDurum();
-            stkDurum.Show();
+            try
+            {
+                stokDurum stkDurum = new stokDurum();
+                stkDurum.Show();
+            }
+            catch (Exception)
+            {
+
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
