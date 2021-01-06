@@ -21,7 +21,6 @@ namespace veritabaniProje
         {
             InitializeComponent();
         }
-        //SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL;Database=veritabaniProje;Trusted_Connection=True;");
         private void button1_Click(object sender, EventArgs e)
         {
             //try catch ile path değişkeni null döndüğünde hata vermesini engelledik
@@ -38,29 +37,43 @@ namespace veritabaniProje
                 //Dosyadan okuma işlemi satır satır gerçekleştiriliyor.
                 string[] satir = System.IO.File.ReadAllLines(path, Encoding.GetEncoding("windows-1254"));
                 //Dosya yolunu kontrol için ekrana bastırıyorum
-                MessageBox.Show("Seçilen dosyanın yolu : \n" + file.FileName  , "Dosya başarıyla seçildi.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Seçilen dosyanın yolu : \n" + file.FileName, "Dosya başarıyla seçildi.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 file.Reset();
-                for (int i = 0; i < satir.Length; i += 6)
+                for (int i = 0; i < satir.Length; i += 7)
                 {
                     var irsaliye = new Entity.tIrsaliye();
+                    var urun = new Entity.tUrun();
                     irsaliye.irsaliyeID = Convert.ToInt32(satir[i]);
                     irsaliye.girisTarih = Convert.ToDateTime(satir[i + 1]);
                     irsaliye.urunId = Convert.ToInt32(satir[i + 2]);
                     irsaliye.girdiFiyat = (float)Convert.ToDouble(satir[i + 3]);
                     irsaliye.miktar = Convert.ToInt32(satir[i + 4]);
                     irsaliye.tedarikciId = Convert.ToInt32(satir[i + 5]);
+                    irsaliye.urunAdi = Convert.ToString(satir[i + 6]);
+                    var product = dbcontext.tUruns.FirstOrDefault(x => x.urunAdi == irsaliye.urunAdi);
+                    //MessageBox.Show(Convert.ToString(product.urunId), "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (product == null)
+                    {
+                        urun.urunId = irsaliye.urunId;
+                        urun.urunAdi = irsaliye.urunAdi;
+                        urun.miktar = irsaliye.miktar;
+                        urun.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + 0.35);
+                        MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dbcontext.tUruns.Add(urun);
+                    }
+                    else
+                    {
+                        product.miktar += irsaliye.miktar;
+                        MessageBox.Show("Ürün güncellendi", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     dbcontext.tIrsaliyes.Add(irsaliye);
                     dbcontext.SaveChanges();
                 }
-                MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //dataGridView1.DataSource = dbcontext.tIrsaliyes.ToList();
             }
             catch (Exception) // Hatayı yakaladık
             {
             }
         }
-
-
         private void stokEkle_Load(object sender, EventArgs e)
         {
 
@@ -68,7 +81,7 @@ namespace veritabaniProje
 
         private void stokEkle_Load_1(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = dbcontext.tIrsaliyes.ToList();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -85,6 +98,19 @@ namespace veritabaniProje
         {
             stokDurum stkDurum1 = new stokDurum();
             stkDurum1.Show();
+        }
+
+        private void stokEkle_Load_2(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'veritabaniProjeDataSet.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSet.tIrsaliyes);
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            stokDurum stkdurum1 = new stokDurum();
+            stkdurum1.Show();
         }
     }
 }
