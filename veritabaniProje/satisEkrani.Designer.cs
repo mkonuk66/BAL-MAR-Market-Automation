@@ -30,32 +30,23 @@ namespace veritabaniProje
         private void InitializeComponent()
         {
             this.addID = new System.Windows.Forms.TextBox();
-            this.showIDText = new System.Windows.Forms.RichTextBox();
             this.addProductButton = new System.Windows.Forms.Button();
             this.deleteProductButton = new System.Windows.Forms.Button();
             this.cashButton = new System.Windows.Forms.Button();
             this.debtButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // addID
             // 
-            this.addID.Location = new System.Drawing.Point(249, 57);
+            this.addID.Location = new System.Drawing.Point(250, 61);
             this.addID.Name = "addID";
-            this.addID.Size = new System.Drawing.Size(196, 22);
+            this.addID.Size = new System.Drawing.Size(231, 22);
             this.addID.TabIndex = 1;
             this.addID.TextChanged += new System.EventHandler(this.addID_TextChanged);
             this.addID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addID_KeyPress);
-            // 
-            // showIDText
-            // 
-            this.showIDText.Location = new System.Drawing.Point(568, 84);
-            this.showIDText.Name = "showIDText";
-            this.showIDText.Size = new System.Drawing.Size(175, 287);
-            this.showIDText.TabIndex = 2;
-            this.showIDText.Text = "";
-            this.showIDText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.showIDText_KeyPress);
             // 
             // addProductButton
             // 
@@ -108,7 +99,7 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(40, 59);
+            this.label1.Location = new System.Drawing.Point(17, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 20);
             this.label1.TabIndex = 8;
@@ -124,19 +115,34 @@ namespace veritabaniProje
             this.label2.TabIndex = 9;
             this.label2.Text = "ÖDEME BİÇİMİ";
             // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 18;
+            this.listBox1.Items.AddRange(new object[] {
+            "14563265\t",
+            "45544554",
+            "909109"});
+            this.listBox1.Location = new System.Drawing.Point(581, 59);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(190, 328);
+            this.listBox1.TabIndex = 10;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // satisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.debtButton);
             this.Controls.Add(this.cashButton);
             this.Controls.Add(this.deleteProductButton);
             this.Controls.Add(this.addProductButton);
-            this.Controls.Add(this.showIDText);
             this.Controls.Add(this.addID);
             this.Name = "satisEkrani";
             this.Text = "SATIŞ EKRANI";
@@ -148,12 +154,12 @@ namespace veritabaniProje
 
         #endregion
         private System.Windows.Forms.TextBox addID;
-        private System.Windows.Forms.RichTextBox showIDText;
         private System.Windows.Forms.Button addProductButton;
         private System.Windows.Forms.Button deleteProductButton;
         private System.Windows.Forms.Button cashButton;
         private System.Windows.Forms.Button debtButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

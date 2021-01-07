@@ -14,6 +14,16 @@ namespace veritabaniProje
 {
     public partial class satisEkrani : Form
     {
+
+        void bekle(int saniye)
+        {
+            saniye = ((saniye + Convert.ToInt32(DateTime.Now.Second)) % 60);
+            for (; ; )
+            {
+                if (saniye == DateTime.Now.Second) break;
+            }
+        }
+
         public satisEkrani()
         {
             //güncelleme
@@ -44,17 +54,29 @@ namespace veritabaniProje
 
         private void addProductButton_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Add(addID.Text);
             StreamWriter write = File.AppendText("M:\\save.txt");
             write.WriteLine(addID.Text);
-            showIDText.Text = addID.Text;
+            
             write.Close();
         }
 
-        private void deleteProductButton_Click(object sender, EventArgs e)
+        public void deleteProductButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+
             bilgileriDogrula bgd = new bilgileriDogrula();
-            bgd.Show();
+            // bgd.Show();
+            listBox1.Items.Remove(listBox1.SelectedItem);
+            /*if ()
+            {
+                bekle(3);
+                listBox1.Items.Remove(listBox1.SelectedItem);
+            }
+            else if (bilgileriDogrula.a.Equals(false))
+            {
+                bekle(3);
+                MessageBox.Show("lUTFEN BİLGİLERİNİZİ DOĞRU GİRİNİZ");
+            }*/
         }
 
         private void satisEkrani_Load(object sender, EventArgs e)
@@ -65,6 +87,11 @@ namespace veritabaniProje
         private void addID_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+       
         }
     }
 }
