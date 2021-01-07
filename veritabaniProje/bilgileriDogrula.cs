@@ -12,31 +12,42 @@ namespace veritabaniProje
 {
     public partial class bilgileriDogrula : Form
     {
-        public bilgileriDogrula()
-        {
-            InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+        bool Dogrulama()
         {
-            if (textBox1.Text == "Muhammet" || textBox2.Text == "123456")
+            if (textBox1.Text == "Muhammet" && textBox2.Text == "123456")
             {
-                satisEkrani ste = new satisEkrani();
-                ste.Show();
+                return true;
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Lütfen parola veya kullanıcı adını doğru giriniz");
+                return false;
             }
         }
+        public static int a;
+            public bilgileriDogrula()
+        {
+            InitializeComponent();
+        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        /*public void Dogrulasana()
+        {
+            Dogrulama();
+        }*/
+        public void button1_Click(object sender, EventArgs e)
+        {
+           /* !!!!
+            Dogrulama();
+            this.Close();*/
+        }
+
+        public void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        public void textBox2_TextChanged(object sender, EventArgs e)
         {
          /*   if (textBox1.Text == "Muhammet" && textBox2.Text == "123456")
             {
@@ -61,7 +72,7 @@ namespace veritabaniProje
 
         private void bilgileriDogrula_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
