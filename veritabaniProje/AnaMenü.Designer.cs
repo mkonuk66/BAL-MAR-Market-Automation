@@ -31,18 +31,21 @@ namespace veritabaniProje
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaMenü));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.anamenubuton = new System.Windows.Forms.Button();
+            this.raporbuton = new System.Windows.Forms.Button();
+            this.stokbuton = new System.Windows.Forms.Button();
+            this.musteributon = new System.Windows.Forms.Button();
             this.satisbuton = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
-            this.musteributon = new System.Windows.Forms.Button();
-            this.stokbuton = new System.Windows.Forms.Button();
-            this.raporbuton = new System.Windows.Forms.Button();
-            this.anamenubuton = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kapatmabutonu = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
+            this.anaMenu1 = new veritabaniProje.AnaMenu();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,56 +65,65 @@ namespace veritabaniProje
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 558);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // anamenubuton
             // 
-            this.panel2.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(246, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(846, 27);
-            this.panel2.TabIndex = 1;
+            this.anamenubuton.FlatAppearance.BorderSize = 0;
+            this.anamenubuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.anamenubuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.anamenubuton.Image = ((System.Drawing.Image)(resources.GetObject("anamenubuton.Image")));
+            this.anamenubuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.anamenubuton.Location = new System.Drawing.Point(12, 87);
+            this.anamenubuton.Name = "anamenubuton";
+            this.anamenubuton.Size = new System.Drawing.Size(209, 61);
+            this.anamenubuton.TabIndex = 7;
+            this.anamenubuton.Text = "       Ana Menü";
+            this.anamenubuton.UseVisualStyleBackColor = true;
+            this.anamenubuton.Click += new System.EventHandler(this.anamenubuton_Click);
             // 
-            // panel3
+            // raporbuton
             // 
-            this.panel3.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(300, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel3.Size = new System.Drawing.Size(129, 148);
-            this.panel3.TabIndex = 2;
+            this.raporbuton.FlatAppearance.BorderSize = 0;
+            this.raporbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raporbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.raporbuton.Image = ((System.Drawing.Image)(resources.GetObject("raporbuton.Image")));
+            this.raporbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.raporbuton.Location = new System.Drawing.Point(12, 356);
+            this.raporbuton.Name = "raporbuton";
+            this.raporbuton.Size = new System.Drawing.Size(209, 61);
+            this.raporbuton.TabIndex = 6;
+            this.raporbuton.Text = "       Rapor Alım";
+            this.raporbuton.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // stokbuton
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.stokbuton.FlatAppearance.BorderSize = 0;
+            this.stokbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stokbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.stokbuton.Image = ((System.Drawing.Image)(resources.GetObject("stokbuton.Image")));
+            this.stokbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.stokbuton.Location = new System.Drawing.Point(12, 289);
+            this.stokbuton.Name = "stokbuton";
+            this.stokbuton.Size = new System.Drawing.Size(209, 61);
+            this.stokbuton.TabIndex = 5;
+            this.stokbuton.Text = "       Stok İşlemleri";
+            this.stokbuton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // musteributon
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(20, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BALMAR";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Balıkesirin Marketi";
+            this.musteributon.FlatAppearance.BorderSize = 0;
+            this.musteributon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.musteributon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteributon.Image = ((System.Drawing.Image)(resources.GetObject("musteributon.Image")));
+            this.musteributon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.musteributon.Location = new System.Drawing.Point(12, 222);
+            this.musteributon.Name = "musteributon";
+            this.musteributon.Size = new System.Drawing.Size(231, 61);
+            this.musteributon.TabIndex = 4;
+            this.musteributon.Text = "       Müşteri İşlemleri";
+            this.musteributon.UseVisualStyleBackColor = true;
+            this.musteributon.Click += new System.EventHandler(this.musteributon_Click);
             // 
             // satisbuton
             // 
@@ -137,61 +149,55 @@ namespace veritabaniProje
             this.sidepanel.TabIndex = 3;
             this.sidepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // musteributon
+            // panel2
             // 
-            this.musteributon.FlatAppearance.BorderSize = 0;
-            this.musteributon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.musteributon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteributon.Image = ((System.Drawing.Image)(resources.GetObject("musteributon.Image")));
-            this.musteributon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.musteributon.Location = new System.Drawing.Point(12, 222);
-            this.musteributon.Name = "musteributon";
-            this.musteributon.Size = new System.Drawing.Size(231, 61);
-            this.musteributon.TabIndex = 4;
-            this.musteributon.Text = "       Müşteri İşlemleri";
-            this.musteributon.UseVisualStyleBackColor = true;
+            this.panel2.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(246, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(846, 27);
+            this.panel2.TabIndex = 1;
             // 
-            // stokbuton
+            // panel3
             // 
-            this.stokbuton.FlatAppearance.BorderSize = 0;
-            this.stokbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stokbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.stokbuton.Image = ((System.Drawing.Image)(resources.GetObject("stokbuton.Image")));
-            this.stokbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.stokbuton.Location = new System.Drawing.Point(12, 289);
-            this.stokbuton.Name = "stokbuton";
-            this.stokbuton.Size = new System.Drawing.Size(209, 61);
-            this.stokbuton.TabIndex = 5;
-            this.stokbuton.Text = "       Stok İşlemleri";
-            this.stokbuton.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(300, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel3.Size = new System.Drawing.Size(129, 148);
+            this.panel3.TabIndex = 2;
             // 
-            // raporbuton
+            // label2
             // 
-            this.raporbuton.FlatAppearance.BorderSize = 0;
-            this.raporbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.raporbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.raporbuton.Image = ((System.Drawing.Image)(resources.GetObject("raporbuton.Image")));
-            this.raporbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.raporbuton.Location = new System.Drawing.Point(12, 356);
-            this.raporbuton.Name = "raporbuton";
-            this.raporbuton.Size = new System.Drawing.Size(209, 61);
-            this.raporbuton.TabIndex = 6;
-            this.raporbuton.Text = "       Rapor Alım";
-            this.raporbuton.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Balıkesirin Marketi";
             // 
-            // anamenubuton
+            // label1
             // 
-            this.anamenubuton.FlatAppearance.BorderSize = 0;
-            this.anamenubuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anamenubuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.anamenubuton.Image = ((System.Drawing.Image)(resources.GetObject("anamenubuton.Image")));
-            this.anamenubuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.anamenubuton.Location = new System.Drawing.Point(12, 87);
-            this.anamenubuton.Name = "anamenubuton";
-            this.anamenubuton.Size = new System.Drawing.Size(209, 61);
-            this.anamenubuton.TabIndex = 7;
-            this.anamenubuton.Text = "       Ana Menü";
-            this.anamenubuton.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(20, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BALMAR";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // kapatmabutonu
             // 
@@ -203,12 +209,29 @@ namespace veritabaniProje
             this.kapatmabutonu.Size = new System.Drawing.Size(49, 50);
             this.kapatmabutonu.TabIndex = 3;
             this.kapatmabutonu.UseVisualStyleBackColor = true;
+            this.kapatmabutonu.Click += new System.EventHandler(this.kapatmabutonu_Click);
+            // 
+            // musteriMenu1
+            // 
+            this.musteriMenu1.Location = new System.Drawing.Point(246, 147);
+            this.musteriMenu1.Name = "musteriMenu1";
+            this.musteriMenu1.Size = new System.Drawing.Size(846, 411);
+            this.musteriMenu1.TabIndex = 5;
+            // 
+            // anaMenu1
+            // 
+            this.anaMenu1.Location = new System.Drawing.Point(246, 147);
+            this.anaMenu1.Name = "anaMenu1";
+            this.anaMenu1.Size = new System.Drawing.Size(846, 411);
+            this.anaMenu1.TabIndex = 4;
             // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.Controls.Add(this.musteriMenu1);
+            this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.kapatmabutonu);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -242,5 +265,8 @@ namespace veritabaniProje
         private System.Windows.Forms.Button stokbuton;
         private System.Windows.Forms.Button musteributon;
         private System.Windows.Forms.Button kapatmabutonu;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private AnaMenu anaMenu1;
+        private MusteriMenu musteriMenu1;
     }
 }
