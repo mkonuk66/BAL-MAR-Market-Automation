@@ -10,8 +10,8 @@ namespace veritabaniProje.Entity
 {
     class tIrsaliye { 
         [Key]
+        public int irsaliyeID { get; set; }
         public int urunId { get; set; }
-        public int irsaliyeID { get; set; } 
         public DateTime girisTarih { get; set; }      
         public double girdiFiyat { get; set; }
         public int miktar { get; set; }

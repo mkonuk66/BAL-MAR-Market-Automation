@@ -55,20 +55,27 @@ namespace veritabaniProje
             bag.Open();
             borcsorgu.Fill(ds, "tBorcs");
             dt1 = ds.Tables["tBorcs"];
-            musteriGosterim.DataSource = dt;
+            borcGosterim.DataSource = dt;
             bag.Close();
-            musteriGosterim.Columns[0].HeaderText = "Musteri No";
-            musteriGosterim.Columns[1].HeaderText = "Borc Tarihi";
-            musteriGosterim.Columns[2].HeaderText = "Borc Miktarı";
-
-
-
+            borcGosterim.Columns[0].HeaderText = "Musteri No";
+            borcGosterim.Columns[1].HeaderText = "Borc Tarihi";
+            borcGosterim.Columns[2].HeaderText = "Borc Miktarı";
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var borc = new Entity.tBorc();
+            var musteri = new Entity.tMusteri();
+            if (borcOdeme.Text != null)
+            {
+                borc.borcMiktar -= Convert.ToInt32(borcOdeme.Text);
+                MessageBox.Show("" + musteri.musteriAdi + "Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen güncellemek istediğiniz borç tutarını giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,6 +102,11 @@ namespace veritabaniProje
         }
 
         private void borcGosterim_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
