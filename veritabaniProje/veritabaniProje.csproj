@@ -80,6 +80,7 @@
     <Compile Include="Entity\tIrsaliye.cs" />
     <Compile Include="Entity\tMusteri.cs" />
     <Compile Include="Entity\tSatis.cs" />
+    <Compile Include="Entity\tTedarikci.cs" />
     <Compile Include="Entity\tUrun.cs" />
     <Compile Include="Form3satis.cs">
       <SubType>Form</SubType>

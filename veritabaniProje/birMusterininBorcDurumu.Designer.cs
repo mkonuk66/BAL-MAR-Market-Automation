@@ -33,13 +33,15 @@ namespace veritabaniProje
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.borcOdemeButonu = new System.Windows.Forms.Button();
             this.tMusterisBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.musteriGosterim = new System.Windows.Forms.DataGridView();
             this.veritabaniProjeDataSet1 = new veritabaniProje.veritabaniProjeDataSet1();
             this.tMusterisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tMusterisTableAdapter = new veritabaniProje.veritabaniProjeDataSet1TableAdapters.tMusterisTableAdapter();
             this.borcGosterim = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.borcOdeme = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tMusterisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteriGosterim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet1)).BeginInit();
@@ -70,7 +72,7 @@ namespace veritabaniProje
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(684, 401);
+            this.button1.Location = new System.Drawing.Point(684, 402);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 37);
@@ -79,19 +81,19 @@ namespace veritabaniProje
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // borcOdemeButonu
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(16, 401);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 37);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Borç Ödeme";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.borcOdemeButonu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.borcOdemeButonu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.borcOdemeButonu.ForeColor = System.Drawing.Color.Sienna;
+            this.borcOdemeButonu.Location = new System.Drawing.Point(626, 241);
+            this.borcOdemeButonu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.borcOdemeButonu.Name = "borcOdemeButonu";
+            this.borcOdemeButonu.Size = new System.Drawing.Size(151, 26);
+            this.borcOdemeButonu.TabIndex = 3;
+            this.borcOdemeButonu.Text = "Borç Ödeme";
+            this.borcOdemeButonu.UseVisualStyleBackColor = false;
+            this.borcOdemeButonu.Click += new System.EventHandler(this.button2_Click);
             // 
             // tMusterisBindingSource
             // 
@@ -99,6 +101,7 @@ namespace veritabaniProje
             // 
             // musteriGosterim
             // 
+            this.musteriGosterim.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.musteriGosterim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.musteriGosterim.Location = new System.Drawing.Point(16, 60);
             this.musteriGosterim.Name = "musteriGosterim";
@@ -124,14 +127,32 @@ namespace veritabaniProje
             // 
             // borcGosterim
             // 
+            this.borcGosterim.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.borcGosterim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.borcGosterim.Location = new System.Drawing.Point(16, 224);
             this.borcGosterim.Name = "borcGosterim";
             this.borcGosterim.RowHeadersWidth = 51;
             this.borcGosterim.RowTemplate.Height = 24;
-            this.borcGosterim.Size = new System.Drawing.Size(772, 139);
+            this.borcGosterim.Size = new System.Drawing.Size(336, 139);
             this.borcGosterim.TabIndex = 5;
             this.borcGosterim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.borcGosterim_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(375, 246);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Ödenecek Tutar : ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // borcOdeme
+            // 
+            this.borcOdeme.Location = new System.Drawing.Point(504, 243);
+            this.borcOdeme.Name = "borcOdeme";
+            this.borcOdeme.Size = new System.Drawing.Size(100, 22);
+            this.borcOdeme.TabIndex = 7;
             // 
             // birMusterininBorcDurumu
             // 
@@ -139,9 +160,11 @@ namespace veritabaniProje
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.borcOdeme);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.borcGosterim);
             this.Controls.Add(this.musteriGosterim);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.borcOdemeButonu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -164,12 +187,14 @@ namespace veritabaniProje
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button borcOdemeButonu;
         private System.Windows.Forms.BindingSource tMusterisBindingSource;
         private System.Windows.Forms.DataGridView musteriGosterim;
         private veritabaniProjeDataSet1 veritabaniProjeDataSet1;
         private System.Windows.Forms.BindingSource tMusterisBindingSource1;
         private veritabaniProjeDataSet1TableAdapters.tMusterisTableAdapter tMusterisTableAdapter;
         private System.Windows.Forms.DataGridView borcGosterim;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox borcOdeme;
     }
 }

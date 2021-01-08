@@ -44,6 +44,7 @@ namespace veritabaniProje
                 {
                     var irsaliye = new Entity.tIrsaliye();
                     var urun = new Entity.tUrun();
+                    var tedarikci = new Entity.tTedarikci();
                     irsaliye.irsaliyeID = Convert.ToInt32(satir[i]);
                     irsaliye.girisTarih = Convert.ToDateTime(satir[i + 1]);
                     irsaliye.urunId = Convert.ToInt32(satir[i + 2]);
@@ -70,6 +71,21 @@ namespace veritabaniProje
                         MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     dbcontext.SaveChanges();
+
+                    var product1 = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
+                    if(product1 == null)
+                    {
+                        tedarikci.tedarikciId = irsaliye.tedarikciId;
+                        tedarikci.urunAdi = irsaliye.urunAdi;
+                        tedarikci.urunId = irsaliye.urunId;
+                        tedarikci.urunMiktar = irsaliye.miktar;
+                        tedarikci.borcMiktar = Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                    }
+                    else
+                    {
+                        tedarikci.urunMiktar += irsaliye.miktar;
+                        tedarikci.borcMiktar += Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                    }
                 }
 
 
@@ -102,7 +118,8 @@ namespace veritabaniProje
         {
             stokDurum stkDurum1 = new stokDurum();
             stkDurum1.Show();
-        }
+
+    }
 
         private void stokEkle_Load_2(object sender, EventArgs e)
         {
