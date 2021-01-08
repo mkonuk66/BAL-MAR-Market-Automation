@@ -12,6 +12,7 @@ namespace veritabaniProje
 {
     public partial class satisArayuzu : Form
     {
+        Entity.Context dbcontext = new Entity.Context();
         public satisArayuzu()
         {
             InitializeComponent();
@@ -31,18 +32,22 @@ namespace veritabaniProje
         {
             if (showPasswordBox.Checked)
             {
-                passwordText.UseSystemPasswordChar = true;
+                passwordText.PasswordChar = '\0';
             }
 
             else
             {
-                passwordText.UseSystemPasswordChar = false;
+                passwordText.PasswordChar = '*';
             }
         }
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if(usernameText.Text == "Muhammet" && passwordText.Text == "123456")
+            string cashierId1 = Convert.ToString(username.Text);
+            string cashierPassword1 = Convert.ToString(passwordText.Text);
+            var cashierId = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciAdi == cashierId1);
+            var cashierPassword = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciSifre == cashierPassword1);
+            if (cashierId != null && cashierPassword != null )
             {
                 satisEkrani stk = new satisEkrani();
                 stk.Show();
@@ -50,8 +55,38 @@ namespace veritabaniProje
             }
             else
             {
-                MessageBox.Show("Lütfen geçerli parola veya kullanıcı adını giriniz");
+                label2.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
             }
         }
+
+        private void satisArayuzu_Load(object sender, EventArgs e)
+        {
+            passwordText.PasswordChar = '*';
+            //var kasiyer = new Entity.tKasiyer();
+            //kasiyer.kasiyerId = 1;
+            //kasiyer.kullaniciAdi = "mehmetEmin";
+            //kasiyer.kullaniciSifre = "1234";
+            //dbcontext.tKasiyers.Add(kasiyer);
+            //dbcontext.SaveChanges();
+            //var kasiyer2 = new Entity.tKasiyer();
+            //kasiyer2.kasiyerId = 2;
+            //kasiyer2.kullaniciAdi = "muhammetMustafa";
+            //kasiyer2.kullaniciSifre = "1234";
+            //dbcontext.tKasiyers.Add(kasiyer2);
+            //dbcontext.SaveChanges();
+            //var kasiyer3 = new Entity.tKasiyer();
+            //kasiyer3.kasiyerId = 3;
+            //kasiyer3.kullaniciAdi = "ibrahim";
+            //kasiyer3.kullaniciSifre = "1234";
+            //dbcontext.tKasiyers.Add(kasiyer3);
+            //dbcontext.SaveChanges();
+            //var kasiyer4 = new Entity.tKasiyer();
+            //kasiyer4.kasiyerId = 4;
+            //kasiyer4.kullaniciAdi = "oguzcan";
+            //kasiyer4.kullaniciSifre = "1234";
+            //dbcontext.tKasiyers.Add(kasiyer4);
+            //dbcontext.SaveChanges();
+        }
+
     }
 }

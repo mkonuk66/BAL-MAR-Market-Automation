@@ -15,5 +15,6 @@ namespace veritabaniProje.Entity
         public DbSet<tSatis> tSatiss { get; set; }
         public DbSet<tBorc> tBorcs { get; set; }
         public DbSet<tTedarikci> tTedarikcis { get; set; }
+        public DbSet<tKasiyer> tKasiyers { get; set; }
     }
 }

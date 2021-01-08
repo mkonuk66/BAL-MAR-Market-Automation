@@ -67,10 +67,9 @@ namespace veritabaniProje
 
         public void deleteProductButton_Click(object sender, EventArgs e)
         {
-
             bilgileriDogrula bgd = new bilgileriDogrula();
-            long newAddId = Convert.ToInt64(addID.Text);
-            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
+            Int64 select = Convert.ToInt64(listBox1.SelectedItem.ToString());
+            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == select);
             totalPrice -= product.satisFiyat;
             label3.Text = "Tutar toplamı : " + totalPrice;
             listBox1.Items.Remove(listBox1.SelectedItem);
@@ -98,7 +97,7 @@ namespace veritabaniProje
             var satisCari = new Entity.tSatis();
             //satisCari.satisNo = 0;
             satisCari.satisTuru = "Cari";
-            satisCari.satisTutar = totalPrice;
+            satisCari.satisTutar = (float)totalPrice;
             dbcontext.tSatiss.Add(satisCari);
             dbcontext.SaveChanges();
             listBox1.Items.Clear();
@@ -115,7 +114,7 @@ namespace veritabaniProje
             var satisPesin = new Entity.tSatis();
             //satisPesin.satisNo = 0;
             satisPesin.satisTuru = "Pesin";
-            satisPesin.satisTutar = totalPrice;
+            satisPesin.satisTutar = (float)totalPrice;
             dbcontext.tSatiss.Add(satisPesin);
             dbcontext.SaveChanges();
             totalPrice = 0;

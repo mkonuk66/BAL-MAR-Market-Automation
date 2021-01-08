@@ -48,7 +48,7 @@ namespace veritabaniProje
                     irsaliye.irsaliyeID = Convert.ToInt32(satir[i]);
                     irsaliye.girisTarih = Convert.ToDateTime(satir[i + 1]);
                     irsaliye.urunId = Convert.ToInt32(satir[i + 2]);
-                    irsaliye.girdiFiyat = Convert.ToDouble(satir[i + 3]);
+                    irsaliye.girdiFiyat = (float)Convert.ToDouble(satir[i + 3]);
                     irsaliye.miktar = Convert.ToInt32(satir[i + 4]);
                     irsaliye.tedarikciId = Convert.ToInt32(satir[i + 5]);
                     irsaliye.urunAdi = Convert.ToString(satir[i + 6]);
@@ -60,14 +60,14 @@ namespace veritabaniProje
                         urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
                         urun.urunAdi = irsaliye.urunAdi;
                         urun.miktar = irsaliye.miktar;
-                        urun.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
+                        urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
                         MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dbcontext.tUruns.Add(urun);
                     }
                     else
                     {
                         product.miktar += irsaliye.miktar;
-                        product.satisFiyat = Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
+                        product.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
                         MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     dbcontext.SaveChanges();
@@ -79,12 +79,12 @@ namespace veritabaniProje
                         tedarikci.urunAdi = irsaliye.urunAdi;
                         tedarikci.urunId = irsaliye.urunId;
                         tedarikci.urunMiktar = irsaliye.miktar;
-                        tedarikci.borcMiktar = Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        tedarikci.borcMiktar = (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                     }
                     else
                     {
                         tedarikci.urunMiktar += irsaliye.miktar;
-                        tedarikci.borcMiktar += Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        tedarikci.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                     }
                 }
 
