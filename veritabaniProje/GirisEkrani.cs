@@ -50,5 +50,11 @@ namespace veritabaniProje
             panel3.BackColor = SystemColors.Control;
             textBox1.BackColor = SystemColors.Control;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AnaMenü ana = new AnaMenü();
+            ana.Show();
+        }
     }
 }
