@@ -14,7 +14,8 @@ namespace veritabaniProje
 {
     public partial class satisEkrani : Form
     {
-
+        public double totalPrice = 0.0;
+        Entity.Context dbcontext = new Entity.Context();
         void bekle(int saniye)
         {
             saniye = ((saniye + Convert.ToInt32(DateTime.Now.Second)) % 60);
@@ -46,42 +47,38 @@ namespace veritabaniProje
 
         }
 
-        private void cashButton_Click(object sender, EventArgs e)
-        {
-            Form3satis frt = new Form3satis();
-            frt.Show();
-        }
-
         private void addProductButton_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(addID.Text);
-            StreamWriter write = File.AppendText("M:\\save.txt");
-            write.WriteLine(addID.Text);
+            long newAddId = Convert.ToInt64(addID.Text); 
+            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
+            if (product == null)
+            {
+                MessageBox.Show("Girilen barkod no'ya ait ürün bulunamadı.","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                totalPrice += product.satisFiyat;
+                listBox1.Items.Add(addID.Text);
+                MessageBox.Show("Ürün sepete eklendi","Eklendi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                label3.Text = "Tutar toplamı : " + totalPrice;
+            }
             
-            write.Close();
         }
 
         public void deleteProductButton_Click(object sender, EventArgs e)
         {
 
             bilgileriDogrula bgd = new bilgileriDogrula();
-            // bgd.Show();
+            long newAddId = Convert.ToInt64(addID.Text);
+            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
+            totalPrice -= product.satisFiyat;
+            label3.Text = "Tutar toplamı : " + totalPrice;
             listBox1.Items.Remove(listBox1.SelectedItem);
-            /*if ()
-            {
-                bekle(3);
-                listBox1.Items.Remove(listBox1.SelectedItem);
-            }
-            else if (bilgileriDogrula.a.Equals(false))
-            {
-                bekle(3);
-                MessageBox.Show("lUTFEN BİLGİLERİNİZİ DOĞRU GİRİNİZ");
-            }*/
         }
 
         private void satisEkrani_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void addID_TextChanged(object sender, EventArgs e)
@@ -92,6 +89,48 @@ namespace veritabaniProje
         public void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
        
+        }
+
+        private void debtButton_Click(object sender, EventArgs e)
+        {
+            musteriArayuzu mstar= new musteriArayuzu();
+            mstar.Show();
+            var satisCari = new Entity.tSatis();
+            //satisCari.satisNo = 0;
+            satisCari.satisTuru = "Cari";
+            satisCari.satisTutar = totalPrice;
+            dbcontext.tSatiss.Add(satisCari);
+            dbcontext.SaveChanges();
+            listBox1.Items.Clear();
+            totalPrice = 0;
+            listBox1.Items.Clear();
+            listBox1.Items.Add("Sepet" );
+            listBox1.Items.Add("----------");
+            label3.Text = "Tutar toplamı : " + totalPrice;
+            MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void cashButton_Click(object sender, EventArgs e)
+        {
+            var satisPesin = new Entity.tSatis();
+            //satisPesin.satisNo = 0;
+            satisPesin.satisTuru = "Pesin";
+            satisPesin.satisTutar = totalPrice;
+            dbcontext.tSatiss.Add(satisPesin);
+            dbcontext.SaveChanges();
+            totalPrice = 0;
+            listBox1.Items.Clear();
+            listBox1.Items.Add("Sepet");
+            listBox1.Items.Add("----------");
+            label3.Text = "Tutar toplamı : " + totalPrice;
+            MessageBox.Show("Satış Tamamlandı","Tamamlandı",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+
+        }
+
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
