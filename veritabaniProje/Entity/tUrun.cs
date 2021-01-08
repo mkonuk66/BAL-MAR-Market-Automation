@@ -15,7 +15,7 @@ namespace veritabaniProje.Entity
         public Int64 barkodNo { get; set; }
         public string urunAdi { get; set; }
         public int miktar { get; set; }
-        public double satisFiyat { get; set; }
+        public float satisFiyat { get; set; }
 
     }
 }
