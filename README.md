@@ -16,12 +16,12 @@ Authors
 --------------------------------------------------------------------
 In the database section
 ----------------------------------
-Mehmet Emin KONUK
+Mehmet Emin KONUK [a link](https://github.com/mkonuk66) -
 İbrahim ÖZDEMİR
 
 In the interface design section
 ----------------------------------
-Muhammet Mustafa HASTAOĞLUGİL
+Muhammet Mustafa HASTAOĞLUGİL -
 Oguzcan KATAR
 
 Thanks...
