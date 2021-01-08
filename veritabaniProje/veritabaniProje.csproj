@@ -63,6 +63,18 @@
     <Compile Include="anaArayüz.Designer.cs">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnaMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenü.Designer.cs">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </Compile>
     <Compile Include="bilgileriDogrula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </Compile>
     <Compile Include="musteriArayuzu.Designer.cs">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MusteriMenu.Designer.cs">
+      <DependentUpon>MusteriMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,6 +212,12 @@
     <EmbeddedResource Include="anaArayüz.resx">
       <DependentUpon>anaArayüz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenü.resx">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bilgileriDogrula.resx">
       <DependentUpon>bilgileriDogrula.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="musteriArayuzu.resx">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriMenu.resx">
+      <DependentUpon>MusteriMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
