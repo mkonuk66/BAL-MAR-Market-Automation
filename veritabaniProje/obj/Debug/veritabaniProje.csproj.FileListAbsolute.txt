@@ -113,3 +113,7 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenu.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenü.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriMenu.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenu.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenü.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriMenu.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisMusteri.resources

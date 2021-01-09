@@ -146,6 +146,12 @@
     <Compile Include="satisArayuzu.Designer.cs">
       <DependentUpon>satisArayuzu.cs</DependentUpon>
     </Compile>
+    <Compile Include="satisMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisMusteri.Designer.cs">
+      <DependentUpon>satisMusteri.cs</DependentUpon>
+    </Compile>
     <Compile Include="satisRapor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="satisEkrani.resx">
       <DependentUpon>satisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisMusteri.resx">
+      <DependentUpon>satisMusteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="satisRapor.resx">
       <DependentUpon>satisRapor.cs</DependentUpon>
