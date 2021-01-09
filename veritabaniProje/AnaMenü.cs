@@ -66,5 +66,10 @@ namespace veritabaniProje
         {
             tarih_saat_bilgi.Text = DateTime.Now.ToString();
         }
+
+        private void stokbuton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
