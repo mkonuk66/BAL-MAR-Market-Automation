@@ -164,6 +164,12 @@
     <Compile Include="satisTrendiGrafik.Designer.cs">
       <DependentUpon>satisTrendiGrafik.cs</DependentUpon>
     </Compile>
+    <Compile Include="Satisİslemleri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Satisİslemleri.Designer.cs">
+      <DependentUpon>Satisİslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="satılanUrunListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="satisTrendiGrafik.resx">
       <DependentUpon>satisTrendiGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satisİslemleri.resx">
+      <DependentUpon>Satisİslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="satılanUrunListesi.resx">
       <DependentUpon>satılanUrunListesi.cs</DependentUpon>
