@@ -49,7 +49,7 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /* string cashierId1 = Convert.ToString(textBox1.Text);
+             string cashierId1 = Convert.ToString(textBox1.Text);
             string cashierPassword1 = Convert.ToString(textBox2.Text);
             var cashierId = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciAdi == cashierId1);
             var cashierPassword = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciSifre == cashierPassword1);
@@ -62,13 +62,13 @@ namespace veritabaniProje
             {
                 label2.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
             }
-            */
+            
             
         }
 
         private void Satisİslemleri_Load(object sender, EventArgs e)
         {
-            //textBox2.PasswordChar = '*';
+            textBox2.PasswordChar = '*';
             //var kasiyer = new Entity.tKasiyer();
             //kasiyer.kasiyerId = 1;
             //kasiyer.kullaniciAdi = "mehmetEmin";
