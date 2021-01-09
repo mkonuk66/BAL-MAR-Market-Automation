@@ -29,6 +29,7 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaMenü));
             this.panel1 = new System.Windows.Forms.Panel();
             this.anamenubuton = new System.Windows.Forms.Button();
@@ -46,6 +47,10 @@ namespace veritabaniProje
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
+            this.tarih = new System.Windows.Forms.Label();
+            this.saat = new System.Windows.Forms.Label();
+            this.tarih_saat_bilgi = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,7 +172,7 @@ namespace veritabaniProje
             this.panel3.Location = new System.Drawing.Point(300, 0);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel3.Size = new System.Drawing.Size(129, 148);
+            this.panel3.Size = new System.Drawing.Size(129, 141);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -215,7 +220,7 @@ namespace veritabaniProje
             // 
             this.musteriMenu1.Location = new System.Drawing.Point(246, 147);
             this.musteriMenu1.Name = "musteriMenu1";
-            this.musteriMenu1.Size = new System.Drawing.Size(846, 411);
+            this.musteriMenu1.Size = new System.Drawing.Size(846, 379);
             this.musteriMenu1.TabIndex = 5;
             // 
             // anaMenu1
@@ -225,11 +230,45 @@ namespace veritabaniProje
             this.anaMenu1.Size = new System.Drawing.Size(846, 411);
             this.anaMenu1.TabIndex = 4;
             // 
+            // tarih
+            // 
+            this.tarih.AutoSize = true;
+            this.tarih.Location = new System.Drawing.Point(779, 34);
+            this.tarih.Name = "tarih";
+            this.tarih.Size = new System.Drawing.Size(41, 17);
+            this.tarih.TabIndex = 6;
+            this.tarih.Text = "Tarih";
+            // 
+            // saat
+            // 
+            this.saat.AutoSize = true;
+            this.saat.Location = new System.Drawing.Point(858, 34);
+            this.saat.Name = "saat";
+            this.saat.Size = new System.Drawing.Size(37, 17);
+            this.saat.TabIndex = 7;
+            this.saat.Text = "Saat";
+            // 
+            // tarih_saat_bilgi
+            // 
+            this.tarih_saat_bilgi.AutoSize = true;
+            this.tarih_saat_bilgi.Location = new System.Drawing.Point(779, 63);
+            this.tarih_saat_bilgi.Name = "tarih_saat_bilgi";
+            this.tarih_saat_bilgi.Size = new System.Drawing.Size(46, 17);
+            this.tarih_saat_bilgi.TabIndex = 8;
+            this.tarih_saat_bilgi.Text = "label5";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.Controls.Add(this.tarih_saat_bilgi);
+            this.Controls.Add(this.saat);
+            this.Controls.Add(this.tarih);
             this.Controls.Add(this.musteriMenu1);
             this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.kapatmabutonu);
@@ -247,6 +286,7 @@ namespace veritabaniProje
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -268,5 +308,9 @@ namespace veritabaniProje
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private AnaMenu anaMenu1;
         private MusteriMenu musteriMenu1;
+        private System.Windows.Forms.Label tarih;
+        private System.Windows.Forms.Label saat;
+        private System.Windows.Forms.Label tarih_saat_bilgi;
+        private System.Windows.Forms.Timer timer1;
     }
 }
