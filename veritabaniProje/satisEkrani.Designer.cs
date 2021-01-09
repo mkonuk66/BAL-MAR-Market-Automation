@@ -40,8 +40,8 @@ namespace veritabaniProje
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -187,14 +187,6 @@ namespace veritabaniProje
             this.panel1.Size = new System.Drawing.Size(244, 186);
             this.panel1.TabIndex = 13;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(35, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 22);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -203,6 +195,14 @@ namespace veritabaniProje
             this.label4.Size = new System.Drawing.Size(212, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Ürünü silmek için şifrenizi giriniz.";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(35, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(176, 22);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -241,7 +241,6 @@ namespace veritabaniProje
             this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.addID);
             this.ForeColor = System.Drawing.Color.DarkRed;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "satisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -51,6 +51,8 @@ namespace veritabaniProje
             this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
             this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,6 +61,7 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.anamenubuton);
             this.panel1.Controls.Add(this.raporbuton);
             this.panel1.Controls.Add(this.stokbuton);
@@ -94,7 +97,7 @@ namespace veritabaniProje
             this.raporbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.raporbuton.Image = ((System.Drawing.Image)(resources.GetObject("raporbuton.Image")));
             this.raporbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.raporbuton.Location = new System.Drawing.Point(12, 356);
+            this.raporbuton.Location = new System.Drawing.Point(12, 347);
             this.raporbuton.Name = "raporbuton";
             this.raporbuton.Size = new System.Drawing.Size(189, 61);
             this.raporbuton.TabIndex = 6;
@@ -108,12 +111,13 @@ namespace veritabaniProje
             this.stokbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.stokbuton.Image = ((System.Drawing.Image)(resources.GetObject("stokbuton.Image")));
             this.stokbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.stokbuton.Location = new System.Drawing.Point(12, 289);
+            this.stokbuton.Location = new System.Drawing.Point(12, 282);
             this.stokbuton.Name = "stokbuton";
             this.stokbuton.Size = new System.Drawing.Size(189, 61);
             this.stokbuton.TabIndex = 5;
             this.stokbuton.Text = "   Stok İşlemleri";
             this.stokbuton.UseVisualStyleBackColor = true;
+            this.stokbuton.Click += new System.EventHandler(this.stokbuton_Click);
             // 
             // musteributon
             // 
@@ -122,7 +126,7 @@ namespace veritabaniProje
             this.musteributon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteributon.Image = ((System.Drawing.Image)(resources.GetObject("musteributon.Image")));
             this.musteributon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.musteributon.Location = new System.Drawing.Point(12, 222);
+            this.musteributon.Location = new System.Drawing.Point(12, 217);
             this.musteributon.Name = "musteributon";
             this.musteributon.Size = new System.Drawing.Size(189, 61);
             this.musteributon.TabIndex = 4;
@@ -137,7 +141,7 @@ namespace veritabaniProje
             this.satisbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.satisbuton.Image = ((System.Drawing.Image)(resources.GetObject("satisbuton.Image")));
             this.satisbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.satisbuton.Location = new System.Drawing.Point(12, 155);
+            this.satisbuton.Location = new System.Drawing.Point(12, 152);
             this.satisbuton.Name = "satisbuton";
             this.satisbuton.Size = new System.Drawing.Size(190, 61);
             this.satisbuton.TabIndex = 0;
@@ -268,11 +272,35 @@ namespace veritabaniProje
             this.satisİslemleri1.Size = new System.Drawing.Size(890, 403);
             this.satisİslemleri1.TabIndex = 11;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(12, 412);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 61);
+            this.button1.TabIndex = 8;
+            this.button1.Text = " Borç Ödeme";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(359, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "label3";
+            // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.satisİslemleri1);
             this.Controls.Add(this.musteriMenu1);
             this.Controls.Add(this.anaMenu1);
@@ -320,5 +348,7 @@ namespace veritabaniProje
         private AnaMenu anaMenu1;
         private MusteriMenu musteriMenu1;
         private Satisİslemleri satisİslemleri1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }

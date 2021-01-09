@@ -20,18 +20,18 @@ namespace veritabaniProje
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.White;
-            panel1.BackColor = Color.White;
-            panel2.BackColor = SystemColors.Control;
-            textBox2.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.ControlLight;
+            panel1.BackColor = SystemColors.ScrollBar;
+            panel2.BackColor = SystemColors.ScrollBar;
+            textBox2.BackColor = SystemColors.ScrollBar;
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;
-            panel2.BackColor = Color.White;
-            panel1.BackColor = SystemColors.Control;
-            textBox1.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.ControlLight;
+            panel2.BackColor = SystemColors.ScrollBar;
+            panel1.BackColor = SystemColors.ScrollBar;
+            textBox1.BackColor = SystemColors.ScrollBar;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
