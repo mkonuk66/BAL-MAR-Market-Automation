@@ -48,6 +48,9 @@ namespace veritabaniProje
             this.saat = new System.Windows.Forms.Label();
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
+            this.anaMenu1 = new veritabaniProje.AnaMenu();
+            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -244,11 +247,35 @@ namespace veritabaniProje
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // musteriMenu1
+            // 
+            this.musteriMenu1.Location = new System.Drawing.Point(202, 152);
+            this.musteriMenu1.Name = "musteriMenu1";
+            this.musteriMenu1.Size = new System.Drawing.Size(890, 406);
+            this.musteriMenu1.TabIndex = 10;
+            // 
+            // anaMenu1
+            // 
+            this.anaMenu1.Location = new System.Drawing.Point(202, 143);
+            this.anaMenu1.Name = "anaMenu1";
+            this.anaMenu1.Size = new System.Drawing.Size(890, 412);
+            this.anaMenu1.TabIndex = 9;
+            // 
+            // satisİslemleri1
+            // 
+            this.satisİslemleri1.Location = new System.Drawing.Point(202, 155);
+            this.satisİslemleri1.Name = "satisİslemleri1";
+            this.satisİslemleri1.Size = new System.Drawing.Size(890, 403);
+            this.satisİslemleri1.TabIndex = 11;
+            // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.Controls.Add(this.satisİslemleri1);
+            this.Controls.Add(this.musteriMenu1);
+            this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.tarih_saat_bilgi);
             this.Controls.Add(this.saat);
             this.Controls.Add(this.tarih);
@@ -290,5 +317,8 @@ namespace veritabaniProje
         private System.Windows.Forms.Label saat;
         private System.Windows.Forms.Label tarih_saat_bilgi;
         private System.Windows.Forms.Timer timer1;
+        private AnaMenu anaMenu1;
+        private MusteriMenu musteriMenu1;
+        private Satisİslemleri satisİslemleri1;
     }
 }
