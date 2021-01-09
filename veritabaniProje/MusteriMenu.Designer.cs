@@ -33,27 +33,27 @@ namespace veritabaniProje
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +88,118 @@ namespace veritabaniProje
             this.panel2.Size = new System.Drawing.Size(741, 258);
             this.panel2.TabIndex = 1;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(16, 169);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(351, 29);
+            this.panel5.TabIndex = 11;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(137, 11);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(192, 15);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(128, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Telefon Numarası :";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.dateTimePicker1);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Location = new System.Drawing.Point(16, 203);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(351, 29);
+            this.panel6.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(129, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Kayıt Tarihi :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(16, 135);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(351, 29);
+            this.panel4.TabIndex = 11;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(68, 6);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(261, 15);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Soyadı :";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(16, 101);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(351, 29);
+            this.panel3.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(62, 9);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(267, 15);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Adı :";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -114,118 +226,6 @@ namespace veritabaniProje
             this.label2.TabIndex = 0;
             this.label2.Text = "Yeni Müşteri Kaydı";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(16, 101);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(351, 29);
-            this.panel3.TabIndex = 10;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(16, 135);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(351, 29);
-            this.panel4.TabIndex = 11;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(16, 169);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(351, 29);
-            this.panel5.TabIndex = 11;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.dateTimePicker1);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(16, 203);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(351, 29);
-            this.panel6.TabIndex = 11;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Adı :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Soyadı :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Telefon Numarası :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Kayıt Tarihi :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(62, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 15);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(68, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 15);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(137, 11);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 15);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(129, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -250,14 +250,14 @@ namespace veritabaniProje
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
