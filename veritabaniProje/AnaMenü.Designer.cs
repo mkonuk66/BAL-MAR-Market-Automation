@@ -44,9 +44,6 @@ namespace veritabaniProje
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kapatmabutonu = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
-            this.anaMenu1 = new veritabaniProje.AnaMenu();
             this.tarih = new System.Windows.Forms.Label();
             this.saat = new System.Windows.Forms.Label();
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
@@ -68,7 +65,7 @@ namespace veritabaniProje
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 558);
+            this.panel1.Size = new System.Drawing.Size(202, 558);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -76,14 +73,14 @@ namespace veritabaniProje
             // 
             this.anamenubuton.FlatAppearance.BorderSize = 0;
             this.anamenubuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anamenubuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.anamenubuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.anamenubuton.Image = ((System.Drawing.Image)(resources.GetObject("anamenubuton.Image")));
             this.anamenubuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.anamenubuton.Location = new System.Drawing.Point(12, 87);
             this.anamenubuton.Name = "anamenubuton";
-            this.anamenubuton.Size = new System.Drawing.Size(209, 61);
+            this.anamenubuton.Size = new System.Drawing.Size(190, 61);
             this.anamenubuton.TabIndex = 7;
-            this.anamenubuton.Text = "       Ana Menü";
+            this.anamenubuton.Text = " Ana Menü";
             this.anamenubuton.UseVisualStyleBackColor = true;
             this.anamenubuton.Click += new System.EventHandler(this.anamenubuton_Click);
             // 
@@ -91,40 +88,40 @@ namespace veritabaniProje
             // 
             this.raporbuton.FlatAppearance.BorderSize = 0;
             this.raporbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.raporbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.raporbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.raporbuton.Image = ((System.Drawing.Image)(resources.GetObject("raporbuton.Image")));
             this.raporbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.raporbuton.Location = new System.Drawing.Point(12, 356);
             this.raporbuton.Name = "raporbuton";
-            this.raporbuton.Size = new System.Drawing.Size(209, 61);
+            this.raporbuton.Size = new System.Drawing.Size(189, 61);
             this.raporbuton.TabIndex = 6;
-            this.raporbuton.Text = "       Rapor Alım";
+            this.raporbuton.Text = " Rapor Alım";
             this.raporbuton.UseVisualStyleBackColor = true;
             // 
             // stokbuton
             // 
             this.stokbuton.FlatAppearance.BorderSize = 0;
             this.stokbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stokbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.stokbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.stokbuton.Image = ((System.Drawing.Image)(resources.GetObject("stokbuton.Image")));
             this.stokbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.stokbuton.Location = new System.Drawing.Point(12, 289);
             this.stokbuton.Name = "stokbuton";
-            this.stokbuton.Size = new System.Drawing.Size(209, 61);
+            this.stokbuton.Size = new System.Drawing.Size(189, 61);
             this.stokbuton.TabIndex = 5;
-            this.stokbuton.Text = "       Stok İşlemleri";
+            this.stokbuton.Text = "   Stok İşlemleri";
             this.stokbuton.UseVisualStyleBackColor = true;
             // 
             // musteributon
             // 
             this.musteributon.FlatAppearance.BorderSize = 0;
             this.musteributon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.musteributon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteributon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteributon.Image = ((System.Drawing.Image)(resources.GetObject("musteributon.Image")));
             this.musteributon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.musteributon.Location = new System.Drawing.Point(12, 222);
             this.musteributon.Name = "musteributon";
-            this.musteributon.Size = new System.Drawing.Size(231, 61);
+            this.musteributon.Size = new System.Drawing.Size(189, 61);
             this.musteributon.TabIndex = 4;
             this.musteributon.Text = "       Müşteri İşlemleri";
             this.musteributon.UseVisualStyleBackColor = true;
@@ -134,14 +131,14 @@ namespace veritabaniProje
             // 
             this.satisbuton.FlatAppearance.BorderSize = 0;
             this.satisbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.satisbuton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.satisbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.satisbuton.Image = ((System.Drawing.Image)(resources.GetObject("satisbuton.Image")));
             this.satisbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.satisbuton.Location = new System.Drawing.Point(12, 155);
             this.satisbuton.Name = "satisbuton";
-            this.satisbuton.Size = new System.Drawing.Size(209, 61);
+            this.satisbuton.Size = new System.Drawing.Size(190, 61);
             this.satisbuton.TabIndex = 0;
-            this.satisbuton.Text = "       Satış İşlemleri";
+            this.satisbuton.Text = "   Satış İşlemleri";
             this.satisbuton.UseVisualStyleBackColor = true;
             this.satisbuton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -158,9 +155,9 @@ namespace veritabaniProje
             // 
             this.panel2.BackColor = System.Drawing.Color.OrangeRed;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(246, 0);
+            this.panel2.Location = new System.Drawing.Point(202, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(846, 27);
+            this.panel2.Size = new System.Drawing.Size(890, 19);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -172,7 +169,7 @@ namespace veritabaniProje
             this.panel3.Location = new System.Drawing.Point(300, 0);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel3.Size = new System.Drawing.Size(129, 141);
+            this.panel3.Size = new System.Drawing.Size(131, 141);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -209,44 +206,30 @@ namespace veritabaniProje
             this.kapatmabutonu.FlatAppearance.BorderSize = 0;
             this.kapatmabutonu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kapatmabutonu.Image = ((System.Drawing.Image)(resources.GetObject("kapatmabutonu.Image")));
-            this.kapatmabutonu.Location = new System.Drawing.Point(1043, 30);
+            this.kapatmabutonu.Location = new System.Drawing.Point(1043, 20);
             this.kapatmabutonu.Name = "kapatmabutonu";
             this.kapatmabutonu.Size = new System.Drawing.Size(49, 50);
             this.kapatmabutonu.TabIndex = 3;
             this.kapatmabutonu.UseVisualStyleBackColor = true;
             this.kapatmabutonu.Click += new System.EventHandler(this.kapatmabutonu_Click);
             // 
-            // musteriMenu1
-            // 
-            this.musteriMenu1.Location = new System.Drawing.Point(246, 147);
-            this.musteriMenu1.Name = "musteriMenu1";
-            this.musteriMenu1.Size = new System.Drawing.Size(846, 379);
-            this.musteriMenu1.TabIndex = 5;
-            // 
-            // anaMenu1
-            // 
-            this.anaMenu1.Location = new System.Drawing.Point(246, 147);
-            this.anaMenu1.Name = "anaMenu1";
-            this.anaMenu1.Size = new System.Drawing.Size(846, 411);
-            this.anaMenu1.TabIndex = 4;
-            // 
             // tarih
             // 
             this.tarih.AutoSize = true;
             this.tarih.Location = new System.Drawing.Point(779, 34);
             this.tarih.Name = "tarih";
-            this.tarih.Size = new System.Drawing.Size(41, 17);
+            this.tarih.Size = new System.Drawing.Size(49, 17);
             this.tarih.TabIndex = 6;
-            this.tarih.Text = "Tarih";
+            this.tarih.Text = "Tarih :";
             // 
             // saat
             // 
             this.saat.AutoSize = true;
             this.saat.Location = new System.Drawing.Point(858, 34);
             this.saat.Name = "saat";
-            this.saat.Size = new System.Drawing.Size(37, 17);
+            this.saat.Size = new System.Drawing.Size(45, 17);
             this.saat.TabIndex = 7;
-            this.saat.Text = "Saat";
+            this.saat.Text = "Saat :";
             // 
             // tarih_saat_bilgi
             // 
@@ -269,8 +252,6 @@ namespace veritabaniProje
             this.Controls.Add(this.tarih_saat_bilgi);
             this.Controls.Add(this.saat);
             this.Controls.Add(this.tarih);
-            this.Controls.Add(this.musteriMenu1);
-            this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.kapatmabutonu);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -305,9 +286,6 @@ namespace veritabaniProje
         private System.Windows.Forms.Button stokbuton;
         private System.Windows.Forms.Button musteributon;
         private System.Windows.Forms.Button kapatmabutonu;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private AnaMenu anaMenu1;
-        private MusteriMenu musteriMenu1;
         private System.Windows.Forms.Label tarih;
         private System.Windows.Forms.Label saat;
         private System.Windows.Forms.Label tarih_saat_bilgi;

@@ -22,10 +22,7 @@ namespace veritabaniProje
         }
         //static string musteriEkle = "Server=DESKTOP-HU112LL;Database=veritabaniProje;Trusted_Connection=True;";
         //SqlConnection musekleme = new SqlConnection(musteriEkle);
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -42,14 +39,59 @@ namespace veritabaniProje
            */
         }
 
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        
+
+        private void MusteriMenu_Load(object sender, EventArgs e)
         {
-            char character = e.KeyChar;
-            if (!Char.IsDigit(character))
-            {
-                e.Handled = true;
-                MessageBox.Show("Sadece sayı giriniz");
-            }
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.White;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            panel5.BackColor = SystemColors.Control;
+            panel6.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
+            textBox3.BackColor = SystemColors.Control;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.White;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            panel5.BackColor = SystemColors.Control;
+            panel6.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.Control;
+            textBox3.BackColor = SystemColors.Control;
+        }
+
+        private void textBox3_Click(object sender, EventArgs e)
+        {
+            textBox3.BackColor = Color.White;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            panel5.BackColor = SystemColors.Control;
+            panel6.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
