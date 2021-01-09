@@ -31,13 +31,7 @@ namespace veritabaniProje
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            sidepanel.Height = anamenubuton.Height;
-            sidepanel.Top = anamenubuton.Top;
-            satisİslemleri1.BringToFront();
-        }
-
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -69,7 +63,30 @@ namespace veritabaniProje
 
         private void stokbuton_Click(object sender, EventArgs e)
         {
+            sidepanel.Height = stokbuton.Height;
+            sidepanel.Top = stokbuton.Top;
+            stokIslemleri1.BringToFront();
+        }
 
+        private void raporbuton_Click(object sender, EventArgs e)
+        {
+            sidepanel.Height = raporbuton.Height;
+            sidepanel.Top = raporbuton.Top;
+            raporAlim1.BringToFront();
+        }
+
+        private void borcButon_Click(object sender, EventArgs e)
+        {
+            sidepanel.Height = borcButon.Height;
+            sidepanel.Top = borcButon.Top;
+           // raporAlim1.BringToFront();
+        }
+
+        private void satisButon_Click(object sender, EventArgs e)
+        {
+            sidepanel.Height = satisButon.Height;
+            sidepanel.Top = satisButon.Top;
+            satisİslemleri1.BringToFront();
         }
     }
 }

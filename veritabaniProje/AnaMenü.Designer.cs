@@ -36,7 +36,6 @@ namespace veritabaniProje
             this.raporbuton = new System.Windows.Forms.Button();
             this.stokbuton = new System.Windows.Forms.Button();
             this.musteributon = new System.Windows.Forms.Button();
-            this.satisbuton = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,11 +47,14 @@ namespace veritabaniProje
             this.saat = new System.Windows.Forms.Label();
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
+            this.raporAlim1 = new veritabaniProje.RaporAlim();
+            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
-            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.satisButon = new System.Windows.Forms.Button();
+            this.borcButon = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,12 +63,12 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.borcButon);
+            this.panel1.Controls.Add(this.satisButon);
             this.panel1.Controls.Add(this.anamenubuton);
             this.panel1.Controls.Add(this.raporbuton);
             this.panel1.Controls.Add(this.stokbuton);
             this.panel1.Controls.Add(this.musteributon);
-            this.panel1.Controls.Add(this.satisbuton);
             this.panel1.Controls.Add(this.sidepanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -103,6 +105,7 @@ namespace veritabaniProje
             this.raporbuton.TabIndex = 6;
             this.raporbuton.Text = " Rapor Alım";
             this.raporbuton.UseVisualStyleBackColor = true;
+            this.raporbuton.Click += new System.EventHandler(this.raporbuton_Click);
             // 
             // stokbuton
             // 
@@ -133,21 +136,6 @@ namespace veritabaniProje
             this.musteributon.Text = "       Müşteri İşlemleri";
             this.musteributon.UseVisualStyleBackColor = true;
             this.musteributon.Click += new System.EventHandler(this.musteributon_Click);
-            // 
-            // satisbuton
-            // 
-            this.satisbuton.FlatAppearance.BorderSize = 0;
-            this.satisbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.satisbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.satisbuton.Image = ((System.Drawing.Image)(resources.GetObject("satisbuton.Image")));
-            this.satisbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.satisbuton.Location = new System.Drawing.Point(12, 152);
-            this.satisbuton.Name = "satisbuton";
-            this.satisbuton.Size = new System.Drawing.Size(190, 61);
-            this.satisbuton.TabIndex = 0;
-            this.satisbuton.Text = "   Satış İşlemleri";
-            this.satisbuton.UseVisualStyleBackColor = true;
-            this.satisbuton.Click += new System.EventHandler(this.button1_Click);
             // 
             // sidepanel
             // 
@@ -251,6 +239,36 @@ namespace veritabaniProje
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(359, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "label3";
+            // 
+            // stokIslemleri1
+            // 
+            this.stokIslemleri1.Location = new System.Drawing.Point(202, 155);
+            this.stokIslemleri1.Name = "stokIslemleri1";
+            this.stokIslemleri1.Size = new System.Drawing.Size(890, 403);
+            this.stokIslemleri1.TabIndex = 14;
+            // 
+            // raporAlim1
+            // 
+            this.raporAlim1.Location = new System.Drawing.Point(202, 155);
+            this.raporAlim1.Name = "raporAlim1";
+            this.raporAlim1.Size = new System.Drawing.Size(890, 403);
+            this.raporAlim1.TabIndex = 13;
+            // 
+            // satisİslemleri1
+            // 
+            this.satisİslemleri1.Location = new System.Drawing.Point(202, 155);
+            this.satisİslemleri1.Name = "satisİslemleri1";
+            this.satisİslemleri1.Size = new System.Drawing.Size(890, 403);
+            this.satisİslemleri1.TabIndex = 11;
+            // 
             // musteriMenu1
             // 
             this.musteriMenu1.Location = new System.Drawing.Point(202, 152);
@@ -265,41 +283,43 @@ namespace veritabaniProje
             this.anaMenu1.Size = new System.Drawing.Size(890, 412);
             this.anaMenu1.TabIndex = 9;
             // 
-            // satisİslemleri1
+            // satisButon
             // 
-            this.satisİslemleri1.Location = new System.Drawing.Point(202, 155);
-            this.satisİslemleri1.Name = "satisİslemleri1";
-            this.satisİslemleri1.Size = new System.Drawing.Size(890, 403);
-            this.satisİslemleri1.TabIndex = 11;
+            this.satisButon.FlatAppearance.BorderSize = 0;
+            this.satisButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.satisButon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.satisButon.Image = ((System.Drawing.Image)(resources.GetObject("satisButon.Image")));
+            this.satisButon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.satisButon.Location = new System.Drawing.Point(7, 155);
+            this.satisButon.Name = "satisButon";
+            this.satisButon.Size = new System.Drawing.Size(189, 61);
+            this.satisButon.TabIndex = 8;
+            this.satisButon.Text = "    Satış İşlemleri";
+            this.satisButon.UseVisualStyleBackColor = true;
+            this.satisButon.Click += new System.EventHandler(this.satisButon_Click);
             // 
-            // button1
+            // borcButon
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 412);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 61);
-            this.button1.TabIndex = 8;
-            this.button1.Text = " Borç Ödeme";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(359, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
+            this.borcButon.FlatAppearance.BorderSize = 0;
+            this.borcButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borcButon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.borcButon.Image = ((System.Drawing.Image)(resources.GetObject("borcButon.Image")));
+            this.borcButon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.borcButon.Location = new System.Drawing.Point(13, 404);
+            this.borcButon.Name = "borcButon";
+            this.borcButon.Size = new System.Drawing.Size(189, 61);
+            this.borcButon.TabIndex = 9;
+            this.borcButon.Text = "       Borç İşlemleri";
+            this.borcButon.UseVisualStyleBackColor = true;
+            this.borcButon.Click += new System.EventHandler(this.borcButon_Click);
             // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.Controls.Add(this.stokIslemleri1);
+            this.Controls.Add(this.raporAlim1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.satisİslemleri1);
             this.Controls.Add(this.musteriMenu1);
@@ -333,7 +353,6 @@ namespace veritabaniProje
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel sidepanel;
-        private System.Windows.Forms.Button satisbuton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button anamenubuton;
@@ -348,7 +367,10 @@ namespace veritabaniProje
         private AnaMenu anaMenu1;
         private MusteriMenu musteriMenu1;
         private Satisİslemleri satisİslemleri1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private RaporAlim raporAlim1;
+        private StokIslemleri stokIslemleri1;
+        private System.Windows.Forms.Button borcButon;
+        private System.Windows.Forms.Button satisButon;
     }
 }
