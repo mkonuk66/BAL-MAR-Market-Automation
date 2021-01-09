@@ -22,7 +22,8 @@ namespace veritabaniProje
 
         private void AnaMenü_Load(object sender, EventArgs e)
         {
-
+            timer1.Interval = 1000;
+            timer1.Enabled = true;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -57,6 +58,11 @@ namespace veritabaniProje
         private void kapatmabutonu_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tarih_saat_bilgi.Text = DateTime.Now.ToString();
         }
     }
 }
