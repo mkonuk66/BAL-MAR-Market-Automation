@@ -71,6 +71,7 @@ namespace veritabaniProje
             {
                 borc.borcMiktar -= Convert.ToInt32(borcOdeme.Text);
                 MessageBox.Show("" + musteri.musteriAdi + "Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dbcontext.SaveChanges();
             }
             else
             {
@@ -81,34 +82,6 @@ namespace veritabaniProje
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tMusterisBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void musteriGosterim_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void borcGosterim_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -95,10 +95,6 @@ namespace veritabaniProje
             this.borcOdemeButonu.UseVisualStyleBackColor = false;
             this.borcOdemeButonu.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tMusterisBindingSource
-            // 
-            this.tMusterisBindingSource.CurrentChanged += new System.EventHandler(this.tMusterisBindingSource_CurrentChanged);
-            // 
             // musteriGosterim
             // 
             this.musteriGosterim.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -109,7 +105,6 @@ namespace veritabaniProje
             this.musteriGosterim.RowTemplate.Height = 24;
             this.musteriGosterim.Size = new System.Drawing.Size(772, 129);
             this.musteriGosterim.TabIndex = 4;
-            this.musteriGosterim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriGosterim_CellContentClick);
             // 
             // veritabaniProjeDataSet1
             // 
@@ -135,7 +130,6 @@ namespace veritabaniProje
             this.borcGosterim.RowTemplate.Height = 24;
             this.borcGosterim.Size = new System.Drawing.Size(336, 139);
             this.borcGosterim.TabIndex = 5;
-            this.borcGosterim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.borcGosterim_CellContentClick);
             // 
             // label3
             // 
@@ -145,7 +139,6 @@ namespace veritabaniProje
             this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Ödenecek Tutar : ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // borcOdeme
             // 

@@ -73,7 +73,7 @@ namespace veritabaniProje
                     dbcontext.SaveChanges();
 
                     var product1 = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
-                    if(product1 == null)
+                    if (product1 == null)
                     {
                         tedarikci.tedarikciId = irsaliye.tedarikciId;
                         tedarikci.urunAdi = irsaliye.urunAdi;
@@ -101,7 +101,7 @@ namespace veritabaniProje
 
         private void stokEkle_Load_1(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = dbcontext.tIrsaliyes.ToList();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -119,11 +119,6 @@ namespace veritabaniProje
             stokDurum stkDurum1 = new stokDurum();
             stkDurum1.Show();
 
-    }
-
-        private void stokEkle_Load_2(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -139,6 +134,15 @@ namespace veritabaniProje
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void stokEkle_Load_2(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tIrsaliyesTableAdapter1.Fill(this.veritabaniProjeDataSetIrsaliye2.tIrsaliyes);
+            //// TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            //this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSetIrsaliye.tIrsaliyes);
 
         }
     }
