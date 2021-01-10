@@ -28,5 +28,15 @@ namespace veritabaniProje
             musteriIdText = Convert.ToInt32(musteriIdsatis.Text);
             this.Close();
         }
+
+        private void musteriIdsatis_Click(object sender, EventArgs e)
+        {
+            musteriIdsatis.BackColor = Color.White;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StokIslemleri));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,15 +45,17 @@ namespace veritabaniProje
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(240, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 40);
+            this.label1.Size = new System.Drawing.Size(229, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stok İşlemleri";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(498, 28);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(484, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

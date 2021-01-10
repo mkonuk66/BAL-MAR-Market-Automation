@@ -29,9 +29,11 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(topluMusteriBorcDurum));
             this.topluBorcDurum = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.wordAktar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.topluBorcDurum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(220, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(326, 25);
@@ -59,6 +61,11 @@ namespace veritabaniProje
             // 
             // wordAktar
             // 
+            this.wordAktar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wordAktar.FlatAppearance.BorderSize = 2;
+            this.wordAktar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wordAktar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.wordAktar.ForeColor = System.Drawing.Color.Sienna;
             this.wordAktar.Location = new System.Drawing.Point(275, 333);
             this.wordAktar.Name = "wordAktar";
             this.wordAktar.Size = new System.Drawing.Size(228, 51);
@@ -67,14 +74,29 @@ namespace veritabaniProje
             this.wordAktar.UseVisualStyleBackColor = true;
             this.wordAktar.Click += new System.EventHandler(this.wordAktar_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(754, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 49);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // topluMusteriBorcDurum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.wordAktar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.topluBorcDurum);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "topluMusteriBorcDurum";
             this.Text = "Müşteri Borç Durum Raporu";
             this.Load += new System.EventHandler(this.topluMusteriBorcDurum_Load);
@@ -89,5 +111,6 @@ namespace veritabaniProje
         private System.Windows.Forms.DataGridView topluBorcDurum;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button wordAktar;
+        private System.Windows.Forms.Button button1;
     }
 }
