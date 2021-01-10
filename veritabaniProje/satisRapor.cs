@@ -73,5 +73,37 @@ namespace veritabaniProje
                 MessageBox.Show("Lüffen silinecek satırı seçin.");
             }
         }
+
+        private void musteriNumber_Click(object sender, EventArgs e)
+        {
+            musteriNumber.BackColor = Color.White;
+            urunAdi.BackColor = SystemColors.Control;
+            satisMiktari.BackColor = SystemColors.Control;
+            toplamTutar.BackColor = SystemColors.Control;
+        }
+
+        private void urunAdi_Click(object sender, EventArgs e)
+        {
+            urunAdi.BackColor = Color.White;
+            musteriNumber.BackColor = SystemColors.Control;
+            satisMiktari.BackColor = SystemColors.Control;
+            toplamTutar.BackColor = SystemColors.Control;
+        }
+
+        private void satisMiktari_Click(object sender, EventArgs e)
+        {
+            satisMiktari.BackColor = Color.White;
+            urunAdi.BackColor = SystemColors.Control;
+            musteriNumber.BackColor = SystemColors.Control;
+            toplamTutar.BackColor = SystemColors.Control;
+        }
+
+        private void toplamTutar_Click(object sender, EventArgs e)
+        {
+            toplamTutar.BackColor = Color.White;
+            urunAdi.BackColor = SystemColors.Control;
+            satisMiktari.BackColor = SystemColors.Control;
+            musteriNumber.BackColor = SystemColors.Control;
+        }
     }
 }

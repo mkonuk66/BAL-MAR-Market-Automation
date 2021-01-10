@@ -29,6 +29,7 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(satisEkrani));
             this.addID = new System.Windows.Forms.TextBox();
             this.addProductButton = new System.Windows.Forms.Button();
             this.deleteProductButton = new System.Windows.Forms.Button();
@@ -65,7 +66,7 @@ namespace veritabaniProje
             this.addProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addProductButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.addProductButton.ForeColor = System.Drawing.Color.Sienna;
-            this.addProductButton.Location = new System.Drawing.Point(97, 161);
+            this.addProductButton.Location = new System.Drawing.Point(461, 135);
             this.addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(123, 53);
@@ -141,6 +142,7 @@ namespace veritabaniProje
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
@@ -150,14 +152,14 @@ namespace veritabaniProje
             this.listBox1.Location = new System.Drawing.Point(599, 62);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(191, 238);
+            this.listBox1.Size = new System.Drawing.Size(226, 328);
             this.listBox1.TabIndex = 10;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(571, 330);
+            this.label3.Location = new System.Drawing.Point(552, 414);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 17);
@@ -171,11 +173,11 @@ namespace veritabaniProje
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(796, -2);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(793, -2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 38);
+            this.button1.Size = new System.Drawing.Size(45, 43);
             this.button1.TabIndex = 12;
-            this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -184,7 +186,7 @@ namespace veritabaniProje
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.deleteProductButton);
-            this.panel1.Location = new System.Drawing.Point(278, 147);
+            this.panel1.Location = new System.Drawing.Point(16, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 186);
             this.panel1.TabIndex = 13;
@@ -262,6 +264,7 @@ namespace veritabaniProje
             this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.addID);
             this.ForeColor = System.Drawing.Color.DarkRed;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "satisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

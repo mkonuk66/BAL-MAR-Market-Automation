@@ -41,5 +41,9 @@ namespace veritabaniProje
             dataGridView1.DataSource = dbcontext.tUruns.ToList();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -145,5 +145,10 @@ namespace veritabaniProje
             //this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSetIrsaliye.tIrsaliyes);
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

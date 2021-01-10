@@ -29,26 +29,30 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(satisMusteri));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.musteriIdsatis = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(95, 45);
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(17, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 19);
+            this.label1.Size = new System.Drawing.Size(187, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Müşteri Numarası Giriniz:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(150, 121);
+            this.button1.Location = new System.Drawing.Point(176, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "TAMAM";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,20 +60,40 @@ namespace veritabaniProje
             // 
             // musteriIdsatis
             // 
-            this.musteriIdsatis.Location = new System.Drawing.Point(99, 82);
+            this.musteriIdsatis.BackColor = System.Drawing.SystemColors.Control;
+            this.musteriIdsatis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteriIdsatis.Location = new System.Drawing.Point(212, 104);
+            this.musteriIdsatis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.musteriIdsatis.Name = "musteriIdsatis";
-            this.musteriIdsatis.Size = new System.Drawing.Size(180, 20);
+            this.musteriIdsatis.Size = new System.Drawing.Size(239, 25);
             this.musteriIdsatis.TabIndex = 2;
+            this.musteriIdsatis.Click += new System.EventHandler(this.musteriIdsatis_Click);
             this.musteriIdsatis.TextChanged += new System.EventHandler(this.musteriIdsatis_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(442, -1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 44);
+            this.button2.TabIndex = 3;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // satisMusteri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 173);
+            this.ClientSize = new System.Drawing.Size(490, 216);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.musteriIdsatis);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "satisMusteri";
             this.Text = "satisMusteri";
             this.ResumeLayout(false);
@@ -82,5 +106,6 @@ namespace veritabaniProje
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox musteriIdsatis;
+        private System.Windows.Forms.Button button2;
     }
 }

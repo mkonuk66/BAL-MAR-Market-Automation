@@ -29,6 +29,7 @@ namespace veritabaniProje
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RaporAlim));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,17 +43,19 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(282, 46);
+            this.label1.Location = new System.Drawing.Point(312, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 40);
+            this.label1.Size = new System.Drawing.Size(190, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Rapor Alım";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(485, 33);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(524, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -60,7 +63,7 @@ namespace veritabaniProje
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(216, 137);
+            this.label2.Location = new System.Drawing.Point(231, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(433, 27);
             this.label2.TabIndex = 2;
