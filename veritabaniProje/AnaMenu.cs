@@ -16,5 +16,10 @@ namespace veritabaniProje
         {
             InitializeComponent();
         }
+
+        private void AnaMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

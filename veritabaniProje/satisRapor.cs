@@ -105,5 +105,10 @@ namespace veritabaniProje
             satisMiktari.BackColor = SystemColors.Control;
             musteriNumber.BackColor = SystemColors.Control;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
