@@ -60,18 +60,20 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(199, 25);
+            this.panel1.Location = new System.Drawing.Point(149, 20);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 59);
+            this.panel1.Size = new System.Drawing.Size(206, 48);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Location = new System.Drawing.Point(1, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 29);
+            this.label1.Size = new System.Drawing.Size(205, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "MÜŞTERİ İŞLEMLERİ";
             // 
@@ -83,27 +85,30 @@ namespace veritabaniProje
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(46, 101);
+            this.panel2.Location = new System.Drawing.Point(34, 82);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(741, 258);
+            this.panel2.Size = new System.Drawing.Size(556, 210);
             this.panel2.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(16, 169);
+            this.panel5.Location = new System.Drawing.Point(12, 137);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(351, 29);
+            this.panel5.Size = new System.Drawing.Size(263, 24);
             this.panel5.TabIndex = 11;
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(137, 11);
+            this.textBox3.Location = new System.Drawing.Point(103, 9);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 15);
+            this.textBox3.Size = new System.Drawing.Size(144, 13);
             this.textBox3.TabIndex = 2;
             this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -111,9 +116,10 @@ namespace veritabaniProje
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 12);
+            this.label5.Location = new System.Drawing.Point(2, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 17);
+            this.label5.Size = new System.Drawing.Size(96, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Telefon Numarası :";
             // 
@@ -121,25 +127,28 @@ namespace veritabaniProje
             // 
             this.panel6.Controls.Add(this.dateTimePicker1);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(16, 203);
+            this.panel6.Location = new System.Drawing.Point(12, 165);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(351, 29);
+            this.panel6.Size = new System.Drawing.Size(263, 24);
             this.panel6.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(129, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(97, 3);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 9);
+            this.label6.Location = new System.Drawing.Point(2, 7);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 17);
+            this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Kayıt Tarihi :";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -148,27 +157,30 @@ namespace veritabaniProje
             // 
             this.panel4.Controls.Add(this.textBox2);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(16, 135);
+            this.panel4.Location = new System.Drawing.Point(12, 110);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(351, 29);
+            this.panel4.Size = new System.Drawing.Size(263, 24);
             this.panel4.TabIndex = 11;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(68, 6);
+            this.textBox2.Location = new System.Drawing.Point(51, 5);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 15);
+            this.textBox2.Size = new System.Drawing.Size(196, 13);
             this.textBox2.TabIndex = 2;
             this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 4);
+            this.label4.Location = new System.Drawing.Point(2, 3);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 17);
+            this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Soyadı :";
             // 
@@ -176,27 +188,31 @@ namespace veritabaniProje
             // 
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(16, 101);
+            this.panel3.Location = new System.Drawing.Point(12, 82);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(351, 29);
+            this.panel3.Size = new System.Drawing.Size(263, 24);
             this.panel3.TabIndex = 10;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(62, 9);
+            this.textBox1.Location = new System.Drawing.Point(46, 7);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 15);
+            this.textBox1.Size = new System.Drawing.Size(200, 13);
             this.textBox1.TabIndex = 1;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 4);
+            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 17);
+            this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Adı :";
             // 
@@ -209,42 +225,46 @@ namespace veritabaniProje
             this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(547, 110);
+            this.button1.Location = new System.Drawing.Point(410, 89);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 73);
+            this.button1.Size = new System.Drawing.Size(110, 59);
             this.button1.TabIndex = 9;
-            this.button1.Text = "      Kaydet";
+            this.button1.Text = "           Kaydet";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 50);
+            this.label2.Location = new System.Drawing.Point(49, 41);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 17);
+            this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Yeni Müşteri Kaydı";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(497, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(373, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // MusteriMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MusteriMenu";
-            this.Size = new System.Drawing.Size(846, 403);
+            this.Size = new System.Drawing.Size(634, 327);
             this.Load += new System.EventHandler(this.MusteriMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
