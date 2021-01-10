@@ -44,6 +44,8 @@ namespace veritabaniProje
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.urunMiktar1 = new System.Windows.Forms.TextBox();
+            this.urunMiktar = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -222,12 +224,31 @@ namespace veritabaniProje
             this.label6.TabIndex = 15;
             this.label6.Text = "label6";
             // 
+            // urunMiktar1
+            // 
+            this.urunMiktar1.Location = new System.Drawing.Point(251, 49);
+            this.urunMiktar1.Name = "urunMiktar1";
+            this.urunMiktar1.Size = new System.Drawing.Size(231, 22);
+            this.urunMiktar1.TabIndex = 16;
+            // 
+            // urunMiktar
+            // 
+            this.urunMiktar.AutoSize = true;
+            this.urunMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.urunMiktar.Location = new System.Drawing.Point(12, 49);
+            this.urunMiktar.Name = "urunMiktar";
+            this.urunMiktar.Size = new System.Drawing.Size(124, 20);
+            this.urunMiktar.TabIndex = 17;
+            this.urunMiktar.Text = "Ürün Miktarı :";
+            // 
             // satisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(837, 480);
+            this.Controls.Add(this.urunMiktar);
+            this.Controls.Add(this.urunMiktar1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
@@ -269,5 +290,7 @@ namespace veritabaniProje
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox urunMiktar1;
+        private System.Windows.Forms.Label urunMiktar;
     }
 }

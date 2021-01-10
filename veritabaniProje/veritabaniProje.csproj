@@ -212,6 +212,12 @@
     <Compile Include="TarihliKarZarar.Designer.cs">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
     </Compile>
+    <Compile Include="topluMusteriBorcDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topluMusteriBorcDurum.Designer.cs">
+      <DependentUpon>topluMusteriBorcDurum.cs</DependentUpon>
+    </Compile>
     <Compile Include="veritabaniProjeDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TarihliKarZarar.resx">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topluMusteriBorcDurum.resx">
+      <DependentUpon>topluMusteriBorcDurum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="yeniMusteriEkleme.resx">
       <DependentUpon>yeniMusteriEkleme.cs</DependentUpon>

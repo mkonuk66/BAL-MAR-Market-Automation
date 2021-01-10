@@ -50,6 +50,7 @@ namespace veritabaniProje
 
         private void addProductButton_Click(object sender, EventArgs e)
         {
+            long newAddmiktar = Convert.ToInt64(urunMiktar1.Text);
             long newAddId = Convert.ToInt64(addID.Text);
             var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
             if (product == null)
@@ -58,8 +59,10 @@ namespace veritabaniProje
             }
             else
             {
+                string urunAdi = product.urunAdi;
+                string gecis = urunAdi + " x " + urunMiktar1.Text;
                 totalPrice += product.satisFiyat;
-                listBox1.Items.Add(addID.Text);
+                listBox1.Items.Add(gecis);
                 MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 label3.Text = "Tutar toplamı : " + totalPrice;
             }
@@ -118,9 +121,10 @@ namespace veritabaniProje
             {
                 var borc = new Entity.tBorc();
                 borc.musteriId = musterii.musteriId;
-                borc.borcMiktar = totalPrice;
+                borc.borcMiktar += totalPrice;
                 borc.borcTarihi = DateTime.Now;
-                borc.odenenMiktar = 0;
+                borc.urunMiktar += Convert.ToInt32(urunMiktar1.Text);
+                // borc.odenenMiktar = 0; - odenen miktarı 0 a çekiyorsun
                 dbcontext.tBorcs.Add(borc);
                 dbcontext.SaveChanges();
 
