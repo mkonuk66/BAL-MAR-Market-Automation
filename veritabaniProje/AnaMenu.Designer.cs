@@ -229,6 +229,7 @@ namespace veritabaniProje
             this.Controls.Add(this.panel1);
             this.Name = "AnaMenu";
             this.Size = new System.Drawing.Size(846, 403);
+            this.Load += new System.EventHandler(this.AnaMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

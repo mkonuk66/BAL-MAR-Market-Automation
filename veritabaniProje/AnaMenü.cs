@@ -41,7 +41,7 @@ namespace veritabaniProje
         {
             sidepanel.Height = anamenubuton.Height;
             sidepanel.Top = anamenubuton.Top;
-           anaMenu1.BringToFront();
+            anaMenu1.BringToFront();
         }
 
         private void musteributon_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace veritabaniProje
         {
             sidepanel.Height = borcButon.Height;
             sidepanel.Top = borcButon.Top;
-           // raporAlim1.BringToFront();
+            //raporAlim1.BringToFront();
         }
 
         private void satisButon_Click(object sender, EventArgs e)
