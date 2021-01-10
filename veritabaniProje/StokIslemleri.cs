@@ -32,8 +32,16 @@ namespace veritabaniProje
 
         private void button2_Click(object sender, EventArgs e)
         {
-            stokEkle stkEkle = new stokEkle();
-            stkEkle.Show();
+            try
+            {
+                stokEkle stkEkle1 = new stokEkle();
+                stkEkle1.Show();
+            }
+            catch (Exception)
+            {
+
+            }
+
         }
     }
 }

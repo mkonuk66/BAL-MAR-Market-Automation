@@ -40,7 +40,7 @@ namespace veritabaniProje
             musteri.musteriId = 0;
             musteri.musteriAdi = musteriadi.Text;
             musteri.musteriSoyadi = musterisoyad.Text;
-            musteri.musteriGSM = Convert.ToInt64(telno.Text);
+            musteri.musteriGSM = telno.Text;
             musteri.kayitTarihi = kayittarihi.Value;
             musteri.musteriBorc = 0;
             dbcontext.tMusteris.Add(musteri);

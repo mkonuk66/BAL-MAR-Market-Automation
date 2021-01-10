@@ -25,7 +25,8 @@ namespace veritabaniProje
 
         private void musteriRaporu_Click(object sender, EventArgs e)
         {
-
+            topluMusteriBorcDurum tpl = new topluMusteriBorcDurum();
+            tpl.Show();
         }
 
         private void karzararDurum_Click(object sender, EventArgs e)

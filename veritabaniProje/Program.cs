@@ -16,7 +16,7 @@ namespace veritabaniProje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new anaArayüz());
+            Application.Run(new GirisEkrani());
         }
     }
 }

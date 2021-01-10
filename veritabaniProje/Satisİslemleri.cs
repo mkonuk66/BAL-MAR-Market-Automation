@@ -38,18 +38,17 @@ namespace veritabaniProje
         {
             if (checkBox1.Checked)
             {
-                textBox2.UseSystemPasswordChar = true;
+                textBox2.PasswordChar = '\0';
             }
-
             else
             {
-                textBox2.UseSystemPasswordChar = false;
+                textBox2.PasswordChar = '*';
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-             string cashierId1 = Convert.ToString(textBox1.Text);
+            string cashierId1 = Convert.ToString(textBox1.Text);
             string cashierPassword1 = Convert.ToString(textBox2.Text);
             var cashierId = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciAdi == cashierId1);
             var cashierPassword = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciSifre == cashierPassword1);
@@ -60,7 +59,7 @@ namespace veritabaniProje
             }
             else
             {
-                label2.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
+                label3.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
             }
             
             
@@ -93,6 +92,11 @@ namespace veritabaniProje
             //kasiyer4.kullaniciSifre = "1234";
             //dbcontext.tKasiyers.Add(kasiyer4);
             //dbcontext.SaveChanges();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
