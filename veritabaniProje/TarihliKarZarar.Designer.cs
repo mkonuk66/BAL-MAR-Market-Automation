@@ -94,7 +94,7 @@ namespace veritabaniProje
             this.satisTrendButton.ForeColor = System.Drawing.Color.Sienna;
             this.satisTrendButton.Location = new System.Drawing.Point(546, 76);
             this.satisTrendButton.Name = "satisTrendButton";
-            this.satisTrendButton.Size = new System.Drawing.Size(204, 45);
+            this.satisTrendButton.Size = new System.Drawing.Size(204, 50);
             this.satisTrendButton.TabIndex = 6;
             this.satisTrendButton.Text = "Belirli Tarih Aralığında Satış Trendi";
             this.satisTrendButton.UseVisualStyleBackColor = false;
@@ -126,7 +126,7 @@ namespace veritabaniProje
             this.karzararButton.ForeColor = System.Drawing.Color.Sienna;
             this.karzararButton.Location = new System.Drawing.Point(546, 201);
             this.karzararButton.Name = "karzararButton";
-            this.karzararButton.Size = new System.Drawing.Size(204, 44);
+            this.karzararButton.Size = new System.Drawing.Size(204, 53);
             this.karzararButton.TabIndex = 8;
             this.karzararButton.Text = "Belirli Tarih Aralığında Kar-Zarar Durumu";
             this.karzararButton.UseVisualStyleBackColor = false;

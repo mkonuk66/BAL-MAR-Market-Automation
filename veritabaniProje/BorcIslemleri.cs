@@ -59,5 +59,10 @@ namespace veritabaniProje
             }
            */
         }
+
+        private void BorcIslemleri_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -75,33 +75,33 @@ namespace veritabaniProje
         private void GirisEkrani_Load(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
-
+           /*
             var yonetici1 = new Entity.tYonetici();
-            ////Yoneticilerin bir kez eklenmesi için oluşturuldu.
-                //yonetici1.yoneticiID = 1;
-                //yonetici1.yKullaniciAdi = "yMehmetEmin";
-                //yonetici1.ySifre = "1234";
-                //dbcontext.tYoneticis.Add(yonetici1);
-                //dbcontext.SaveChanges();
-                //var yonetici2 = new Entity.tYonetici();
-                //yonetici2.yoneticiID = 2;
-                //yonetici2.yKullaniciAdi = "yIbrahim";
-                //yonetici2.ySifre = "1234";
-                //dbcontext.tYoneticis.Add(yonetici2);
-                //dbcontext.SaveChanges();
-                //var yonetici3 = new Entity.tYonetici();
-                //yonetici3.yoneticiID = 3;
-                //yonetici3.yKullaniciAdi = "yMuhammetMustafa";
-                //yonetici3.ySifre = "1234";
-                //dbcontext.tYoneticis.Add(yonetici3);
-                //dbcontext.SaveChanges();
-                //var yonetici4 = new Entity.tYonetici();
-                //yonetici4.yoneticiID = 4;
-                //yonetici4.yKullaniciAdi = "yOguzcan";
-                //yonetici4.ySifre = "1234";
-                //dbcontext.tYoneticis.Add(yonetici4);
-                //dbcontext.SaveChanges();
-            ////Yoneticilerin bir kez eklenmesi için oluşturuldu.
+            //Yoneticilerin bir kez eklenmesi için oluşturuldu.
+                yonetici1.yoneticiID = 1;
+                yonetici1.yKullaniciAdi = "yMehmetEmin";
+                yonetici1.ySifre = "1234";
+                dbcontext.tYoneticis.Add(yonetici1);
+                dbcontext.SaveChanges();
+                var yonetici2 = new Entity.tYonetici();
+                yonetici2.yoneticiID = 2;
+                yonetici2.yKullaniciAdi = "yIbrahim";
+                yonetici2.ySifre = "1234";
+                dbcontext.tYoneticis.Add(yonetici2);
+                dbcontext.SaveChanges();
+                var yonetici3 = new Entity.tYonetici();
+                yonetici3.yoneticiID = 3;
+                yonetici3.yKullaniciAdi = "yMuhammetMustafa";
+                yonetici3.ySifre = "1234";
+                dbcontext.tYoneticis.Add(yonetici3);
+                dbcontext.SaveChanges();
+                var yonetici4 = new Entity.tYonetici();
+                yonetici4.yoneticiID = 4;
+                yonetici4.yKullaniciAdi = "yOguzcan";
+                yonetici4.ySifre = "1234";
+                dbcontext.tYoneticis.Add(yonetici4);
+                dbcontext.SaveChanges();
+            //Yoneticilerin bir kez eklenmesi için oluşturuldu. */
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
