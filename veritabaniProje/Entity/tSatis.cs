@@ -11,7 +11,8 @@ namespace veritabaniProje.Entity
     {
         [Key]
         public int satisNo { get; set; }
-        public string satisTuru { get; set; }
         public float satisTutar { get; set; }
+        public string urunAdi { get; set; }
+        public int satisMiktar { get; set; }
     }
 }

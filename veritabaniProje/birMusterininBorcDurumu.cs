@@ -83,5 +83,10 @@ namespace veritabaniProje
         {
             this.Close();
         }
+
+        private void musteriGosterim_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
