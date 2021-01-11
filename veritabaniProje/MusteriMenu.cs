@@ -64,35 +64,35 @@ namespace veritabaniProje
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            //textBox1.BackColor = Color.White;
+            textBox1.BackColor = Color.White;
             panel3.BackColor = Color.White;
             panel4.BackColor = SystemColors.Control;
             panel5.BackColor = SystemColors.Control;
             panel6.BackColor = SystemColors.Control;
-            //textBox2.BackColor = SystemColors.Control;
-            //textBox3.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
+            textBox3.BackColor = SystemColors.Control;
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            //textBox2.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
             panel3.BackColor = SystemColors.Control;
             panel4.BackColor = Color.White;
             panel5.BackColor = SystemColors.Control;
             panel6.BackColor = SystemColors.Control;
-            //textBox1.BackColor = SystemColors.Control;
-            //textBox3.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.Control;
+            textBox3.BackColor = SystemColors.Control;
         }
 
         private void textBox3_Click(object sender, EventArgs e)
         {
-            //textBox3.BackColor = Color.White;
+            textBox3.BackColor = Color.White;
             panel3.BackColor = SystemColors.Control;
             panel4.BackColor = SystemColors.Control;
             panel5.BackColor = Color.White;
             panel6.BackColor = SystemColors.Control;
-            //textBox1.BackColor = SystemColors.Control;
-            //textBox2.BackColor = SystemColors.Control;
+            textBox1.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

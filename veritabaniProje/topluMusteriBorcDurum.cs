@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
-using Word = Microsoft.Office.Interop.Word;
+//using Word = Microsoft.Office.Interop.Word;
 
 
 namespace veritabaniProje
@@ -54,7 +54,7 @@ namespace veritabaniProje
             Object oMissing = System.Reflection.Missing.Value;
             object oEndOfDoc = "\\endofdoc";
 
-            Word.Application wordApp = new Word.Application();
+            /*Word.Application wordApp = new Word.Application();
             Word.Document wordDoc = wordApp.Documents.Add(ref oMissing, ref oMissing, ref oMissing, ref oMissing);
             wordApp.Visible = true;
 
@@ -114,7 +114,7 @@ namespace veritabaniProje
                     tablo.Rows[i + 2].Cells[j + 1].Range.Text = topluBorcDurum.Rows[i].Cells[j].Value.ToString();
                 }
             } 
-
+            */
 
         }
 

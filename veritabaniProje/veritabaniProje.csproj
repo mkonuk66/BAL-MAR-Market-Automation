@@ -87,6 +87,12 @@
     <Compile Include="birMusterininBorcDurumu.Designer.cs">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BorcIslemleri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BorcIslemleri.Designer.cs">
+      <DependentUpon>BorcIslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Context.cs" />
     <Compile Include="Entity\tBorc.cs" />
     <Compile Include="Entity\tIrsaliye.cs" />
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="birMusterininBorcDurumu.resx">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorcIslemleri.resx">
+      <DependentUpon>BorcIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisEkrani.resx">
       <DependentUpon>GirisEkrani.cs</DependentUpon>

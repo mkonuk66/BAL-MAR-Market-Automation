@@ -67,7 +67,7 @@ namespace veritabaniProje
             this.button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.Sienna;
             this.button1.Location = new System.Drawing.Point(361, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(344, 63);
             this.button1.TabIndex = 0;
@@ -84,7 +84,7 @@ namespace veritabaniProje
             this.button2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.Sienna;
             this.button2.Location = new System.Drawing.Point(16, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(307, 48);
             this.button2.TabIndex = 2;
@@ -101,7 +101,7 @@ namespace veritabaniProje
             this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.Sienna;
             this.button3.Location = new System.Drawing.Point(744, 491);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(307, 48);
             this.button3.TabIndex = 3;
@@ -115,7 +115,7 @@ namespace veritabaniProje
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Arial", 7F, System.Drawing.FontStyle.Bold);
             this.button4.Location = new System.Drawing.Point(392, 14);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 25);
             this.button4.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace veritabaniProje
             // karPayi
             // 
             this.karPayi.Location = new System.Drawing.Point(228, 14);
-            this.karPayi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.karPayi.Margin = new System.Windows.Forms.Padding(4);
             this.karPayi.Name = "karPayi";
             this.karPayi.Size = new System.Drawing.Size(132, 22);
             this.karPayi.TabIndex = 5;
@@ -145,7 +145,7 @@ namespace veritabaniProje
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -158,7 +158,7 @@ namespace veritabaniProje
             this.dataGridView1.DataSource = this.tIrsaliyesBindingSource1;
             this.dataGridView1.GridColor = System.Drawing.Color.Sienna;
             this.dataGridView1.Location = new System.Drawing.Point(99, 153);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(864, 298);
@@ -255,7 +255,7 @@ namespace veritabaniProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
@@ -266,8 +266,9 @@ namespace veritabaniProje
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "stokEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stok Ekleme Ekranı";
             this.Load += new System.EventHandler(this.stokEkle_Load_2);
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).EndInit();

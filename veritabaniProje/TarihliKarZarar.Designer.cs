@@ -86,7 +86,7 @@ namespace veritabaniProje
             // 
             // satisTrendButton
             // 
-            this.satisTrendButton.BackColor = System.Drawing.SystemColors.Control;
+            this.satisTrendButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.satisTrendButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.satisTrendButton.FlatAppearance.BorderSize = 2;
             this.satisTrendButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -102,7 +102,7 @@ namespace veritabaniProje
             // 
             // ürünListeButton
             // 
-            this.ürünListeButton.BackColor = System.Drawing.SystemColors.Control;
+            this.ürünListeButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ürünListeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ürünListeButton.FlatAppearance.BorderSize = 2;
             this.ürünListeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -118,7 +118,7 @@ namespace veritabaniProje
             // 
             // karzararButton
             // 
-            this.karzararButton.BackColor = System.Drawing.SystemColors.Control;
+            this.karzararButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.karzararButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.karzararButton.FlatAppearance.BorderSize = 2;
             this.karzararButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -149,7 +149,7 @@ namespace veritabaniProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.karzararButton);
@@ -163,6 +163,7 @@ namespace veritabaniProje
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TarihliKarZarar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kar Zarar Arayüzü";
             this.ResumeLayout(false);
 

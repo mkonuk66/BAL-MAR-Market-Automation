@@ -39,6 +39,7 @@ namespace veritabaniProje
             // 
             // topluBorcDurum
             // 
+            this.topluBorcDurum.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.topluBorcDurum.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.topluBorcDurum.Location = new System.Drawing.Point(31, 80);
             this.topluBorcDurum.Name = "topluBorcDurum";
@@ -90,7 +91,7 @@ namespace veritabaniProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.wordAktar);
@@ -98,6 +99,7 @@ namespace veritabaniProje
             this.Controls.Add(this.topluBorcDurum);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "topluMusteriBorcDurum";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Borç Durum Raporu";
             this.Load += new System.EventHandler(this.topluMusteriBorcDurum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.topluBorcDurum)).EndInit();
