@@ -53,6 +53,8 @@ namespace veritabaniProje
 
         private void button2_Click(object sender, EventArgs e)
         {
+          
+
             string managerId1 = Convert.ToString(textBox1.Text);
             string managerPassword1 = Convert.ToString(textBox2.Text);
             var managerId = dbcontext.tYoneticis.FirstOrDefault(x => x.yKullaniciAdi == managerId1);
@@ -100,6 +102,11 @@ namespace veritabaniProje
                 //dbcontext.tYoneticis.Add(yonetici4);
                 //dbcontext.SaveChanges();
             ////Yoneticilerin bir kez eklenmesi için oluşturuldu.
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
