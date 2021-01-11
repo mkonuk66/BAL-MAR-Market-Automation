@@ -79,7 +79,7 @@ namespace veritabaniProje
         {
             sidepanel.Height = borcButon.Height;
             sidepanel.Top = borcButon.Top;
-            //raporAlim1.BringToFront();
+            borcIslemleri1.BringToFront();
         }
 
         private void satisButon_Click(object sender, EventArgs e)
@@ -87,6 +87,11 @@ namespace veritabaniProje
             sidepanel.Height = satisButon.Height;
             sidepanel.Top = satisButon.Top;
             satisİslemleri1.BringToFront();
+        }
+
+        private void borcIslemleri1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
