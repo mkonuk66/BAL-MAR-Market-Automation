@@ -60,15 +60,23 @@ namespace veritabaniProje
                         urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
                         urun.urunAdi = irsaliye.urunAdi;
                         urun.miktar = irsaliye.miktar;
-                        urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
-                        MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);                       
                         dbcontext.tUruns.Add(urun);
+                        if (i == satir.Length - 7)
+                        {
+                            MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        
                     }
                     else
                     {
                         product.miktar += irsaliye.miktar;
                         product.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
-                        MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (i == satir.Length - 7)
+                        {
+                            MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        
                     }
                     dbcontext.SaveChanges();
 
@@ -123,6 +131,7 @@ namespace veritabaniProje
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             stokDurum stkdurum1 = new stokDurum();
             stkdurum1.Show();
         }

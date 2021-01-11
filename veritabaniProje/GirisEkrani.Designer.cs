@@ -86,9 +86,9 @@ namespace veritabaniProje
             this.label3.Location = new System.Drawing.Point(328, 118);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 26);
+            this.label3.Size = new System.Drawing.Size(92, 26);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Kasiyer Numaranızı ve \r\n     Şifrenizi Giriniz.";
+            this.label3.Text = " Yönetici Adı  ve \r\n     Şifrenizi Giriniz.";
             // 
             // label2
             // 
@@ -216,7 +216,6 @@ namespace veritabaniProje
             this.textBox1.Size = new System.Drawing.Size(344, 19);
             this.textBox1.TabIndex = 0;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox3
             // 

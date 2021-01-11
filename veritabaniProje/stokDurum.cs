@@ -25,6 +25,7 @@ namespace veritabaniProje
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             stokEkle stkEkle1 = new stokEkle();
             stkEkle1.Show();
         }
