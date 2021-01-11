@@ -18,51 +18,25 @@ namespace veritabaniProje
             InitializeComponent();
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-            textBox1.BackColor = Color.White;
-        }
-
-        private void textBox2_Click(object sender, EventArgs e)
-        {
-            textBox2.BackColor = Color.White;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* string musteriId1 = Convert.ToString(textBox1.Text);
-            var musteriId = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == musteriId1);
-            if (musteriId != null)
-            {
-                satisEkrani ste = new satisEkrani();
-                ste.Show();
-            }
-            else
-            {
-                label6.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
-            }
-           */
+            birMusterininBorcDurumu bmd = new birMusterininBorcDurumu();
+            bmd.Show();
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-           /* string musteriId1 = Convert.ToString(textBox1.Text);
-            var musteriId = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == musteriId1);
-            if (musteriId != null)
-            {
-                satisEkrani ste = new satisEkrani();
-                ste.Show();
-            }
-            else
-            {
-                label6.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
-            }
-           */
+            tedarikcininBorcDurumu tbd = new tedarikcininBorcDurumu();
+            tbd.Show();
         }
 
         private void BorcIslemleri_Load(object sender, EventArgs e)
         {
 
         }
+
+       
     }
 }
