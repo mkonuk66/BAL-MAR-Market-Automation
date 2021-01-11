@@ -95,6 +95,7 @@
     <Compile Include="Entity\tSatis.cs" />
     <Compile Include="Entity\tTedarikci.cs" />
     <Compile Include="Entity\tUrun.cs" />
+    <Compile Include="Entity\tYonetici.cs" />
     <Compile Include="GirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -410,9 +411,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="yeniMusteriKaydı.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

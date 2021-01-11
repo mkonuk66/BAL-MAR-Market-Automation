@@ -42,9 +42,8 @@ namespace veritabaniProje
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.sifreText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.urunMiktar1 = new System.Windows.Forms.TextBox();
             this.urunMiktar = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -52,10 +51,10 @@ namespace veritabaniProje
             // 
             // addID
             // 
-            this.addID.Location = new System.Drawing.Point(251, 95);
-            this.addID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addID.Location = new System.Drawing.Point(188, 77);
+            this.addID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addID.Name = "addID";
-            this.addID.Size = new System.Drawing.Size(231, 22);
+            this.addID.Size = new System.Drawing.Size(174, 20);
             this.addID.TabIndex = 1;
             this.addID.TextChanged += new System.EventHandler(this.addID_TextChanged);
             this.addID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addID_KeyPress);
@@ -66,10 +65,10 @@ namespace veritabaniProje
             this.addProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addProductButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.addProductButton.ForeColor = System.Drawing.Color.Sienna;
-            this.addProductButton.Location = new System.Drawing.Point(461, 135);
-            this.addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addProductButton.Location = new System.Drawing.Point(346, 110);
+            this.addProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(123, 53);
+            this.addProductButton.Size = new System.Drawing.Size(92, 43);
             this.addProductButton.TabIndex = 3;
             this.addProductButton.Text = "Ürünü Ekle";
             this.addProductButton.UseVisualStyleBackColor = false;
@@ -81,10 +80,10 @@ namespace veritabaniProje
             this.deleteProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteProductButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.deleteProductButton.ForeColor = System.Drawing.Color.Sienna;
-            this.deleteProductButton.Location = new System.Drawing.Point(61, 125);
-            this.deleteProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteProductButton.Location = new System.Drawing.Point(46, 102);
+            this.deleteProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteProductButton.Name = "deleteProductButton";
-            this.deleteProductButton.Size = new System.Drawing.Size(123, 54);
+            this.deleteProductButton.Size = new System.Drawing.Size(92, 44);
             this.deleteProductButton.TabIndex = 4;
             this.deleteProductButton.Text = "Ürünü Sil";
             this.deleteProductButton.UseVisualStyleBackColor = false;
@@ -96,10 +95,10 @@ namespace veritabaniProje
             this.cashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cashButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cashButton.ForeColor = System.Drawing.Color.Sienna;
-            this.cashButton.Location = new System.Drawing.Point(81, 399);
-            this.cashButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cashButton.Location = new System.Drawing.Point(61, 324);
+            this.cashButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cashButton.Name = "cashButton";
-            this.cashButton.Size = new System.Drawing.Size(139, 47);
+            this.cashButton.Size = new System.Drawing.Size(104, 38);
             this.cashButton.TabIndex = 5;
             this.cashButton.Text = "Peşin";
             this.cashButton.UseVisualStyleBackColor = false;
@@ -111,10 +110,10 @@ namespace veritabaniProje
             this.debtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.debtButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.debtButton.ForeColor = System.Drawing.Color.Sienna;
-            this.debtButton.Location = new System.Drawing.Point(351, 399);
-            this.debtButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.debtButton.Location = new System.Drawing.Point(263, 324);
+            this.debtButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.debtButton.Name = "debtButton";
-            this.debtButton.Size = new System.Drawing.Size(131, 47);
+            this.debtButton.Size = new System.Drawing.Size(98, 38);
             this.debtButton.TabIndex = 6;
             this.debtButton.Text = "Cari";
             this.debtButton.UseVisualStyleBackColor = false;
@@ -124,9 +123,10 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 97);
+            this.label1.Location = new System.Drawing.Point(9, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 20);
+            this.label1.Size = new System.Drawing.Size(171, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "BARKOD NO GİRİNİZ :";
             // 
@@ -134,9 +134,10 @@ namespace veritabaniProje
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(202, 349);
+            this.label2.Location = new System.Drawing.Point(152, 284);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 25);
+            this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "ÖDEME BİÇİMİ";
             // 
@@ -145,24 +146,23 @@ namespace veritabaniProje
             this.listBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
+            this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
             "Sepet",
             "----------"});
-            this.listBox1.Location = new System.Drawing.Point(599, 62);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBox1.Location = new System.Drawing.Point(449, 50);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(226, 328);
+            this.listBox1.Size = new System.Drawing.Size(170, 259);
             this.listBox1.TabIndex = 10;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(552, 414);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(446, 324);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Tutar Toplamı :\r\n";
             // 
@@ -174,9 +174,10 @@ namespace veritabaniProje
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(793, -2);
+            this.button1.Location = new System.Drawing.Point(595, -2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 43);
+            this.button1.Size = new System.Drawing.Size(34, 35);
             this.button1.TabIndex = 12;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -184,74 +185,69 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.sifreText);
             this.panel1.Controls.Add(this.deleteProductButton);
-            this.panel1.Location = new System.Drawing.Point(16, 135);
+            this.panel1.Location = new System.Drawing.Point(12, 121);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 186);
+            this.panel1.Size = new System.Drawing.Size(183, 151);
             this.panel1.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 50);
+            this.label4.Location = new System.Drawing.Point(12, 41);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 17);
+            this.label4.Size = new System.Drawing.Size(156, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Ürünü silmek için şifrenizi giriniz.";
             // 
-            // textBox1
+            // sifreText
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 22);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.sifreText.Location = new System.Drawing.Point(26, 61);
+            this.sifreText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sifreText.Name = "sifreText";
+            this.sifreText.Size = new System.Drawing.Size(133, 20);
+            this.sifreText.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(336, 19);
+            this.label5.Location = new System.Drawing.Point(260, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Hoşgedin";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(410, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "label6";
+            this.label5.Text = "Hoşgeldiniz..";
             // 
             // urunMiktar1
             // 
-            this.urunMiktar1.Location = new System.Drawing.Point(251, 49);
+            this.urunMiktar1.Location = new System.Drawing.Point(188, 40);
+            this.urunMiktar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.urunMiktar1.Name = "urunMiktar1";
-            this.urunMiktar1.Size = new System.Drawing.Size(231, 22);
+            this.urunMiktar1.Size = new System.Drawing.Size(174, 20);
             this.urunMiktar1.TabIndex = 16;
             // 
             // urunMiktar
             // 
             this.urunMiktar.AutoSize = true;
             this.urunMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.urunMiktar.Location = new System.Drawing.Point(12, 49);
+            this.urunMiktar.Location = new System.Drawing.Point(9, 40);
+            this.urunMiktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.urunMiktar.Name = "urunMiktar";
-            this.urunMiktar.Size = new System.Drawing.Size(124, 20);
+            this.urunMiktar.Size = new System.Drawing.Size(106, 17);
             this.urunMiktar.TabIndex = 17;
             this.urunMiktar.Text = "Ürün Miktarı :";
             // 
             // satisEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(837, 480);
+            this.ClientSize = new System.Drawing.Size(628, 390);
             this.Controls.Add(this.urunMiktar);
             this.Controls.Add(this.urunMiktar1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -265,7 +261,7 @@ namespace veritabaniProje
             this.Controls.Add(this.addID);
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "satisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SATIŞ EKRANI";
@@ -290,9 +286,8 @@ namespace veritabaniProje
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox sifreText;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox urunMiktar1;
         private System.Windows.Forms.Label urunMiktar;
     }

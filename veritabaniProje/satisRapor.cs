@@ -14,7 +14,7 @@ namespace veritabaniProje
     public partial class satisRapor : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adborcsorgu = new SqlDataAdapter();
         DataSet satissorguds = new DataSet();
 
@@ -40,6 +40,11 @@ namespace veritabaniProje
             satisRaporListe.Columns[0].HeaderText = "Ürün Adı";
             satisRaporListe.Columns[1].HeaderText = "Toplam Satış Miktarı";
             satisRaporListe.Columns[2].HeaderText = "Toplam Tutar";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

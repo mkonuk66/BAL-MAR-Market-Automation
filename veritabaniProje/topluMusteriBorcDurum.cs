@@ -17,7 +17,7 @@ namespace veritabaniProje
     public partial class topluMusteriBorcDurum : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adborcsorgu = new SqlDataAdapter();
         DataSet borcsorguds = new DataSet();
         public topluMusteriBorcDurum()

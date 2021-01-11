@@ -53,11 +53,11 @@ namespace veritabaniProje
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string cashierId1 = Convert.ToString(textBox1.Text);
-            string cashierPassword1 = Convert.ToString(textBox2.Text);
-            var cashierId = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciAdi == cashierId1);
-            var cashierPassword = dbcontext.tKasiyers.FirstOrDefault(x => x.kullaniciSifre == cashierPassword1);
-            if (cashierId != null && cashierPassword != null)
+            string managerId1 = Convert.ToString(textBox1.Text);
+            string managerPassword1 = Convert.ToString(textBox2.Text);
+            var managerId = dbcontext.tYoneticis.FirstOrDefault(x => x.yKullaniciAdi == managerId1);
+            var managerPassword = dbcontext.tYoneticis.FirstOrDefault(x => x.ySifre == managerPassword1);
+            if (managerId != null && managerPassword != null)
             {
                 this.Hide();
                 AnaMenü ana1 = new AnaMenü();
@@ -70,14 +70,36 @@ namespace veritabaniProje
           
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void GirisEkrani_Load(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
+
+            var yonetici1 = new Entity.tYonetici();
+            ////Yoneticilerin bir kez eklenmesi için oluşturuldu.
+                //yonetici1.yoneticiID = 1;
+                //yonetici1.yKullaniciAdi = "yMehmetEmin";
+                //yonetici1.ySifre = "1234";
+                //dbcontext.tYoneticis.Add(yonetici1);
+                //dbcontext.SaveChanges();
+                //var yonetici2 = new Entity.tYonetici();
+                //yonetici2.yoneticiID = 2;
+                //yonetici2.yKullaniciAdi = "yIbrahim";
+                //yonetici2.ySifre = "1234";
+                //dbcontext.tYoneticis.Add(yonetici2);
+                //dbcontext.SaveChanges();
+                //var yonetici3 = new Entity.tYonetici();
+                //yonetici3.yoneticiID = 3;
+                //yonetici3.yKullaniciAdi = "yMuhammetMustafa";
+                //yonetici3.ySifre = "1234";
+                //dbcontext.tYoneticis.Add(yonetici3);
+                //dbcontext.SaveChanges();
+                //var yonetici4 = new Entity.tYonetici();
+                //yonetici4.yoneticiID = 4;
+                //yonetici4.yKullaniciAdi = "yOguzcan";
+                //yonetici4.ySifre = "1234";
+                //dbcontext.tYoneticis.Add(yonetici4);
+                //dbcontext.SaveChanges();
+            ////Yoneticilerin bir kez eklenmesi için oluşturuldu.
         }
     }
 }

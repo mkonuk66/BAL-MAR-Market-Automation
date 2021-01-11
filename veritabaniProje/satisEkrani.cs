@@ -17,66 +17,75 @@ namespace veritabaniProje
         public float totalPrice = 0;
         Entity.Context dbcontext = new Entity.Context();
         public int stsmusteriID;
-        void bekle(int saniye)
-        {
-            saniye = ((saniye + Convert.ToInt32(DateTime.Now.Second)) % 60);
-            for (; ; )
-            {
-                if (saniye == DateTime.Now.Second) break;
-            }
-        }
-
         public satisEkrani()
         {
-            //güncelleme
-
             InitializeComponent();
         }
-
         private void addID_KeyPress(object sender, KeyPressEventArgs e)
         {
             char character = e.KeyChar;
             if (!Char.IsDigit(character))
             {
                 e.Handled = true;
-                MessageBox.Show("Sadece sayı giriniz");
+                MessageBox.Show("Sadece sayı giriniz!","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
-
         private void showIDText_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
-
         private void addProductButton_Click(object sender, EventArgs e)
         {
-            long newAddmiktar = Convert.ToInt64(urunMiktar1.Text);
-            long newAddId = Convert.ToInt64(addID.Text);
-            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
-            if (product == null)
+            try
             {
-                MessageBox.Show("Girilen barkod no'ya ait ürün bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                long newAddmiktar = Convert.ToInt64(urunMiktar1.Text);
+                long newAddId = Convert.ToInt64(addID.Text);
+                var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
+                if (product == null)
+                {
+                    MessageBox.Show("Girilen barkod no'ya ait ürün bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string urunAdi = product.urunAdi;
+                    string gecis = urunAdi + " x " + urunMiktar1.Text;
+                    totalPrice += product.satisFiyat;
+                    listBox1.Items.Add(gecis);
+                    MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    label3.Text = "Tutar toplamı : " + totalPrice;
+                }
             }
-            else
+            catch (Exception)
             {
-                string urunAdi = product.urunAdi;
-                string gecis = urunAdi + " x " + urunMiktar1.Text;
-                totalPrice += product.satisFiyat;
-                listBox1.Items.Add(gecis);
-                MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                label3.Text = "Tutar toplamı : " + totalPrice;
+                MessageBox.Show("Ürün miktarı giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
 
         }
-
         public void deleteProductButton_Click(object sender, EventArgs e)
         {
-            bilgileriDogrula bgd = new bilgileriDogrula();
-            Int64 select = Convert.ToInt64(listBox1.SelectedItem.ToString());
-            var product = dbcontext.tUruns.FirstOrDefault(x => x.barkodNo == select);
-            totalPrice -= product.satisFiyat;
-            label3.Text = "Tutar toplamı : " + totalPrice;
-            listBox1.Items.Remove(listBox1.SelectedItem);
+            try
+            {
+                Int64 itemSelected = Convert.ToInt64(listBox1.SelectedItem.ToString());
+                var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == itemSelected);
+                var password = dbcontext.tYoneticis.SingleOrDefault(x => x.ySifre == sifreText.Text);
+                if (password == null)
+                {
+                    MessageBox.Show("Hatalı şifre girdiniz. Ürün silinemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    totalPrice -= product.satisFiyat;
+                    label3.Text = "Tutar toplamı : " + totalPrice;
+                    listBox1.Items.Remove(listBox1.SelectedItem);
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Ürün seçilemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
 
         private void satisEkrani_Load(object sender, EventArgs e)
@@ -103,10 +112,12 @@ namespace veritabaniProje
             var musterii = dbcontext.tBorcs.FirstOrDefault(x => x.musteriId == stsmusteriID);
             if (musterii == null)
             {
-                yeniMusteriEkleme ynmusteri = new yeniMusteriEkleme();
+                //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
+                MusteriMenu ynmusteri = new MusteriMenu();
                 ynmusteri.Show();
                 satisMusteri stsmst1 = new satisMusteri();
                 stsmst1.Show();
+                //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
                 dbcontext.SaveChanges();
                 stsmusteriID = Convert.ToInt32(satisMusteri.musteriIdText);
                 var musteriii = dbcontext.tBorcs.FirstOrDefault(x => x.musteriId == stsmusteriID);
@@ -151,7 +162,7 @@ namespace veritabaniProje
         private void cashButton_Click(object sender, EventArgs e)
         {
             var urunKontrol = new Entity.tUrun();
-            var satisPesin  = new Entity.tSatis();
+            var satisPesin = new Entity.tSatis();
             long newAddId = Convert.ToInt64(addID.Text);
             var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
             var urunKontrol1 = dbcontext.tSatiss.FirstOrDefault(x => x.urunAdi == product.urunAdi);
@@ -199,9 +210,5 @@ namespace veritabaniProje
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

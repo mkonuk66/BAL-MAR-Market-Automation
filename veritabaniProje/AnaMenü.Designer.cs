@@ -50,11 +50,11 @@ namespace veritabaniProje
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.raporAlim1 = new veritabaniProje.RaporAlim();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
-            this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
             this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.musteriMenu1 = new veritabaniProje.MusteriMenu();
+            this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
+            this.raporAlim1 = new veritabaniProje.RaporAlim();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -302,33 +302,17 @@ namespace veritabaniProje
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
-            // raporAlim1
-            // 
-            this.raporAlim1.Location = new System.Drawing.Point(152, 126);
-            this.raporAlim1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.raporAlim1.Name = "raporAlim1";
-            this.raporAlim1.Size = new System.Drawing.Size(668, 327);
-            this.raporAlim1.TabIndex = 17;
-            // 
             // anaMenu1
             // 
-            this.anaMenu1.Location = new System.Drawing.Point(172, 126);
+            this.anaMenu1.Location = new System.Drawing.Point(172, 124);
             this.anaMenu1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.anaMenu1.Name = "anaMenu1";
             this.anaMenu1.Size = new System.Drawing.Size(634, 327);
-            this.anaMenu1.TabIndex = 16;
-            // 
-            // stokIslemleri1
-            // 
-            this.stokIslemleri1.Location = new System.Drawing.Point(152, 124);
-            this.stokIslemleri1.Margin = new System.Windows.Forms.Padding(2);
-            this.stokIslemleri1.Name = "stokIslemleri1";
-            this.stokIslemleri1.Size = new System.Drawing.Size(668, 327);
-            this.stokIslemleri1.TabIndex = 15;
+            this.anaMenu1.TabIndex = 13;
             // 
             // satisİslemleri1
             // 
-            this.satisİslemleri1.Location = new System.Drawing.Point(172, 124);
+            this.satisİslemleri1.Location = new System.Drawing.Point(172, 126);
             this.satisİslemleri1.Margin = new System.Windows.Forms.Padding(2);
             this.satisİslemleri1.Name = "satisİslemleri1";
             this.satisİslemleri1.Size = new System.Drawing.Size(634, 327);
@@ -340,18 +324,34 @@ namespace veritabaniProje
             this.musteriMenu1.Margin = new System.Windows.Forms.Padding(2);
             this.musteriMenu1.Name = "musteriMenu1";
             this.musteriMenu1.Size = new System.Drawing.Size(634, 327);
-            this.musteriMenu1.TabIndex = 18;
+            this.musteriMenu1.TabIndex = 15;
+            // 
+            // stokIslemleri1
+            // 
+            this.stokIslemleri1.Location = new System.Drawing.Point(172, 126);
+            this.stokIslemleri1.Margin = new System.Windows.Forms.Padding(2);
+            this.stokIslemleri1.Name = "stokIslemleri1";
+            this.stokIslemleri1.Size = new System.Drawing.Size(668, 327);
+            this.stokIslemleri1.TabIndex = 16;
+            // 
+            // raporAlim1
+            // 
+            this.raporAlim1.Location = new System.Drawing.Point(172, 126);
+            this.raporAlim1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.raporAlim1.Name = "raporAlim1";
+            this.raporAlim1.Size = new System.Drawing.Size(668, 327);
+            this.raporAlim1.TabIndex = 17;
             // 
             // AnaMenü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 453);
-            this.Controls.Add(this.musteriMenu1);
             this.Controls.Add(this.raporAlim1);
-            this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.stokIslemleri1);
+            this.Controls.Add(this.musteriMenu1);
             this.Controls.Add(this.satisİslemleri1);
+            this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tarih_saat_bilgi);
             this.Controls.Add(this.saat);
@@ -397,10 +397,10 @@ namespace veritabaniProje
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button borcButon;
         private System.Windows.Forms.Button satisButon;
-        private Satisİslemleri satisİslemleri1;
-        private StokIslemleri stokIslemleri1;
         private AnaMenu anaMenu1;
-        private RaporAlim raporAlim1;
+        private Satisİslemleri satisİslemleri1;
         private MusteriMenu musteriMenu1;
+        private StokIslemleri stokIslemleri1;
+        private RaporAlim raporAlim1;
     }
 }
