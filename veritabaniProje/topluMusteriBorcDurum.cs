@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
-// using Word = Microsoft.Office.Interop.Word;
+using Word = Microsoft.Office.Interop.Word;
 
 
 namespace veritabaniProje
@@ -49,7 +49,7 @@ namespace veritabaniProje
 
         private void wordAktar_Click(object sender, EventArgs e)
         {
-            /* int satir = topluBorcDurum.Rows.Count, sutun = topluBorcDurum.Columns.Count;
+            int satir = topluBorcDurum.Rows.Count, sutun = topluBorcDurum.Columns.Count;
 
             Object oMissing = System.Reflection.Missing.Value;
             object oEndOfDoc = "\\endofdoc";
@@ -113,7 +113,7 @@ namespace veritabaniProje
                 {
                     tablo.Rows[i + 2].Cells[j + 1].Range.Text = topluBorcDurum.Rows[i].Cells[j].Value.ToString();
                 }
-            } */
+            } 
 
 
         }

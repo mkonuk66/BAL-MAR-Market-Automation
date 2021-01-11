@@ -105,6 +105,7 @@ namespace veritabaniProje
             this.musteriGosterim.RowTemplate.Height = 24;
             this.musteriGosterim.Size = new System.Drawing.Size(772, 129);
             this.musteriGosterim.TabIndex = 4;
+            this.musteriGosterim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriGosterim_CellContentClick);
             // 
             // veritabaniProjeDataSet1
             // 

@@ -96,6 +96,7 @@ namespace veritabaniProje
         private void debtButton_Click(object sender, EventArgs e)
         {
             //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
+            var urunMiktar = new Entity.tUrun();
             satisMusteri stsmst = new satisMusteri();
             stsmst.Show();
             stsmusteriID = Convert.ToInt32(satisMusteri.musteriIdText);
@@ -113,6 +114,7 @@ namespace veritabaniProje
                 borc.musteriId = musteriii.musteriId;
                 borc.borcMiktar = totalPrice;
                 borc.borcTarihi = DateTime.Now;
+                urunMiktar.miktar -= Convert.ToInt32(urunMiktar1.Text);
                 borc.odenenMiktar = 0;
                 dbcontext.tBorcs.Add(borc);
                 dbcontext.SaveChanges();
@@ -124,6 +126,7 @@ namespace veritabaniProje
                 borc.borcMiktar += totalPrice;
                 borc.borcTarihi = DateTime.Now;
                 borc.urunMiktar += Convert.ToInt32(urunMiktar1.Text);
+                urunMiktar.miktar -= Convert.ToInt32(urunMiktar1.Text);
                 // borc.odenenMiktar = 0; - odenen miktarı 0 a çekiyorsun
                 dbcontext.tBorcs.Add(borc);
                 dbcontext.SaveChanges();
@@ -132,7 +135,7 @@ namespace veritabaniProje
             //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
             var satisCari = new Entity.tSatis();
             //satisCari.satisNo = 0;
-            satisCari.satisTuru = "Cari";
+            //satisCari.satisTuru = "Cari";
             satisCari.satisTutar = (float)totalPrice;
             dbcontext.tSatiss.Add(satisCari);
             dbcontext.SaveChanges();
@@ -147,18 +150,41 @@ namespace veritabaniProje
 
         private void cashButton_Click(object sender, EventArgs e)
         {
-            var satisPesin = new Entity.tSatis();
-            //satisPesin.satisNo = 0;
-            satisPesin.satisTuru = "Pesin";
-            satisPesin.satisTutar = (float)totalPrice;
-            dbcontext.tSatiss.Add(satisPesin);
-            dbcontext.SaveChanges();
-            totalPrice = 0;
-            listBox1.Items.Clear();
-            listBox1.Items.Add("Sepet");
-            listBox1.Items.Add("----------");
-            label3.Text = "Tutar toplamı : " + totalPrice;
-            MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            var urunKontrol = new Entity.tUrun();
+            var satisPesin  = new Entity.tSatis();
+            long newAddId = Convert.ToInt64(addID.Text);
+            var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == newAddId);
+            var urunKontrol1 = dbcontext.tSatiss.FirstOrDefault(x => x.urunAdi == product.urunAdi);
+            if (urunKontrol1 == null)
+            {
+                //satisPesin.satisNo = 0;
+                //satisPesin.satisTuru = "Pesin";
+                string urunAdi1 = product.urunAdi;
+                satisPesin.urunAdi = urunAdi1;
+                satisPesin.satisTutar = (float)totalPrice;
+                satisPesin.satisMiktar = Convert.ToInt32(urunMiktar1.Text);
+                dbcontext.tSatiss.Add(satisPesin);
+                dbcontext.SaveChanges();
+                totalPrice = 0;
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Sepet");
+                listBox1.Items.Add("----------");
+                label3.Text = "Tutar toplamı : " + totalPrice;
+                MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                satisPesin.satisTutar += (float)totalPrice;
+                satisPesin.satisMiktar += Convert.ToInt32(urunMiktar1.Text);
+                dbcontext.tSatiss.Add(satisPesin);
+                dbcontext.SaveChanges();
+                totalPrice = 0;
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Sepet");
+                listBox1.Items.Add("----------");
+                label3.Text = "Tutar toplamı : " + totalPrice;
+                MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
 
         }
 
