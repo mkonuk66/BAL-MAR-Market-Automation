@@ -50,12 +50,12 @@ namespace veritabaniProje
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
+            this.borcIslemleri1 = new veritabaniProje.BorcIslemleri();
             this.raporAlim1 = new veritabaniProje.RaporAlim();
             this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
             this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
-            this.borcIslemleri1 = new veritabaniProje.BorcIslemleri();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -297,6 +297,13 @@ namespace veritabaniProje
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
+            // borcIslemleri1
+            // 
+            this.borcIslemleri1.Location = new System.Drawing.Point(202, 153);
+            this.borcIslemleri1.Name = "borcIslemleri1";
+            this.borcIslemleri1.Size = new System.Drawing.Size(983, 426);
+            this.borcIslemleri1.TabIndex = 18;
+            // 
             // raporAlim1
             // 
             this.raporAlim1.Location = new System.Drawing.Point(202, 155);
@@ -336,14 +343,6 @@ namespace veritabaniProje
             this.anaMenu1.Name = "anaMenu1";
             this.anaMenu1.Size = new System.Drawing.Size(845, 402);
             this.anaMenu1.TabIndex = 13;
-            // 
-            // borcIslemleri1
-            // 
-            this.borcIslemleri1.Location = new System.Drawing.Point(202, 155);
-            this.borcIslemleri1.Name = "borcIslemleri1";
-            this.borcIslemleri1.Size = new System.Drawing.Size(983, 426);
-            this.borcIslemleri1.TabIndex = 18;
-            this.borcIslemleri1.Load += new System.EventHandler(this.borcIslemleri1_Load);
             // 
             // AnaMenü
             // 

@@ -219,6 +219,12 @@
     <Compile Include="TarihliKarZarar.Designer.cs">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
     </Compile>
+    <Compile Include="tedarikcininBorcDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tedarikcininBorcDurumu.Designer.cs">
+      <DependentUpon>tedarikcininBorcDurumu.cs</DependentUpon>
+    </Compile>
     <Compile Include="topluMusteriBorcDurum.cs">
       <SubType>Form</SubType>
     </Compile>
