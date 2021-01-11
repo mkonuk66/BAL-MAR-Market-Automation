@@ -14,7 +14,7 @@ namespace veritabaniProje
     public partial class satisRapor : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adborcsorgu = new SqlDataAdapter();
         DataSet satissorguds = new DataSet();
 

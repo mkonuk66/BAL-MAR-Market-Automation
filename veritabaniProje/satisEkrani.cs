@@ -48,7 +48,7 @@ namespace veritabaniProje
                 else
                 {
                     string urunAdi = product.urunAdi;
-                    string gecis = urunAdi + " x " + urunMiktar1.Text;
+                    string gecis = urunAdi + " x " + newAddmiktar;
                     totalPrice += product.satisFiyat;
                     listBox1.Items.Add(gecis);
                     MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -66,8 +66,10 @@ namespace veritabaniProje
         {
             try
             {
-                Int64 itemSelected = Convert.ToInt64(listBox1.SelectedItem.ToString());
-                var product = dbcontext.tUruns.SingleOrDefault(x => x.barkodNo == itemSelected);
+                string itemSelected = listBox1.SelectedItem.ToString();
+                string[] selected = itemSelected.Split(' ');
+                string selected1 = selected[0];
+                var product = dbcontext.tUruns.SingleOrDefault(x => x.urunAdi == selected1);
                 var password = dbcontext.tYoneticis.SingleOrDefault(x => x.ySifre == sifreText.Text);
                 if (password == null)
                 {
@@ -83,7 +85,6 @@ namespace veritabaniProje
             catch(Exception)
             {
                 MessageBox.Show("Ürün seçilemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
 
         }
