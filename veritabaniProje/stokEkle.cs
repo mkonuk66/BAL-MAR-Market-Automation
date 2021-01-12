@@ -17,6 +17,7 @@ namespace veritabaniProje
     public partial class stokEkle : Form
     {
         Entity.Context dbcontext = new Entity.Context();
+        //Kar miktarını tutacağımız bir değişken
         public double karMiktari;
         public stokEkle()
         {
@@ -42,9 +43,9 @@ namespace veritabaniProje
                 file.Reset();
                 for (int i = 0; i < satir.Length; i += 7)
                 {
+                    //İrsaliye ekleniyor...
                     var irsaliye = new Entity.tIrsaliye();
                     var urun = new Entity.tUrun();
-                    var tedarikci = new Entity.tTedarikci();
                     irsaliye.irsaliyeID = Convert.ToInt32(satir[i]);
                     irsaliye.girisTarih = Convert.ToDateTime(satir[i + 1]);
                     irsaliye.urunId = Convert.ToInt32(satir[i + 2]);
@@ -53,9 +54,12 @@ namespace veritabaniProje
                     irsaliye.tedarikciId = Convert.ToInt32(satir[i + 5]);
                     irsaliye.urunAdi = Convert.ToString(satir[i + 6]);
                     dbcontext.tIrsaliyes.Add(irsaliye);
+                    //Ürünün var olup olmamasını kontrol ediyoruz.
                     var product = dbcontext.tUruns.FirstOrDefault(x => x.urunAdi == irsaliye.urunAdi);
                     if (product == null)
                     {
+                        //Ürünün olmadığı senaryo
+                        //Ürün veritabanına ekleniyor
                         urun.urunId = irsaliye.urunId;
                         urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
                         urun.urunAdi = irsaliye.urunAdi;
@@ -64,39 +68,44 @@ namespace veritabaniProje
                         dbcontext.tUruns.Add(urun);
                         if (i == satir.Length - 7)
                         {
-                            MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Ürünler başarıyla kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         
                     }
                     else
                     {
+                        //Ürünün olduğu senaryo
+                        // Ürünün miktarına ekleme yapılıyor.
+                        //Eğer fiyat değişkikliği olursa o da güncelleniyor.
                         product.miktar += irsaliye.miktar;
                         product.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
                         if (i == satir.Length - 7)
                         {
-                            MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Ürün stokları güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         
                     }
                     dbcontext.SaveChanges();
 
-                    var product1 = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
-                    if (product1 == null)
+                    //Tedarikçinin varlığı kontrol ediliyor
+                    var tedarikci = new Entity.tTedarikci();
+                    var tedarikciKontrol = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
+                    if (tedarikciKontrol == null)
                     {
+                        //Tedarikçi yeni ekleniyor. Eklenen ürünün fiyatı tedarikçi borcuna ekleniyor.
                         tedarikci.tedarikciId = irsaliye.tedarikciId;
-                        tedarikci.urunAdi = irsaliye.urunAdi;
-                        tedarikci.urunId = irsaliye.urunId;
-                        tedarikci.urunMiktar = irsaliye.miktar;
                         tedarikci.borcMiktar = (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        dbcontext.tTedarikcis.Add(tedarikci);
+                        dbcontext.SaveChanges();
                     }
                     else
                     {
-                        tedarikci.urunMiktar += irsaliye.miktar;
-                        tedarikci.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        //Var olan tedarikçiye olan borcumuz güncelleniyor.
+                        tedarikciKontrol.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        dbcontext.SaveChanges();
+
                     }
                 }
-
-
             }
             catch (Exception) // Hatayı yakaladık
             {
