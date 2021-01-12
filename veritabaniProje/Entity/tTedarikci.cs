@@ -16,5 +16,7 @@ namespace veritabaniProje.Entity
         public float borcMiktar { get; set; }
         public int urunMiktar { get; set; }
 
+        public virtual ICollection<tIrsaliye> tIrsaliyes { get; set; }
+
     }
 }

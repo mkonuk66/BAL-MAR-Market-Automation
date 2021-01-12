@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 namespace veritabaniProje.Entity
 {
     class tIrsaliye { 
-        
         public int irsaliyeID { get; set; }
         [Key]
         public int urunId { get; set; }
         public DateTime girisTarih { get; set; }      
         public float girdiFiyat { get; set; }
         public int miktar { get; set; }
+        public tTedarikci tTedarikci { get; set; }
+        [ForeignKey("tTedarikci")]
         public int tedarikciId { get; set; }
         public string urunAdi { get; set; }
 

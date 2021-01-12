@@ -120,6 +120,12 @@
     <Compile Include="kayitliMusteri.Designer.cs">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </Compile>
+    <Compile Include="kayitliTedarikci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitliTedarikci.Designer.cs">
+      <DependentUpon>kayitliTedarikci.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="musteriArayuzu.cs">
       <SubType>Form</SubType>
@@ -219,6 +225,12 @@
     <Compile Include="TarihliKarZarar.Designer.cs">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
     </Compile>
+    <Compile Include="tedarikciBorc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tedarikciBorc.Designer.cs">
+      <DependentUpon>tedarikciBorc.cs</DependentUpon>
+    </Compile>
     <Compile Include="topluMusteriBorcDurum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="kayitliMusteri.resx">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitliTedarikci.resx">
+      <DependentUpon>kayitliTedarikci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="musteriArayuzu.resx">
       <DependentUpon>musteriArayuzu.cs</DependentUpon>
@@ -329,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TarihliKarZarar.resx">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tedarikciBorc.resx">
+      <DependentUpon>tedarikciBorc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="topluMusteriBorcDurum.resx">
       <DependentUpon>topluMusteriBorcDurum.cs</DependentUpon>
