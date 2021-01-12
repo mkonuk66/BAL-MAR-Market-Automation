@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace veritabaniProje.Entity
 {
-    class tIrsaliye { 
-        
-        public int irsaliyeID { get; set; }
+    class tIrsaliye {
+
         [Key]
+        public int satirNo { get; set; }
+        public int irsaliyeID { get; set; }
+        
         public int urunId { get; set; }
         public DateTime girisTarih { get; set; }      
         public float girdiFiyat { get; set; }

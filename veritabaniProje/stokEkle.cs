@@ -150,8 +150,6 @@ namespace veritabaniProje
         {
             // TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.tIrsaliyesTableAdapter1.Fill(this.veritabaniProjeDataSetIrsaliye2.tIrsaliyes);
-            //// TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            //this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSetIrsaliye.tIrsaliyes);
 
         }
 

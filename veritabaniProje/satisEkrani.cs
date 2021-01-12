@@ -64,8 +64,8 @@ namespace veritabaniProje
         }
         public void deleteProductButton_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 string itemSelected = listBox1.SelectedItem.ToString();
                 string[] selected = itemSelected.Split(' ');
                 string selected1 = selected[0];
@@ -81,11 +81,11 @@ namespace veritabaniProje
                     label3.Text = "Tutar toplamı : " + totalPrice;
                     listBox1.Items.Remove(listBox1.SelectedItem);
                 }
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Ürün seçilemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //}
+            //catch(Exception)
+            //{
+            //    MessageBox.Show("Ürün seçilemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
         }
 
