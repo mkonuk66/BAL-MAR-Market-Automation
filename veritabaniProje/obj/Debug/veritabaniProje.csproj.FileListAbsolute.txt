@@ -21,9 +21,7 @@ C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\De
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.pdb
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csprojAssemblyReference.cache
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.anaArayüz.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Properties.Resources.resources
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.raporlamaArayuzu.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.GenerateResource.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
@@ -42,7 +40,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.musteriArayuzu.resources
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.raporlamaArayuzu.resources
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.musteriArayuzu.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.ResolveComReference.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisRapor.resources
@@ -82,10 +79,8 @@ C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\De
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.xml
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.bilgileriDogrula.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.birMusterininBorcDurumu.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliMusteri.resources
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisArayuzu.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisEkrani.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.yeniMusteriEkleme.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CopyComplete
@@ -97,7 +92,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.GirisEkrani.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.GirisEkrani.resources
@@ -113,7 +107,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.RaporAlim.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.StokIslemleri.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenu.resources
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenü.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriMenu.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.RaporAlim.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisMusteri.resources
@@ -132,3 +125,6 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenüGorunum.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliTedarikci.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.tedarikcininBorcDurumu.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenüGorunum.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliTedarikci.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.tedarikcininBorcDurumu.resources

@@ -85,8 +85,6 @@ namespace veritabaniProje
                     if (product1 == null)
                     {
                         tedarikci.tedarikciId = irsaliye.tedarikciId;
-                        tedarikci.urunAdi = irsaliye.urunAdi;
-                        tedarikci.urunId = irsaliye.urunId;
                         tedarikci.urunMiktar = irsaliye.miktar;
                         tedarikci.borcMiktar = (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                         dbcontext.tTedarikcis.Add(tedarikci);
