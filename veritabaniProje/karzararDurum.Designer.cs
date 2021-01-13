@@ -38,6 +38,7 @@ namespace veritabaniProje
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "karzararDurum";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tarihli Kar Zarar Durumu";
             this.ResumeLayout(false);
 

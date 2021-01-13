@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace veritabaniProje
 {
-    public partial class AnaMenü : Form
+    public partial class AnaMenüGorunum : Form
     {
-        public AnaMenü()
+        public AnaMenüGorunum()
         {
             InitializeComponent();
             sidepanel.Height = anamenubuton.Height;

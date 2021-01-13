@@ -59,6 +59,7 @@ namespace veritabaniProje
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.chart1);
             this.Name = "satisTrendiGrafik";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Satış Trendi Grafiği";
             this.Load += new System.EventHandler(this.satisTrendiGrafik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

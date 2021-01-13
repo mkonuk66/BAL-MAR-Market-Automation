@@ -43,18 +43,18 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(312, 46);
+            this.label1.Location = new System.Drawing.Point(312, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 38);
+            this.label1.Size = new System.Drawing.Size(223, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Rapor Alım";
+            this.label1.Text = "RAPOR ALIM";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(524, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(541, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(90, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -63,7 +63,7 @@ namespace veritabaniProje
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(231, 137);
+            this.label2.Location = new System.Drawing.Point(267, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(433, 27);
             this.label2.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace veritabaniProje
             this.musteriSatis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.musteriSatis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteriSatis.ForeColor = System.Drawing.Color.Sienna;
-            this.musteriSatis.Location = new System.Drawing.Point(53, 207);
+            this.musteriSatis.Location = new System.Drawing.Point(98, 229);
             this.musteriSatis.Name = "musteriSatis";
             this.musteriSatis.Size = new System.Drawing.Size(249, 93);
             this.musteriSatis.TabIndex = 5;
@@ -93,7 +93,7 @@ namespace veritabaniProje
             this.musteriRaporu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.musteriRaporu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteriRaporu.ForeColor = System.Drawing.Color.Sienna;
-            this.musteriRaporu.Location = new System.Drawing.Point(319, 207);
+            this.musteriRaporu.Location = new System.Drawing.Point(364, 229);
             this.musteriRaporu.Name = "musteriRaporu";
             this.musteriRaporu.Size = new System.Drawing.Size(249, 93);
             this.musteriRaporu.TabIndex = 6;
@@ -109,7 +109,7 @@ namespace veritabaniProje
             this.karzararDurum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.karzararDurum.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.karzararDurum.ForeColor = System.Drawing.Color.Sienna;
-            this.karzararDurum.Location = new System.Drawing.Point(587, 207);
+            this.karzararDurum.Location = new System.Drawing.Point(632, 229);
             this.karzararDurum.Name = "karzararDurum";
             this.karzararDurum.Size = new System.Drawing.Size(249, 93);
             this.karzararDurum.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace veritabaniProje
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "RaporAlim";
-            this.Size = new System.Drawing.Size(890, 403);
+            this.Size = new System.Drawing.Size(982, 431);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
