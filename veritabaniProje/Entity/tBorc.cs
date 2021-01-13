@@ -15,6 +15,5 @@ namespace veritabaniProje.Entity
         public int musteriId { get; set; }
         public DateTime borcTarihi { get; set; }
         public float borcMiktar { get; set; }
-        public int urunMiktar { get; set; }
     }
 }

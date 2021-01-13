@@ -17,7 +17,7 @@ namespace veritabaniProje
     public partial class birMusterininBorcDurumu : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection bag = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection bag = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adtr = new SqlDataAdapter();
         DataSet ds = new DataSet();
         public birMusterininBorcDurumu()
@@ -46,11 +46,12 @@ namespace veritabaniProje
             musteriGosterim.Columns[3].HeaderText = "GSM";
             musteriGosterim.Columns[4].HeaderText = "Kayıt Tarihi";
             musteriGosterim.Columns[5].HeaderText = "Müşterinin Borcu";
+            musteriGosterim.Columns[6].HeaderText = "Ödenen Miktar";
 
             //Borc Bilgilerini Gösteriyor
 
             DataTable dt1 = new DataTable();
-            SqlDataAdapter borcsorgu = new SqlDataAdapter("select * From tBorcs Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
+            SqlDataAdapter borcsorgu = new SqlDataAdapter("select musteriId,borcTarihi,borcMiktar,urunMiktar From tBorcs Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
             ds = new DataSet();
             bag.Open();
             borcsorgu.Fill(ds, "tBorcs");
@@ -60,17 +61,20 @@ namespace veritabaniProje
             borcGosterim.Columns[0].HeaderText = "Musteri No";
             borcGosterim.Columns[1].HeaderText = "Borc Tarihi";
             borcGosterim.Columns[2].HeaderText = "Borc Miktarı";
+            borcGosterim.Columns[3].HeaderText = "Alınan Ürün Miktarı";
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var borc = new Entity.tBorc();
-            var musteri = new Entity.tMusteri();
-            if (borcOdeme.Text != null)
+            int mus = Convert.ToInt32(label2.Text);
+            int borcode = Convert.ToInt32(borcOdeme.Text);
+            var musterisorgu = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == mus);
+            if (borcOdeme.Text != null && musterisorgu != null )
             {
-                borc.borcMiktar -= Convert.ToInt32(borcOdeme.Text);
-                MessageBox.Show("" + musteri.musteriAdi + "Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                musterisorgu.odenenMiktar += borcode;
+                musterisorgu.musteriBorc -= borcode;
+                MessageBox.Show("" + musterisorgu.musteriAdi + "Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dbcontext.SaveChanges();
             }
             else

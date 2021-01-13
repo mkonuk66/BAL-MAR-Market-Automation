@@ -46,6 +46,9 @@ namespace veritabaniProje
             this.label5 = new System.Windows.Forms.Label();
             this.urunMiktar1 = new System.Windows.Forms.TextBox();
             this.urunMiktar = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.musArama = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +98,7 @@ namespace veritabaniProje
             this.cashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cashButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cashButton.ForeColor = System.Drawing.Color.Sienna;
-            this.cashButton.Location = new System.Drawing.Point(95, 468);
+            this.cashButton.Location = new System.Drawing.Point(77, 468);
             this.cashButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cashButton.Name = "cashButton";
             this.cashButton.Size = new System.Drawing.Size(136, 46);
@@ -110,7 +113,7 @@ namespace veritabaniProje
             this.debtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.debtButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.debtButton.ForeColor = System.Drawing.Color.Sienna;
-            this.debtButton.Location = new System.Drawing.Point(400, 468);
+            this.debtButton.Location = new System.Drawing.Point(422, 468);
             this.debtButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.debtButton.Name = "debtButton";
             this.debtButton.Size = new System.Drawing.Size(128, 46);
@@ -145,6 +148,9 @@ namespace veritabaniProje
             this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
+            this.listBox1.Items.AddRange(new object[] {
+            "Sepet",
+            "---------"});
             this.listBox1.Location = new System.Drawing.Point(658, 82);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
@@ -234,12 +240,41 @@ namespace veritabaniProje
             this.urunMiktar.TabIndex = 17;
             this.urunMiktar.Text = "Ürün Miktarı :";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(422, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 43);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Yeni Müşteri Ekleme";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // musArama
+            // 
+            this.musArama.Location = new System.Drawing.Point(422, 441);
+            this.musArama.Name = "musArama";
+            this.musArama.Size = new System.Drawing.Size(128, 22);
+            this.musArama.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(407, 420);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(170, 17);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Müşteri Numarası Giriniz :\r\n";
+            // 
             // satisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(939, 550);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.musArama);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.urunMiktar);
             this.Controls.Add(this.urunMiktar1);
             this.Controls.Add(this.label5);
@@ -284,5 +319,8 @@ namespace veritabaniProje
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox urunMiktar1;
         private System.Windows.Forms.Label urunMiktar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox musArama;
+        private System.Windows.Forms.Label label6;
     }
 }

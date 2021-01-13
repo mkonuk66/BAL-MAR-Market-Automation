@@ -15,7 +15,6 @@ namespace veritabaniProje
     public partial class satisEkrani : Form
     {
         public float totalPrice = 0;
-        public int toplammiktar = 0;
         Entity.Context dbcontext = new Entity.Context();
         public int stsmusteriID;
         public satisEkrani()
@@ -49,7 +48,7 @@ namespace veritabaniProje
                 {
                     string urunAdi = product.urunAdi;
                     string gecis = urunAdi + " x " + urunMiktar1.Text;
-                    totalPrice += product.satisFiyat;
+                    totalPrice += product.satisFiyat * Convert.ToSingle(urunMiktar1.Text);
                     listBox1.Items.Add(gecis);
                     MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     label3.Text = "Tutar toplamı : " + totalPrice;
@@ -103,34 +102,27 @@ namespace veritabaniProje
         }
         private void debtButton_Click(object sender, EventArgs e)
         {
-            //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
-            satisMusteri stsmst = new satisMusteri();
-            stsmst.Show();
-            stsmusteriID = Convert.ToInt32(satisMusteri.musteriIdText);
+            stsmusteriID = Convert.ToInt32(musArama.Text);
             var satis = new Entity.tSatis();
             var musterii = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == stsmusteriID);
             if (musterii == null)
             {
                 //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
                 MessageBox.Show("Lütfen yeni müşteri oluşturunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MusteriMenu ynmusteri = new MusteriMenu();
-                ynmusteri.Show();
             }
             else
             {
-                for (int i = 0; i < listBox1.Items.Count; i++)
+                for (int i = 2; i < listBox1.Items.Count; i++)
                 {
                     string itemSelected = listBox1.Items[i].ToString();
                     string[] selected = itemSelected.Split(' ');
                     string selected1 = selected[0];
                     int selected2 = Convert.ToInt32(selected[2]);
-                    var urunMiktari1 = new Entity.tUrun();
                     var urunMiktari12 = dbcontext.tUruns.FirstOrDefault(x => x.urunAdi == selected1);
                     var satissorgu = dbcontext.tSatiss.FirstOrDefault(x => x.urunAdi == selected1);
                     if (urunMiktari12 != null)
                     {
                         urunMiktari12.miktar -= selected2;
-                        toplammiktar += selected2;
                         if(satissorgu == null)
                         {
                             satis.satisTutar = Convert.ToSingle(urunMiktari12.satisFiyat * selected2);
@@ -141,7 +133,6 @@ namespace veritabaniProje
                         }
                         else
                         {
-                            urunMiktari12.miktar -= selected2;
                             satissorgu.satisTutar += Convert.ToSingle(urunMiktari12.satisFiyat * selected2);
                             satissorgu.satisMiktar += selected2;
                             dbcontext.SaveChanges();
@@ -154,46 +145,37 @@ namespace veritabaniProje
                     }
                 }
                 var borc = new Entity.tBorc();
-                var borc1 = new Entity.tMusteri();
-                var satisCari = new Entity.tSatis();
                 borc.musteriId = musterii.musteriId;
                 borc.borcMiktar = totalPrice;
                 borc.borcTarihi = DateTime.Now;
-                borc.urunMiktar = toplammiktar;
-                borc1.musteriBorc += totalPrice; // - odenen miktarı 0 a çekiyorsun
+                musterii.musteriBorc += totalPrice; // - odenen miktarı 0 a çekiyorsun
                 dbcontext.tBorcs.Add(borc);
                 dbcontext.SaveChanges();
+                listBox1.Items.Clear();
+                totalPrice = 0;
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Sepet");
+                listBox1.Items.Add("----------");
+                label3.Text = "Tutar toplamı : " + totalPrice;
+                MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
-            //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
-            //satisCari.satisNo = 0;
-            //satisCari.satisTuru = "Cari";
-            listBox1.Items.Clear();
-            totalPrice = 0;
-            listBox1.Items.Clear();
-            //listBox1.Items.Add("Sepet");
-            //listBox1.Items.Add("----------");
-            label3.Text = "Tutar toplamı : " + totalPrice;
-            MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
         }
 
         private void cashButton_Click(object sender, EventArgs e)
         {
 
             var satis = new Entity.tSatis();
-            for (int i=0; i < listBox1.Items.Count; i++)
+            for (int i=2; i < listBox1.Items.Count; i++)
             {
                 string itemSelected = listBox1.Items[i].ToString();
                 string[] selected = itemSelected.Split(' ');
                 string selected1 = selected[0];
                 int selected2 = Convert.ToInt32(selected[2]);
-                var urunMiktari1 = new Entity.tUrun();
                 var urunMiktari12 = dbcontext.tUruns.FirstOrDefault(x => x.urunAdi == selected1);
                 var satissorgu1 = dbcontext.tSatiss.FirstOrDefault(x => x.urunAdi == selected1);
                 if (urunMiktari12 != null)
                 {
                     urunMiktari12.miktar -= selected2;
-                    toplammiktar += selected2;
                     if (satissorgu1 == null)
                     {
                         satis.satisTutar = urunMiktari12.satisFiyat * Convert.ToSingle(selected2);
@@ -210,8 +192,8 @@ namespace veritabaniProje
                     }
                     dbcontext.SaveChanges();
                     listBox1.Items.Clear();
-                    //listBox1.Items.Add("Sepet");
-                    //listBox1.Items.Add("----------");
+                    listBox1.Items.Add("Sepet");
+                    listBox1.Items.Add("----------");
                     label3.Text = "Tutar toplamı : " + totalPrice;
                     MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
@@ -233,5 +215,10 @@ namespace veritabaniProje
             this.Close();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            yeniMusteriEkleme yme = new yeniMusteriEkleme();
+            yme.Show();
+        }
     }
 }
