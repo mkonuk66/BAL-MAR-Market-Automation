@@ -62,7 +62,7 @@ namespace veritabaniProje
             if (managerId != null && managerPassword != null)
             {
                 this.Hide();
-                AnaMenü ana1 = new AnaMenü();
+                AnaMenüGorunum ana1 = new AnaMenüGorunum();
                 ana1.Show();
             }
             else

@@ -33,11 +33,11 @@ namespace veritabaniProje
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -47,7 +47,7 @@ namespace veritabaniProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(249, 22);
+            this.label1.Location = new System.Drawing.Point(287, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 38);
             this.label1.TabIndex = 0;
@@ -56,9 +56,9 @@ namespace veritabaniProje
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(564, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(602, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(77, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -67,10 +67,23 @@ namespace veritabaniProje
             // 
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(79, 105);
+            this.panel1.Location = new System.Drawing.Point(63, 105);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 274);
             this.panel1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(153, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 44);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Giriş";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -99,7 +112,7 @@ namespace veritabaniProje
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(153, 143);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 32);
+            this.button2.Size = new System.Drawing.Size(93, 44);
             this.button2.TabIndex = 4;
             this.button2.Text = "Giriş";
             this.button2.UseVisualStyleBackColor = false;
@@ -116,19 +129,6 @@ namespace veritabaniProje
             this.label3.Text = "Tedarikçi borç ödeme ekranına\r\n         ekranına gitmek için \r\n        lütfen but" +
     "ona basınız.";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(153, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // BorcIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -138,7 +138,7 @@ namespace veritabaniProje
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "BorcIslemleri";
-            this.Size = new System.Drawing.Size(983, 426);
+            this.Size = new System.Drawing.Size(982, 431);
             this.Load += new System.EventHandler(this.BorcIslemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

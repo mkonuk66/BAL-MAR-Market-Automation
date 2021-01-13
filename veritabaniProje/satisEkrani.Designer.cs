@@ -145,7 +145,7 @@ namespace veritabaniProje
             this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(658, 70);
+            this.listBox1.Location = new System.Drawing.Point(658, 82);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(248, 400);
@@ -155,10 +155,11 @@ namespace veritabaniProje
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(642, 483);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(638, 497);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.Size = new System.Drawing.Size(122, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Tutar Toplamı :\r\n";
             // 
@@ -170,10 +171,10 @@ namespace veritabaniProje
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(883, -3);
+            this.button1.Location = new System.Drawing.Point(874, -3);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 54);
+            this.button1.Size = new System.Drawing.Size(66, 69);
             this.button1.TabIndex = 12;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

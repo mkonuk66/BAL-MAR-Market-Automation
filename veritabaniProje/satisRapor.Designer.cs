@@ -48,7 +48,7 @@ namespace veritabaniProje
             this.satisRaporListe.RowHeadersWidth = 51;
             this.satisRaporListe.RowTemplate.Height = 24;
             this.satisRaporListe.ShowCellErrors = false;
-            this.satisRaporListe.Size = new System.Drawing.Size(655, 320);
+            this.satisRaporListe.Size = new System.Drawing.Size(660, 344);
             this.satisRaporListe.TabIndex = 8;
             this.satisRaporListe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -57,10 +57,10 @@ namespace veritabaniProje
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(663, 0);
+            this.button1.Location = new System.Drawing.Point(684, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 53);
+            this.button1.Size = new System.Drawing.Size(68, 62);
             this.button1.TabIndex = 13;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -70,7 +70,7 @@ namespace veritabaniProje
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(208, 9);
+            this.label1.Location = new System.Drawing.Point(211, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(309, 44);
             this.label1.TabIndex = 14;
@@ -81,7 +81,7 @@ namespace veritabaniProje
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(726, 437);
+            this.ClientSize = new System.Drawing.Size(751, 448);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.satisRaporListe);
