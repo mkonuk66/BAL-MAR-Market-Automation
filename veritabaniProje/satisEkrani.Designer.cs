@@ -145,9 +145,6 @@ namespace veritabaniProje
             this.listBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
-            this.listBox1.Items.AddRange(new object[] {
-            "Sepet",
-            "----------"});
             this.listBox1.Location = new System.Drawing.Point(658, 70);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";

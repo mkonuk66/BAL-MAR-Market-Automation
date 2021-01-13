@@ -25,8 +25,8 @@ namespace veritabaniProje
         private void button1_Click(object sender, EventArgs e)
         {
             //try catch ile path değişkeni null döndüğünde hata vermesini engelledik
-            try
-            {
+            //try
+            //{
                 OpenFileDialog file = new OpenFileDialog();
                 //OpenFileDialog acildiginda masaustu acılacak
                 file.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -40,6 +40,7 @@ namespace veritabaniProje
                 //Dosya yolunu kontrol için ekrana bastırıyorum
                 MessageBox.Show("Seçilen dosyanın yolu : \n" + file.FileName, "Dosya başarıyla seçildi.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 file.Reset();
+                Random rastgele = new Random();
                 for (int i = 0; i < satir.Length; i += 7)
                 {
                     var irsaliye = new Entity.tIrsaliye();
@@ -57,7 +58,7 @@ namespace veritabaniProje
                     if (product == null)
                     {
                         urun.urunId = irsaliye.urunId;
-                        urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
+                        urun.barkodNo = rastgele.Next(100000,1000000);
                         urun.urunAdi = irsaliye.urunAdi;
                         urun.miktar = irsaliye.miktar;
                         urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);                       
@@ -88,19 +89,21 @@ namespace veritabaniProje
                         tedarikci.urunId = irsaliye.urunId;
                         tedarikci.urunMiktar = irsaliye.miktar;
                         tedarikci.borcMiktar = (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
+                        dbcontext.tTedarikcis.Add(tedarikci);
                     }
                     else
                     {
                         tedarikci.urunMiktar += irsaliye.miktar;
                         tedarikci.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                     }
+                    dbcontext.SaveChanges();
                 }
 
 
-            }
-            catch (Exception) // Hatayı yakaladık
-            {
-            }
+            //}
+            //catch (Exception) // Hatayı yakaladık
+            //{
+            //}
         }
         private void stokEkle_Load(object sender, EventArgs e)
         {
@@ -148,8 +151,9 @@ namespace veritabaniProje
 
         private void stokEkle_Load_2(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'veritabaniProjeDataSet2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSet2.tIrsaliyes);
             // TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.tIrsaliyesTableAdapter1.Fill(this.veritabaniProjeDataSetIrsaliye2.tIrsaliyes);
 
         }
 

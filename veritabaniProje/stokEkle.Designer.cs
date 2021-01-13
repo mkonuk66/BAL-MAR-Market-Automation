@@ -52,12 +52,17 @@ namespace veritabaniProje
             this.veritabaniProjeDataSetIrsaliye1 = new veritabaniProje.veritabaniProjeDataSetIrsaliye();
             this.tIrsaliyesTableAdapter1 = new veritabaniProje.veritabaniProjeDataSetIrsaliyeTableAdapters.tIrsaliyesTableAdapter();
             this.button5 = new System.Windows.Forms.Button();
+            this.veritabaniProjeDataSet2 = new veritabaniProje.veritabaniProjeDataSet2();
+            this.tIrsaliyesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tIrsaliyesTableAdapter = new veritabaniProje.veritabaniProjeDataSet2TableAdapters.tIrsaliyesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -155,7 +160,7 @@ namespace veritabaniProje
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            this.dataGridView1.DataSource = this.tIrsaliyesBindingSource1;
+            this.dataGridView1.DataSource = this.tIrsaliyesBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.Sienna;
             this.dataGridView1.Location = new System.Drawing.Point(99, 153);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -251,6 +256,20 @@ namespace veritabaniProje
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // veritabaniProjeDataSet2
+            // 
+            this.veritabaniProjeDataSet2.DataSetName = "veritabaniProjeDataSet2";
+            this.veritabaniProjeDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tIrsaliyesBindingSource
+            // 
+            this.tIrsaliyesBindingSource.DataMember = "tIrsaliyes";
+            this.tIrsaliyesBindingSource.DataSource = this.veritabaniProjeDataSet2;
+            // 
+            // tIrsaliyesTableAdapter
+            // 
+            this.tIrsaliyesTableAdapter.ClearBeforeFill = true;
+            // 
             // stokEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -277,6 +296,8 @@ namespace veritabaniProje
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +326,8 @@ namespace veritabaniProje
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Button button5;
+        private veritabaniProjeDataSet2 veritabaniProjeDataSet2;
+        private System.Windows.Forms.BindingSource tIrsaliyesBindingSource;
+        private veritabaniProjeDataSet2TableAdapters.tIrsaliyesTableAdapter tIrsaliyesTableAdapter;
     }
 }

@@ -236,6 +236,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>veritabaniProjeDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="veritabaniProjeDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veritabaniProjeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="veritabaniProjeDataSetIrsaliye.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -362,6 +372,28 @@
     </None>
     <None Include="veritabaniProjeDataSet11.xss">
       <DependentUpon>veritabaniProjeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xsc">
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veritabaniProjeDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xss">
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xsc">
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veritabaniProjeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xss">
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
     </None>
     <None Include="veritabaniProjeDataSetIrsaliye.xsc">
       <DependentUpon>veritabaniProjeDataSetIrsaliye.xsd</DependentUpon>

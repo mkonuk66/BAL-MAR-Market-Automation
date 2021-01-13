@@ -11,10 +11,10 @@ namespace veritabaniProje.Entity
     class tBorc
     {
         [Key]
+        public int borcNo { get; set;}
         public int musteriId { get; set; }
         public DateTime borcTarihi { get; set; }
         public float borcMiktar { get; set; }
-        public float odenenMiktar { get; set; }
         public int urunMiktar { get; set; }
     }
 }
