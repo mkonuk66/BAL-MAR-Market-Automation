@@ -51,7 +51,7 @@ namespace veritabaniProje
                     totalPrice += product.satisFiyat * Convert.ToSingle(urunMiktar1.Text);
                     listBox1.Items.Add(gecis);
                     MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    label3.Text = "Tutar toplamı : " + totalPrice;
+                    label3.Text = "Tutar toplamı : "+ totalPrice +"";
                 }
             }
             else
@@ -74,8 +74,8 @@ namespace veritabaniProje
                 }
                 else
                 {
-                    totalPrice -= product.satisFiyat;
-                    label3.Text = "Tutar toplamı : " + totalPrice;
+                    totalPrice -= product.satisFiyat * Convert.ToSingle(urunMiktar1.Text);
+                    label3.Text = "Tutar toplamı : " + totalPrice + "";
                     listBox1.Items.Remove(listBox1.SelectedItem);
                 }
             //}
@@ -156,6 +156,7 @@ namespace veritabaniProje
                 listBox1.Items.Clear();
                 listBox1.Items.Add("Sepet");
                 listBox1.Items.Add("----------");
+                totalPrice = 0;
                 label3.Text = "Tutar toplamı : " + totalPrice;
                 MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
@@ -190,18 +191,19 @@ namespace veritabaniProje
                         satissorgu1.satisMiktar += selected2;
                         dbcontext.SaveChanges();
                     }
-                    dbcontext.SaveChanges();
-                    listBox1.Items.Clear();
-                    listBox1.Items.Add("Sepet");
-                    listBox1.Items.Add("----------");
-                    label3.Text = "Tutar toplamı : " + totalPrice;
-                    MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
                 else
                 {
                     MessageBox.Show("Hata");
                 }
             }
+            dbcontext.SaveChanges();
+            listBox1.Items.Clear();
+            listBox1.Items.Add("Sepet");
+            listBox1.Items.Add("----------");
+            totalPrice = 0;
+            label3.Text = "Tutar toplamı : " + totalPrice;
+            MessageBox.Show("Satış Tamamlandı", "Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
 
