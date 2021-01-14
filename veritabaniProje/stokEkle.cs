@@ -59,7 +59,9 @@ namespace veritabaniProje
                     urun.barkodNo = Convert.ToInt64("855" + irsaliye.urunId + "555");
                     urun.urunAdi = irsaliye.urunAdi;
                     urun.miktar = irsaliye.miktar;
-                    urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
+                    double cevrim = Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
+                    cevrim = Math.Round(cevrim, 2);
+                    urun.satisFiyat = cevrim;
                     dbcontext.tUruns.Add(urun);
                     if (i == satir.Length - 7)
                     {

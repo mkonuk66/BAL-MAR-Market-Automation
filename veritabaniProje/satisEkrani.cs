@@ -15,7 +15,7 @@ namespace veritabaniProje
 {
     public partial class satisEkrani : Form
     {
-        public float totalPrice = 0;
+        public double totalPrice = 0;
         Entity.Context dbcontext = new Entity.Context();
         public int stsmusteriID;
         public satisEkrani()
@@ -50,7 +50,7 @@ namespace veritabaniProje
                 {
                     string urunAdi = product.urunAdi;
                     string gecis = urunAdi + " x " + urunMiktar1.Text;
-                    totalPrice += product.satisFiyat * Convert.ToSingle(urunMiktar1.Text);
+                    totalPrice += product.satisFiyat * Convert.ToDouble(urunMiktar1.Text);
                     listBox1.Items.Add(gecis);
                     MessageBox.Show("Ürün sepete eklendi", "Eklendi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     label3.Text = "Tutar toplamı : " + totalPrice + "";
@@ -69,6 +69,7 @@ namespace veritabaniProje
             string itemSelected = listBox1.SelectedItem.ToString();
             string[] selected = itemSelected.Split(' ');
             string selected1 = selected[0];
+            int selected2 = Convert.ToInt32(selected[2]);
             var product = dbcontext.tUruns.SingleOrDefault(x => x.urunAdi == selected1);
             var password = dbcontext.tYoneticis.SingleOrDefault(x => x.ySifre == sifreText.Text);
             if (password == null)
@@ -77,7 +78,8 @@ namespace veritabaniProje
             }
             else
             {
-                totalPrice -= product.satisFiyat * Convert.ToSingle(urunMiktar1.Text);
+                double al = Convert.ToDouble(product.satisFiyat);
+                totalPrice -=  Convert.ToSingle(al * selected2);
                 label3.Text = "Tutar toplamı : " + totalPrice + "";
                 listBox1.Items.Remove(listBox1.SelectedItem);
             }
@@ -135,10 +137,10 @@ namespace veritabaniProje
                 }
                 var borc = new Entity.tBorc();
                 borc.musteriId = musterii.musteriId;
-                borc.borcMiktar = totalPrice;
+                borc.borcMiktar = Convert.ToSingle(totalPrice);
                 borc.borcTarihi = DateTime.Now.ToShortDateString();
-                musterii.musteriBorc += totalPrice;  // - odenen miktarı 0 a çekiyorsun
-                musterii.kalanBorc += totalPrice;
+                musterii.musteriBorc += Convert.ToSingle(totalPrice);  // - odenen miktarı 0 a çekiyorsun
+                musterii.kalanBorc += Convert.ToSingle(totalPrice);
                 dbcontext.tBorcs.Add(borc);
                 dbcontext.SaveChanges();
                 listBox1.Items.Clear();
