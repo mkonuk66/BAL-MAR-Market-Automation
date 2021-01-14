@@ -17,7 +17,6 @@ namespace veritabaniProje
     public partial class stokEkle : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        //Kar miktarını tutacağımız bir değişken
         public double karMiktari;
         public stokEkle()
         {
@@ -26,8 +25,8 @@ namespace veritabaniProje
         private void button1_Click(object sender, EventArgs e)
         {
             //try catch ile path değişkeni null döndüğünde hata vermesini engelledik
-            try
-            {
+            //try
+            //{
                 OpenFileDialog file = new OpenFileDialog();
                 //OpenFileDialog acildiginda masaustu acılacak
                 file.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -41,11 +40,12 @@ namespace veritabaniProje
                 //Dosya yolunu kontrol için ekrana bastırıyorum
                 MessageBox.Show("Seçilen dosyanın yolu : \n" + file.FileName, "Dosya başarıyla seçildi.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 file.Reset();
+                Random rastgele = new Random();
                 for (int i = 0; i < satir.Length; i += 7)
                 {
-                    //İrsaliye ekleniyor...
                     var irsaliye = new Entity.tIrsaliye();
                     var urun = new Entity.tUrun();
+                    var tedarikci = new Entity.tTedarikci();
                     irsaliye.irsaliyeID = Convert.ToInt32(satir[i]);
                     irsaliye.girisTarih = Convert.ToDateTime(satir[i + 1]);
                     irsaliye.urunId = Convert.ToInt32(satir[i + 2]);
@@ -54,62 +54,54 @@ namespace veritabaniProje
                     irsaliye.tedarikciId = Convert.ToInt32(satir[i + 5]);
                     irsaliye.urunAdi = Convert.ToString(satir[i + 6]);
                     dbcontext.tIrsaliyes.Add(irsaliye);
-                    //Ürünün var olup olmamasını kontrol ediyoruz.
                     var product = dbcontext.tUruns.FirstOrDefault(x => x.urunAdi == irsaliye.urunAdi);
                     if (product == null)
                     {
-                        //Ürünün olmadığı senaryo
-                        //Ürün veritabanına ekleniyor
                         urun.urunId = irsaliye.urunId;
-                        urun.barkodNo = Convert.ToInt64("8" + "55" + irsaliye.urunId + "55" + irsaliye.urunId + "55");
+                        urun.barkodNo = rastgele.Next(100000,1000000);
                         urun.urunAdi = irsaliye.urunAdi;
                         urun.miktar = irsaliye.miktar;
                         urun.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);                       
                         dbcontext.tUruns.Add(urun);
                         if (i == satir.Length - 7)
                         {
-                            MessageBox.Show("Ürünler başarıyla kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Ürün kayıt edildi.", "Kayıt", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         
                     }
                     else
                     {
-                        //Ürünün olduğu senaryo
-                        // Ürünün miktarına ekleme yapılıyor.
-                        //Eğer fiyat değişkikliği olursa o da güncelleniyor.
                         product.miktar += irsaliye.miktar;
                         product.satisFiyat = (float)Convert.ToDouble(irsaliye.girdiFiyat + karMiktari);
                         if (i == satir.Length - 7)
                         {
-                            MessageBox.Show("Ürün stokları güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Ürün güncellendi", "Stok Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         
                     }
                     dbcontext.SaveChanges();
 
-                    //Tedarikçinin varlığı kontrol ediliyor
-                    var tedarikci = new Entity.tTedarikci();
-                    var tedarikciKontrol = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
-                    if (tedarikciKontrol == null)
+                    var product1 = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == irsaliye.tedarikciId);
+                    if (product1 == null)
                     {
-                        //Tedarikçi yeni ekleniyor. Eklenen ürünün fiyatı tedarikçi borcuna ekleniyor.
                         tedarikci.tedarikciId = irsaliye.tedarikciId;
+                        tedarikci.urunMiktar = irsaliye.miktar;
                         tedarikci.borcMiktar = (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                         dbcontext.tTedarikcis.Add(tedarikci);
-                        dbcontext.SaveChanges();
                     }
                     else
                     {
-                        //Var olan tedarikçiye olan borcumuz güncelleniyor.
-                        tedarikciKontrol.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
-                        dbcontext.SaveChanges();
-
+                        tedarikci.urunMiktar += irsaliye.miktar;
+                        tedarikci.borcMiktar += (float)Convert.ToDouble(irsaliye.miktar * irsaliye.girdiFiyat);
                     }
+                    dbcontext.SaveChanges();
                 }
-            }
-            catch (Exception) // Hatayı yakaladık
-            {
-            }
+
+
+            //}
+            //catch (Exception) // Hatayı yakaladık
+            //{
+            //}
         }
         private void stokEkle_Load(object sender, EventArgs e)
         {
@@ -157,8 +149,9 @@ namespace veritabaniProje
 
         private void stokEkle_Load_2(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'veritabaniProjeDataSet2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tIrsaliyesTableAdapter.Fill(this.veritabaniProjeDataSet2.tIrsaliyes);
             // TODO: Bu kod satırı 'veritabaniProjeDataSetIrsaliye2.tIrsaliyes' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.tIrsaliyesTableAdapter1.Fill(this.veritabaniProjeDataSetIrsaliye2.tIrsaliyes);
 
         }
 

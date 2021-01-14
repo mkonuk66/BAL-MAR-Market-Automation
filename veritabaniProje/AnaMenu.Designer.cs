@@ -59,20 +59,20 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(206, 15);
+            this.panel1.Location = new System.Drawing.Point(291, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(399, 77);
+            this.panel1.Size = new System.Drawing.Size(455, 77);
             this.panel1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(38, 25);
+            this.label2.Location = new System.Drawing.Point(28, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(341, 22);
+            this.label2.Size = new System.Drawing.Size(402, 22);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Bal-Mar Market Otomasyon Sistemi ";
+            this.label2.Text = "BAL-MAR MARKET OTOMASYON SİSTEMİ";
             // 
             // panel2
             // 
@@ -80,9 +80,9 @@ namespace veritabaniProje
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(76, 185);
+            this.panel2.Location = new System.Drawing.Point(178, 187);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(136, 201);
+            this.panel2.Size = new System.Drawing.Size(168, 222);
             this.panel2.TabIndex = 1;
             // 
             // label6
@@ -90,7 +90,7 @@ namespace veritabaniProje
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(42, 169);
+            this.label6.Location = new System.Drawing.Point(57, 185);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 16);
             this.label6.TabIndex = 2;
@@ -100,7 +100,7 @@ namespace veritabaniProje
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(3, 116);
+            this.label5.Location = new System.Drawing.Point(18, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 44);
             this.label5.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace veritabaniProje
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -122,9 +122,9 @@ namespace veritabaniProje
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(328, 185);
+            this.panel3.Location = new System.Drawing.Point(430, 187);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(136, 201);
+            this.panel3.Size = new System.Drawing.Size(153, 222);
             this.panel3.TabIndex = 2;
             // 
             // label8
@@ -132,7 +132,7 @@ namespace veritabaniProje
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(49, 169);
+            this.label8.Location = new System.Drawing.Point(56, 185);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 16);
             this.label8.TabIndex = 3;
@@ -142,7 +142,7 @@ namespace veritabaniProje
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(10, 116);
+            this.label7.Location = new System.Drawing.Point(17, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 22);
             this.label7.TabIndex = 2;
@@ -153,7 +153,7 @@ namespace veritabaniProje
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(21, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(93, 113);
+            this.pictureBox2.Size = new System.Drawing.Size(119, 129);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -164,9 +164,9 @@ namespace veritabaniProje
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(595, 185);
+            this.panel4.Location = new System.Drawing.Point(697, 187);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(136, 201);
+            this.panel4.Size = new System.Drawing.Size(150, 222);
             this.panel4.TabIndex = 3;
             // 
             // label10
@@ -174,7 +174,7 @@ namespace veritabaniProje
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(42, 169);
+            this.label10.Location = new System.Drawing.Point(51, 185);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 16);
             this.label10.TabIndex = 4;
@@ -184,7 +184,7 @@ namespace veritabaniProje
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(-4, 116);
+            this.label9.Location = new System.Drawing.Point(5, 132);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(142, 44);
             this.label9.TabIndex = 3;
@@ -193,9 +193,9 @@ namespace veritabaniProje
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(22, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(23, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(93, 113);
+            this.pictureBox3.Size = new System.Drawing.Size(109, 129);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -203,7 +203,7 @@ namespace veritabaniProje
             // panel5
             // 
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(264, 113);
+            this.panel5.Location = new System.Drawing.Point(363, 120);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(285, 40);
             this.panel5.TabIndex = 4;
@@ -228,7 +228,7 @@ namespace veritabaniProje
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AnaMenu";
-            this.Size = new System.Drawing.Size(846, 403);
+            this.Size = new System.Drawing.Size(982, 431);
             this.Load += new System.EventHandler(this.AnaMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

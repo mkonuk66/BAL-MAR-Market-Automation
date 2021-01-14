@@ -21,7 +21,7 @@ Mehmet Emin KONUK [go to github profile](https://github.com/mkonuk66) -
 
 In the interface design section
 ----------------------------------
-Muhammet Mustafa HASTAOĞLUGİL -
+Muhammet Mustafa HASTAOĞLUGİL  (https://github.com/Muhammet-7898)- 
 Oguzcan KATAR
 
 Thanks...

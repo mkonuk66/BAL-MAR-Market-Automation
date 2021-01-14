@@ -57,29 +57,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="anaArayüz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="anaArayüz.Designer.cs">
-      <DependentUpon>anaArayüz.cs</DependentUpon>
-    </Compile>
     <Compile Include="AnaMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AnaMenu.Designer.cs">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnaMenü.cs">
+    <Compile Include="AnaMenüGorunum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaMenü.Designer.cs">
-      <DependentUpon>AnaMenü.cs</DependentUpon>
-    </Compile>
-    <Compile Include="bilgileriDogrula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="bilgileriDogrula.Designer.cs">
-      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    <Compile Include="AnaMenüGorunum.Designer.cs">
+      <DependentUpon>AnaMenüGorunum.cs</DependentUpon>
     </Compile>
     <Compile Include="birMusterininBorcDurumu.cs">
       <SubType>Form</SubType>
@@ -120,13 +108,13 @@
     <Compile Include="kayitliMusteri.Designer.cs">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="musteriArayuzu.cs">
+    <Compile Include="kayitliTedarikci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="musteriArayuzu.Designer.cs">
-      <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    <Compile Include="kayitliTedarikci.Designer.cs">
+      <DependentUpon>kayitliTedarikci.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MusteriMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,23 +129,11 @@
     <Compile Include="RaporAlim.Designer.cs">
       <DependentUpon>RaporAlim.cs</DependentUpon>
     </Compile>
-    <Compile Include="raporlamaArayuzu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="raporlamaArayuzu.Designer.cs">
-      <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
-    </Compile>
     <Compile Include="satisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="satisEkrani.Designer.cs">
       <DependentUpon>satisEkrani.cs</DependentUpon>
-    </Compile>
-    <Compile Include="satisArayuzu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="satisArayuzu.Designer.cs">
-      <DependentUpon>satisArayuzu.cs</DependentUpon>
     </Compile>
     <Compile Include="satisMusteri.cs">
       <SubType>Form</SubType>
@@ -188,12 +164,6 @@
     </Compile>
     <Compile Include="satılanUrunListesi.Designer.cs">
       <DependentUpon>satılanUrunListesi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="stokAnaArayuz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="stokAnaArayuz.Designer.cs">
-      <DependentUpon>stokAnaArayuz.cs</DependentUpon>
     </Compile>
     <Compile Include="stokDurum.cs">
       <SubType>Form</SubType>
@@ -236,6 +206,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>veritabaniProjeDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="veritabaniProjeDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veritabaniProjeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="veritabaniProjeDataSetIrsaliye.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -252,17 +232,11 @@
     <Compile Include="yeniMusteriEkleme.Designer.cs">
       <DependentUpon>yeniMusteriEkleme.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="anaArayüz.resx">
-      <DependentUpon>anaArayüz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnaMenü.resx">
-      <DependentUpon>AnaMenü.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bilgileriDogrula.resx">
-      <DependentUpon>bilgileriDogrula.cs</DependentUpon>
+    <EmbeddedResource Include="AnaMenüGorunum.resx">
+      <DependentUpon>AnaMenüGorunum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="birMusterininBorcDurumu.resx">
       <DependentUpon>birMusterininBorcDurumu.cs</DependentUpon>
@@ -279,8 +253,8 @@
     <EmbeddedResource Include="kayitliMusteri.resx">
       <DependentUpon>kayitliMusteri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="musteriArayuzu.resx">
-      <DependentUpon>musteriArayuzu.cs</DependentUpon>
+    <EmbeddedResource Include="kayitliTedarikci.resx">
+      <DependentUpon>kayitliTedarikci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriMenu.resx">
       <DependentUpon>MusteriMenu.cs</DependentUpon>
@@ -296,12 +270,6 @@
     </Compile>
     <EmbeddedResource Include="RaporAlim.resx">
       <DependentUpon>RaporAlim.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="raporlamaArayuzu.resx">
-      <DependentUpon>raporlamaArayuzu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="satisArayuzu.resx">
-      <DependentUpon>satisArayuzu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="satisEkrani.resx">
       <DependentUpon>satisEkrani.cs</DependentUpon>
@@ -321,9 +289,6 @@
     <EmbeddedResource Include="satılanUrunListesi.resx">
       <DependentUpon>satılanUrunListesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="stokAnaArayuz.resx">
-      <DependentUpon>stokAnaArayuz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="stokDurum.resx">
       <DependentUpon>stokDurum.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TarihliKarZarar.resx">
       <DependentUpon>TarihliKarZarar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tedarikcininBorcDurumu.resx">
+      <DependentUpon>tedarikcininBorcDurumu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="topluMusteriBorcDurum.resx">
       <DependentUpon>topluMusteriBorcDurum.cs</DependentUpon>
@@ -362,6 +330,28 @@
     </None>
     <None Include="veritabaniProjeDataSet11.xss">
       <DependentUpon>veritabaniProjeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xsc">
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veritabaniProjeDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veritabaniProjeDataSet21.xss">
+      <DependentUpon>veritabaniProjeDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xsc">
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veritabaniProjeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veritabaniProjeDataSet4.xss">
+      <DependentUpon>veritabaniProjeDataSet4.xsd</DependentUpon>
     </None>
     <None Include="veritabaniProjeDataSetIrsaliye.xsc">
       <DependentUpon>veritabaniProjeDataSetIrsaliye.xsd</DependentUpon>

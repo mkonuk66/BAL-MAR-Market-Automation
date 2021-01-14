@@ -53,23 +53,23 @@ namespace veritabaniProje
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
            
-            string managerId1 = Convert.ToString(textBox1.Text);
-            string managerPassword1 = Convert.ToString(textBox2.Text);
-            var managerId = dbcontext.tYoneticis.FirstOrDefault(x => x.yKullaniciAdi == managerId1);
-            var managerPassword = dbcontext.tYoneticis.FirstOrDefault(x => x.ySifre == managerPassword1);
-            if (managerId != null && managerPassword != null)
-            {
-                this.Hide();
-                AnaMenü ana1 = new AnaMenü();
-                ana1.Show();
-            }
-            else
-            {
-                label4.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
-            }
-          
+             string managerId1 = Convert.ToString(textBox1.Text);
+             string managerPassword1 = Convert.ToString(textBox2.Text);
+             var managerId = dbcontext.tYoneticis.FirstOrDefault(x => x.yKullaniciAdi == managerId1);
+             var managerPassword = dbcontext.tYoneticis.FirstOrDefault(x => x.ySifre == managerPassword1);
+             if (managerId != null && managerPassword != null)
+             {
+                 this.Hide();
+                 AnaMenüGorunum ana1 = new AnaMenüGorunum();
+                 ana1.Show();
+             }
+             else
+             {
+                 label4.Text = "Lütfen geçerli bir kullanıcı adı veya parola giriniz";
+             }
+         
         }
 
         private void GirisEkrani_Load(object sender, EventArgs e)

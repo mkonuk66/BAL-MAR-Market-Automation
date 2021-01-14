@@ -43,5 +43,10 @@ namespace veritabaniProje
             }
 
         }
+
+        private void StokIslemleri_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

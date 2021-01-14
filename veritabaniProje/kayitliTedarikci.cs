@@ -12,16 +12,21 @@ namespace veritabaniProje
 {
     public partial class kayitliTedarikci : Form
     {
-        Entity.Context dbcontext = new Entity.Context();
         public kayitliTedarikci()
         {
             InitializeComponent();
         }
+
+        private void kayitliTedarikci_Load(object sender, EventArgs e)
+        {
+
+        }
         public static string gonderilecekveri1;
+        Entity.Context dbcontext = new Entity.Context();
         private void button1_Click(object sender, EventArgs e)
         {
             gonderilecekveri1 = textBox1.Text;
-            var musteri = new Entity.tTedarikci();
+            var musteri = new Entity.tMusteri();
             int kontrol = Convert.ToInt32(textBox1.Text);
             var product = dbcontext.tTedarikcis.FirstOrDefault(x => x.tedarikciId == kontrol);
             if (product == null)
@@ -34,6 +39,11 @@ namespace veritabaniProje
                 f2.Show();
                 this.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

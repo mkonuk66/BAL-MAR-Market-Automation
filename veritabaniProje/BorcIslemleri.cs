@@ -21,15 +21,15 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            birMusterininBorcDurumu bmd = new birMusterininBorcDurumu();
-            bmd.Show();
+            kayitliMusteri kym = new kayitliMusteri();
+            kym.Show();
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
-            tedarikcininBorcDurumu tbd = new tedarikcininBorcDurumu();
-            tbd.Show();
+            kayitliTedarikci kyt = new kayitliTedarikci();
+            kyt.Show();
         }
 
         private void BorcIslemleri_Load(object sender, EventArgs e)

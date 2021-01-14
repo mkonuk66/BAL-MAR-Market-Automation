@@ -1,7 +1,7 @@
 ﻿
 namespace veritabaniProje
 {
-    partial class AnaMenü
+    partial class AnaMenüGorunum
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace veritabaniProje
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaMenü));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaMenüGorunum));
             this.panel1 = new System.Windows.Forms.Panel();
             this.borcButon = new System.Windows.Forms.Button();
             this.satisButon = new System.Windows.Forms.Button();
@@ -50,12 +50,12 @@ namespace veritabaniProje
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.borcIslemleri1 = new veritabaniProje.BorcIslemleri();
-            this.raporAlim1 = new veritabaniProje.RaporAlim();
-            this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
-            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
-            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.anaMenu1 = new veritabaniProje.AnaMenu();
+            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
+            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
+            this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
+            this.raporAlim1 = new veritabaniProje.RaporAlim();
+            this.borcIslemleri1 = new veritabaniProje.BorcIslemleri();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,13 +81,14 @@ namespace veritabaniProje
             // 
             // borcButon
             // 
+            this.borcButon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.borcButon.FlatAppearance.BorderSize = 0;
             this.borcButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.borcButon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.borcButon.ForeColor = System.Drawing.SystemColors.Window;
             this.borcButon.Image = ((System.Drawing.Image)(resources.GetObject("borcButon.Image")));
             this.borcButon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.borcButon.Location = new System.Drawing.Point(13, 404);
+            this.borcButon.Location = new System.Drawing.Point(13, 402);
             this.borcButon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.borcButon.Name = "borcButon";
             this.borcButon.Size = new System.Drawing.Size(189, 62);
@@ -98,13 +99,14 @@ namespace veritabaniProje
             // 
             // satisButon
             // 
+            this.satisButon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.satisButon.FlatAppearance.BorderSize = 0;
             this.satisButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.satisButon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.satisButon.ForeColor = System.Drawing.SystemColors.Window;
             this.satisButon.Image = ((System.Drawing.Image)(resources.GetObject("satisButon.Image")));
             this.satisButon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.satisButon.Location = new System.Drawing.Point(7, 155);
+            this.satisButon.Location = new System.Drawing.Point(7, 150);
             this.satisButon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.satisButon.Name = "satisButon";
             this.satisButon.Size = new System.Drawing.Size(189, 62);
@@ -115,6 +117,7 @@ namespace veritabaniProje
             // 
             // anamenubuton
             // 
+            this.anamenubuton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.anamenubuton.FlatAppearance.BorderSize = 0;
             this.anamenubuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.anamenubuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -132,13 +135,14 @@ namespace veritabaniProje
             // 
             // raporbuton
             // 
+            this.raporbuton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.raporbuton.FlatAppearance.BorderSize = 0;
             this.raporbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.raporbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.raporbuton.ForeColor = System.Drawing.SystemColors.Window;
             this.raporbuton.Image = ((System.Drawing.Image)(resources.GetObject("raporbuton.Image")));
             this.raporbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.raporbuton.Location = new System.Drawing.Point(12, 347);
+            this.raporbuton.Location = new System.Drawing.Point(12, 339);
             this.raporbuton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.raporbuton.Name = "raporbuton";
             this.raporbuton.Size = new System.Drawing.Size(189, 62);
@@ -149,13 +153,14 @@ namespace veritabaniProje
             // 
             // stokbuton
             // 
+            this.stokbuton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stokbuton.FlatAppearance.BorderSize = 0;
             this.stokbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stokbuton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.stokbuton.ForeColor = System.Drawing.SystemColors.Window;
             this.stokbuton.Image = ((System.Drawing.Image)(resources.GetObject("stokbuton.Image")));
             this.stokbuton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.stokbuton.Location = new System.Drawing.Point(12, 282);
+            this.stokbuton.Location = new System.Drawing.Point(12, 276);
             this.stokbuton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stokbuton.Name = "stokbuton";
             this.stokbuton.Size = new System.Drawing.Size(189, 62);
@@ -166,13 +171,14 @@ namespace veritabaniProje
             // 
             // musteributon
             // 
+            this.musteributon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.musteributon.FlatAppearance.BorderSize = 0;
             this.musteributon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.musteributon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteributon.ForeColor = System.Drawing.SystemColors.Window;
             this.musteributon.Image = ((System.Drawing.Image)(resources.GetObject("musteributon.Image")));
             this.musteributon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.musteributon.Location = new System.Drawing.Point(12, 217);
+            this.musteributon.Location = new System.Drawing.Point(12, 213);
             this.musteributon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.musteributon.Name = "musteributon";
             this.musteributon.Size = new System.Drawing.Size(189, 62);
@@ -246,13 +252,14 @@ namespace veritabaniProje
             // 
             // kapatmabutonu
             // 
+            this.kapatmabutonu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapatmabutonu.FlatAppearance.BorderSize = 0;
             this.kapatmabutonu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kapatmabutonu.Image = ((System.Drawing.Image)(resources.GetObject("kapatmabutonu.Image")));
-            this.kapatmabutonu.Location = new System.Drawing.Point(1130, 20);
+            this.kapatmabutonu.Location = new System.Drawing.Point(1123, 20);
             this.kapatmabutonu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kapatmabutonu.Name = "kapatmabutonu";
-            this.kapatmabutonu.Size = new System.Drawing.Size(55, 60);
+            this.kapatmabutonu.Size = new System.Drawing.Size(62, 60);
             this.kapatmabutonu.TabIndex = 3;
             this.kapatmabutonu.UseVisualStyleBackColor = true;
             this.kapatmabutonu.Click += new System.EventHandler(this.kapatmabutonu_Click);
@@ -297,54 +304,52 @@ namespace veritabaniProje
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
-            // borcIslemleri1
+            // anaMenu1
             // 
-            this.borcIslemleri1.Location = new System.Drawing.Point(202, 153);
-            this.borcIslemleri1.Name = "borcIslemleri1";
-            this.borcIslemleri1.Size = new System.Drawing.Size(983, 426);
-            this.borcIslemleri1.TabIndex = 18;
-            // 
-            // raporAlim1
-            // 
-            this.raporAlim1.Location = new System.Drawing.Point(202, 155);
-            this.raporAlim1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.raporAlim1.Name = "raporAlim1";
-            this.raporAlim1.Size = new System.Drawing.Size(983, 426);
-            this.raporAlim1.TabIndex = 17;
-            // 
-            // stokIslemleri1
-            // 
-            this.stokIslemleri1.Location = new System.Drawing.Point(229, 155);
-            this.stokIslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.stokIslemleri1.Name = "stokIslemleri1";
-            this.stokIslemleri1.Size = new System.Drawing.Size(891, 402);
-            this.stokIslemleri1.TabIndex = 16;
-            // 
-            // musteriMenu1
-            // 
-            this.musteriMenu1.Location = new System.Drawing.Point(229, 155);
-            this.musteriMenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.musteriMenu1.Name = "musteriMenu1";
-            this.musteriMenu1.Size = new System.Drawing.Size(845, 402);
-            this.musteriMenu1.TabIndex = 15;
+            this.anaMenu1.Location = new System.Drawing.Point(203, 150);
+            this.anaMenu1.Name = "anaMenu1";
+            this.anaMenu1.Size = new System.Drawing.Size(982, 431);
+            this.anaMenu1.TabIndex = 13;
             // 
             // satisİslemleri1
             // 
-            this.satisİslemleri1.Location = new System.Drawing.Point(229, 155);
+            this.satisİslemleri1.Location = new System.Drawing.Point(202, 168);
             this.satisİslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.satisİslemleri1.Name = "satisİslemleri1";
-            this.satisİslemleri1.Size = new System.Drawing.Size(845, 402);
+            this.satisİslemleri1.Size = new System.Drawing.Size(983, 411);
             this.satisİslemleri1.TabIndex = 14;
             // 
-            // anaMenu1
+            // musteriMenu1
             // 
-            this.anaMenu1.Location = new System.Drawing.Point(229, 153);
-            this.anaMenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.anaMenu1.Name = "anaMenu1";
-            this.anaMenu1.Size = new System.Drawing.Size(845, 402);
-            this.anaMenu1.TabIndex = 13;
+            this.musteriMenu1.Location = new System.Drawing.Point(202, 150);
+            this.musteriMenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.musteriMenu1.Name = "musteriMenu1";
+            this.musteriMenu1.Size = new System.Drawing.Size(994, 431);
+            this.musteriMenu1.TabIndex = 15;
             // 
-            // AnaMenü
+            // stokIslemleri1
+            // 
+            this.stokIslemleri1.Location = new System.Drawing.Point(202, 148);
+            this.stokIslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.stokIslemleri1.Name = "stokIslemleri1";
+            this.stokIslemleri1.Size = new System.Drawing.Size(982, 431);
+            this.stokIslemleri1.TabIndex = 16;
+            // 
+            // raporAlim1
+            // 
+            this.raporAlim1.Location = new System.Drawing.Point(202, 147);
+            this.raporAlim1.Name = "raporAlim1";
+            this.raporAlim1.Size = new System.Drawing.Size(982, 431);
+            this.raporAlim1.TabIndex = 17;
+            // 
+            // borcIslemleri1
+            // 
+            this.borcIslemleri1.Location = new System.Drawing.Point(202, 150);
+            this.borcIslemleri1.Name = "borcIslemleri1";
+            this.borcIslemleri1.Size = new System.Drawing.Size(982, 431);
+            this.borcIslemleri1.TabIndex = 18;
+            // 
+            // AnaMenüGorunum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -363,10 +368,10 @@ namespace veritabaniProje
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AnaMenü";
+            this.Name = "AnaMenüGorunum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnaMenü";
             this.Load += new System.EventHandler(this.AnaMenü_Load);

@@ -46,14 +46,19 @@ namespace veritabaniProje
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tIrsaliyesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veritabaniProjeDataSet2 = new veritabaniProje.veritabaniProjeDataSet2();
             this.tIrsaliyesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.veritabaniProjeDataSetIrsaliye2 = new veritabaniProje.veritabaniProjeDataSetIrsaliye();
             this.veritabaniProjeDataSetIrsaliye1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.veritabaniProjeDataSetIrsaliye1 = new veritabaniProje.veritabaniProjeDataSetIrsaliye();
             this.tIrsaliyesTableAdapter1 = new veritabaniProje.veritabaniProjeDataSetIrsaliyeTableAdapters.tIrsaliyesTableAdapter();
             this.button5 = new System.Windows.Forms.Button();
+            this.tIrsaliyesTableAdapter = new veritabaniProje.veritabaniProjeDataSet2TableAdapters.tIrsaliyesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1BindingSource)).BeginInit();
@@ -155,7 +160,7 @@ namespace veritabaniProje
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            this.dataGridView1.DataSource = this.tIrsaliyesBindingSource1;
+            this.dataGridView1.DataSource = this.tIrsaliyesBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.Sienna;
             this.dataGridView1.Location = new System.Drawing.Point(99, 153);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -214,6 +219,16 @@ namespace veritabaniProje
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // tIrsaliyesBindingSource
+            // 
+            this.tIrsaliyesBindingSource.DataMember = "tIrsaliyes";
+            this.tIrsaliyesBindingSource.DataSource = this.veritabaniProjeDataSet2;
+            // 
+            // veritabaniProjeDataSet2
+            // 
+            this.veritabaniProjeDataSet2.DataSetName = "veritabaniProjeDataSet2";
+            this.veritabaniProjeDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tIrsaliyesBindingSource1
             // 
             this.tIrsaliyesBindingSource1.DataMember = "tIrsaliyes";
@@ -244,12 +259,16 @@ namespace veritabaniProje
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(1023, 0);
+            this.button5.Location = new System.Drawing.Point(1013, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 45);
+            this.button5.Size = new System.Drawing.Size(55, 52);
             this.button5.TabIndex = 8;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // tIrsaliyesTableAdapter
+            // 
+            this.tIrsaliyesTableAdapter.ClearBeforeFill = true;
             // 
             // stokEkle
             // 
@@ -273,6 +292,8 @@ namespace veritabaniProje
             this.Load += new System.EventHandler(this.stokEkle_Load_2);
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetUrunBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIrsaliyesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veritabaniProjeDataSetIrsaliye1BindingSource)).EndInit();
@@ -305,5 +326,8 @@ namespace veritabaniProje
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Button button5;
+        private veritabaniProjeDataSet2 veritabaniProjeDataSet2;
+        private System.Windows.Forms.BindingSource tIrsaliyesBindingSource;
+        private veritabaniProjeDataSet2TableAdapters.tIrsaliyesTableAdapter tIrsaliyesTableAdapter;
     }
 }

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="veritabaniProjeDataSet" targetNamespace="http://tempuri.org/veritabaniProjeDataSet3.xsd" xmlns:mstns="http://tempuri.org/veritabaniProjeDataSet3.xsd" xmlns="http://tempuri.org/veritabaniProjeDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="veritabaniProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="veritabaniProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.veritabaniProje.Properties.Settings.GlobalReference.Default.veritabaniProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tIrsaliyesTableAdapter" GeneratorDataComponentClassName="tIrsaliyesTableAdapter" Name="tIrsaliyes" UserDataComponentName="tIrsaliyesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="veritabaniProjeConnectionString (Settings)" DbObjectName="veritabaniProje.dbo.tIrsaliyes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT irsaliyeID, urunId, girdiFiyat, tedarikciId, urunAdi, miktar FROM dbo.tIrsaliyes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="irsaliyeID" DataSetColumn="irsaliyeID" />
+              <Mapping SourceColumn="urunId" DataSetColumn="urunId" />
+              <Mapping SourceColumn="girdiFiyat" DataSetColumn="girdiFiyat" />
+              <Mapping SourceColumn="tedarikciId" DataSetColumn="tedarikciId" />
+              <Mapping SourceColumn="urunAdi" DataSetColumn="urunAdi" />
+              <Mapping SourceColumn="miktar" DataSetColumn="miktar" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="veritabaniProjeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="veritabaniProjeDataSet" msprop:Generator_UserDSName="veritabaniProjeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tIrsaliyes" msprop:Generator_TableClassName="tIrsaliyesDataTable" msprop:Generator_TableVarName="tabletIrsaliyes" msprop:Generator_TablePropName="tIrsaliyes" msprop:Generator_RowDeletingName="tIrsaliyesRowDeleting" msprop:Generator_RowChangingName="tIrsaliyesRowChanging" msprop:Generator_RowEvHandlerName="tIrsaliyesRowChangeEventHandler" msprop:Generator_RowDeletedName="tIrsaliyesRowDeleted" msprop:Generator_UserTableName="tIrsaliyes" msprop:Generator_RowChangedName="tIrsaliyesRowChanged" msprop:Generator_RowEvArgName="tIrsaliyesRowChangeEvent" msprop:Generator_RowClassName="tIrsaliyesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="irsaliyeID" msprop:Generator_ColumnVarNameInTable="columnirsaliyeID" msprop:Generator_ColumnPropNameInRow="irsaliyeID" msprop:Generator_ColumnPropNameInTable="irsaliyeIDColumn" msprop:Generator_UserColumnName="irsaliyeID" type="xs:int" />
+              <xs:element name="urunId" msprop:Generator_ColumnVarNameInTable="columnurunId" msprop:Generator_ColumnPropNameInRow="urunId" msprop:Generator_ColumnPropNameInTable="urunIdColumn" msprop:Generator_UserColumnName="urunId" type="xs:int" />
+              <xs:element name="girdiFiyat" msprop:Generator_ColumnVarNameInTable="columngirdiFiyat" msprop:Generator_ColumnPropNameInRow="girdiFiyat" msprop:Generator_ColumnPropNameInTable="girdiFiyatColumn" msprop:Generator_UserColumnName="girdiFiyat" type="xs:float" />
+              <xs:element name="tedarikciId" msprop:Generator_ColumnVarNameInTable="columntedarikciId" msprop:Generator_ColumnPropNameInRow="tedarikciId" msprop:Generator_ColumnPropNameInTable="tedarikciIdColumn" msprop:Generator_UserColumnName="tedarikciId" type="xs:int" />
+              <xs:element name="urunAdi" msprop:Generator_ColumnVarNameInTable="columnurunAdi" msprop:Generator_ColumnPropNameInRow="urunAdi" msprop:Generator_ColumnPropNameInTable="urunAdiColumn" msprop:Generator_UserColumnName="urunAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="miktar" msprop:Generator_ColumnVarNameInTable="columnmiktar" msprop:Generator_ColumnPropNameInRow="miktar" msprop:Generator_ColumnPropNameInTable="miktarColumn" msprop:Generator_UserColumnName="miktar" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -13,7 +13,6 @@ namespace veritabaniProje.Entity
         [Key]
         public int satirNo { get; set; }
         public int irsaliyeID { get; set; }
-        
         public int urunId { get; set; }
         public DateTime girisTarih { get; set; }      
         public float girdiFiyat { get; set; }
