@@ -12,6 +12,8 @@ namespace veritabaniProje
 {
     public partial class TarihliKarZarar : Form
     {
+        public static string trend1;
+        public static string trend2;
         public TarihliKarZarar()
         {
             InitializeComponent();
@@ -19,6 +21,8 @@ namespace veritabaniProje
 
         private void satisTrendButton_Click(object sender, EventArgs e)
         {
+            trend1 = trend.Value.ToShortDateString();
+            trend2 = trend3.Value.ToShortDateString();
             satisTrendiGrafik trendGrafik = new satisTrendiGrafik();
             trendGrafik.Show();
         }
@@ -35,8 +39,6 @@ namespace veritabaniProje
 
         private void ürünListeButton_Click(object sender, EventArgs e)
         {
-            satılanUrunListesi urunListe = new satılanUrunListesi();
-            urunListe.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

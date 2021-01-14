@@ -237,9 +237,9 @@ namespace veritabaniProje
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(119, 217);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 24);
+            this.label1.Size = new System.Drawing.Size(147, 24);
             this.label1.TabIndex = 3;
-            this.label1.Text = "BALMAR AVM";
+            this.label1.Text = "BAL-MAR AVM";
             // 
             // pictureBox6
             // 

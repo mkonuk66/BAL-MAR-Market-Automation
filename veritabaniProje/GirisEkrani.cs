@@ -79,12 +79,12 @@ namespace veritabaniProje
             textBox2.PasswordChar = '*';
 
             //Yöneticinin bir kere oluşturulması için eklenmiştir.
-            //var yonetici1 = new Entity.tYonetici();
-            //yonetici1.yoneticiID = 1;
-            //yonetici1.yKullaniciAdi = "yonetici";
-            //yonetici1.ySifre = "1234";
-            //dbcontext.tYoneticis.Add(yonetici1);
-            //dbcontext.SaveChanges();
+            /*var yonetici1 = new Entity.tYonetici();
+            yonetici1.yoneticiID = 1;
+            yonetici1.yKullaniciAdi = "yonetici";
+            yonetici1.ySifre = "1234";
+            dbcontext.tYoneticis.Add(yonetici1);
+            dbcontext.SaveChanges(); */
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
