@@ -83,6 +83,7 @@
     </Compile>
     <Compile Include="Entity\Context.cs" />
     <Compile Include="Entity\tBorc.cs" />
+    <Compile Include="Entity\ttedarikciOdeme.cs" />
     <Compile Include="Entity\tIrsaliye.cs" />
     <Compile Include="Entity\tKasiyer.cs" />
     <Compile Include="Entity\tMusteri.cs" />
@@ -158,12 +159,6 @@
     </Compile>
     <Compile Include="Satisİslemleri.Designer.cs">
       <DependentUpon>Satisİslemleri.cs</DependentUpon>
-    </Compile>
-    <Compile Include="satılanUrunListesi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="satılanUrunListesi.Designer.cs">
-      <DependentUpon>satılanUrunListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="stokDurum.cs">
       <SubType>Form</SubType>
@@ -285,9 +280,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Satisİslemleri.resx">
       <DependentUpon>Satisİslemleri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="satılanUrunListesi.resx">
-      <DependentUpon>satılanUrunListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stokDurum.resx">
       <DependentUpon>stokDurum.cs</DependentUpon>

@@ -88,7 +88,7 @@ namespace veritabaniProje
             this.borcOdemeButonu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.borcOdemeButonu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.borcOdemeButonu.ForeColor = System.Drawing.Color.Sienna;
-            this.borcOdemeButonu.Location = new System.Drawing.Point(678, 320);
+            this.borcOdemeButonu.Location = new System.Drawing.Point(660, 365);
             this.borcOdemeButonu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.borcOdemeButonu.Name = "borcOdemeButonu";
             this.borcOdemeButonu.Size = new System.Drawing.Size(139, 31);
@@ -129,17 +129,17 @@ namespace veritabaniProje
             this.borcGosterim.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.borcGosterim.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.borcGosterim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.borcGosterim.Location = new System.Drawing.Point(32, 260);
+            this.borcGosterim.Location = new System.Drawing.Point(32, 256);
             this.borcGosterim.Name = "borcGosterim";
             this.borcGosterim.RowHeadersWidth = 51;
             this.borcGosterim.RowTemplate.Height = 24;
-            this.borcGosterim.Size = new System.Drawing.Size(386, 162);
+            this.borcGosterim.Size = new System.Drawing.Size(559, 162);
             this.borcGosterim.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(424, 327);
+            this.label3.Location = new System.Drawing.Point(597, 330);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 6;
@@ -147,7 +147,7 @@ namespace veritabaniProje
             // 
             // borcOdeme
             // 
-            this.borcOdeme.Location = new System.Drawing.Point(553, 324);
+            this.borcOdeme.Location = new System.Drawing.Point(726, 327);
             this.borcOdeme.Name = "borcOdeme";
             this.borcOdeme.Size = new System.Drawing.Size(100, 22);
             this.borcOdeme.TabIndex = 7;

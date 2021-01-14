@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
-//using Word = Microsoft.Office.Interop.Word;
+using Word = Microsoft.Office.Interop.Word;
 
 
 namespace veritabaniProje
@@ -17,7 +17,7 @@ namespace veritabaniProje
     public partial class topluMusteriBorcDurum : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection baglanti = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adborcsorgu = new SqlDataAdapter();
         DataSet borcsorguds = new DataSet();
         public topluMusteriBorcDurum()
@@ -33,7 +33,7 @@ namespace veritabaniProje
         private void topluMusteriBorcDurum_Load(object sender, EventArgs e)
         {
             DataTable borcsorgudt = new DataTable();
-            SqlDataAdapter borcsorgu = new SqlDataAdapter("select tMusteris.musteriAdi, tMusteris.musteriSoyadi,tBorcs.urunMiktar,tBorcs.borcMiktar,tBorcs.odenenMiktar from tMusteris,tBorcs where tMusteris.musteriId = tBorcs.musteriId", baglanti);
+            SqlDataAdapter borcsorgu = new SqlDataAdapter("select musteriAdi, musteriSoyadi,kalanBorc,musteriBorc,odenenMiktar from tMusteris", baglanti);
             baglanti.Open();
             borcsorgu.Fill(borcsorguds, "tMusteris,tBorcs");
             borcsorgudt = borcsorguds.Tables["tMusteris,tBorcs"];
@@ -41,7 +41,7 @@ namespace veritabaniProje
             baglanti.Close();
             topluBorcDurum.Columns[0].HeaderText = "Müşteri Adı";
             topluBorcDurum.Columns[1].HeaderText = "Müşteri Soyadı";
-            topluBorcDurum.Columns[2].HeaderText = "Alınan Ürün Miktarı";
+            topluBorcDurum.Columns[2].HeaderText = "Kalan Borç Miktarı";
             topluBorcDurum.Columns[3].HeaderText = "Toplam Borç";
             topluBorcDurum.Columns[4].HeaderText = "Ödenen Borç";
 
@@ -54,7 +54,7 @@ namespace veritabaniProje
             Object oMissing = System.Reflection.Missing.Value;
             object oEndOfDoc = "\\endofdoc";
 
-            /*Word.Application wordApp = new Word.Application();
+            Word.Application wordApp = new Word.Application();
             Word.Document wordDoc = wordApp.Documents.Add(ref oMissing, ref oMissing, ref oMissing, ref oMissing);
             wordApp.Visible = true;
 
@@ -114,13 +114,18 @@ namespace veritabaniProje
                     tablo.Rows[i + 2].Cells[j + 1].Range.Text = topluBorcDurum.Rows[i].Cells[j].Value.ToString();
                 }
             } 
-            */
+            
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

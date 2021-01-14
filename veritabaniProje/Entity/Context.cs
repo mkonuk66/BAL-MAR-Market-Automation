@@ -17,5 +17,6 @@ namespace veritabaniProje.Entity
         public DbSet<tTedarikci> tTedarikcis { get; set; }
         public DbSet<tKasiyer> tKasiyers { get; set; }
         public DbSet<tYonetici> tYoneticis { get; set; }
+        public DbSet<ttedarikciOdeme> ttedarikciOdemes { get; set; }
     }
 }

@@ -36,12 +36,13 @@ namespace veritabaniProje
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string tarih = kayittarihi.Value.ToShortDateString();
             var musteri = new Entity.tMusteri();
             musteri.musteriId = 0;
             musteri.musteriAdi = musteriadi.Text;
             musteri.musteriSoyadi = musterisoyad.Text;
             musteri.musteriGSM = telno.Text;
-            musteri.kayitTarihi = kayittarihi.Value;
+            musteri.kayitTarihi = tarih;
             musteri.musteriBorc = 0;
             dbcontext.tMusteris.Add(musteri);
             dbcontext.SaveChanges();

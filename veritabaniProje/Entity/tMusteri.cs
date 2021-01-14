@@ -15,8 +15,9 @@ namespace veritabaniProje.Entity
         public string musteriAdi { get; set; }
         public string musteriSoyadi { get; set; }
         public string musteriGSM { get; set; }
-        public DateTime kayitTarihi { get; set; }
+        public string kayitTarihi { get; set; }
         public float musteriBorc { get; set; }
         public float odenenMiktar { get; set; }
+        public float kalanBorc { get; set; }
     }
 }
