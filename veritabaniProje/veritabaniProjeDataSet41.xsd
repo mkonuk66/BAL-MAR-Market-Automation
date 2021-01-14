@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="veritabaniProjeDataSet4" targetNamespace="http://tempuri.org/veritabaniProjeDataSet41.xsd" xmlns:mstns="http://tempuri.org/veritabaniProjeDataSet41.xsd" xmlns="http://tempuri.org/veritabaniProjeDataSet41.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="veritabaniProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="veritabaniProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.veritabaniProje.Properties.Settings.GlobalReference.Default.veritabaniProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tSatisTableAdapter" GeneratorDataComponentClassName="tSatisTableAdapter" Name="tSatis" UserDataComponentName="tSatisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="veritabaniProjeConnectionString (Settings)" DbObjectName="veritabaniProje.dbo.tSatis" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT satisMiktar FROM dbo.tSatis</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="satisMiktar" DataSetColumn="satisMiktar" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="veritabaniProjeDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="veritabaniProjeDataSet4" msprop:Generator_UserDSName="veritabaniProjeDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tSatis" msprop:Generator_TableClassName="tSatisDataTable" msprop:Generator_TableVarName="tabletSatis" msprop:Generator_TablePropName="tSatis" msprop:Generator_RowDeletingName="tSatisRowDeleting" msprop:Generator_RowChangingName="tSatisRowChanging" msprop:Generator_RowEvHandlerName="tSatisRowChangeEventHandler" msprop:Generator_RowDeletedName="tSatisRowDeleted" msprop:Generator_UserTableName="tSatis" msprop:Generator_RowChangedName="tSatisRowChanged" msprop:Generator_RowEvArgName="tSatisRowChangeEvent" msprop:Generator_RowClassName="tSatisRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="satisMiktar" msprop:Generator_ColumnVarNameInTable="columnsatisMiktar" msprop:Generator_ColumnPropNameInRow="satisMiktar" msprop:Generator_ColumnPropNameInTable="satisMiktarColumn" msprop:Generator_UserColumnName="satisMiktar" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

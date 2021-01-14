@@ -235,9 +235,9 @@ namespace veritabaniProje
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(13, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 24);
+            this.label1.Size = new System.Drawing.Size(100, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "BALMAR";
+            this.label1.Text = "BAL-MAR";
             // 
             // pictureBox1
             // 
@@ -298,11 +298,12 @@ namespace veritabaniProje
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(359, 26);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(358, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(351, 17);
             this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
+            this.label3.Text = "BAL-MAR LTD. ŞTİ TARAFINDAN YAPILMIŞTIR.\r\n";
             // 
             // anaMenu1
             // 

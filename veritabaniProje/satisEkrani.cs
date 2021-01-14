@@ -167,9 +167,10 @@ namespace veritabaniProje
                 if (urunMiktari12 != null)
                 {
                     urunMiktari12.miktar -= selected2;
-                    satis.satisTutar = urunMiktari12.satisFiyat * Convert.ToSingle(selected2);
+                    satis.satisTutar = Convert.ToSingle(urunMiktari12.satisFiyat * selected2);
                     satis.urunAdi = urunMiktari12.urunAdi;
                     satis.satisMiktar = selected2;
+                    satis.satisTarih = DateTime.Now.ToShortDateString();
                     dbcontext.tSatiss.Add(satis);
                     dbcontext.SaveChanges();
                 }
