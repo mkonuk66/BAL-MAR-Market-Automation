@@ -12,7 +12,6 @@ namespace veritabaniProje.Entity
         [Key]
         public int tedarikciId { get; set; }
         public float borcMiktar { get; set; }
-        public int urunMiktar { get; set; }
 
     }
 }

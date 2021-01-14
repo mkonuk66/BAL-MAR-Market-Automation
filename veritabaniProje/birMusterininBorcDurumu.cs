@@ -17,7 +17,7 @@ namespace veritabaniProje
     public partial class birMusterininBorcDurumu : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection bag = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection bag = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adtr = new SqlDataAdapter();
         DataSet ds = new DataSet();
         public birMusterininBorcDurumu()
@@ -54,7 +54,7 @@ namespace veritabaniProje
             SqlDataAdapter borcsorgu = new SqlDataAdapter("select musteriId,borcTarihi,borcMiktar,urunMiktar From tBorcs Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
             ds = new DataSet();
             bag.Open();
-            borcsorgu.Fill(ds, "tBorcs");
+            //borcsorgu.Fill(ds, "tBorcs");
             dt1 = ds.Tables["tBorcs"];
             borcGosterim.DataSource = dt;
             bag.Close();
@@ -68,7 +68,7 @@ namespace veritabaniProje
         private void button2_Click(object sender, EventArgs e)
         {
             int mus = Convert.ToInt32(label2.Text);
-            int borcode = Convert.ToInt32(borcOdeme.Text);
+            float borcode = Convert.ToSingle(borcOdeme.Text);
             var musterisorgu = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == mus);
             if (borcOdeme.Text != null && musterisorgu != null )
             {

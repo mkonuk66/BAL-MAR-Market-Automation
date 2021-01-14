@@ -4,7 +4,6 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.pdb
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.anaArayüz.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
@@ -26,7 +25,6 @@ C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.raporlamaArayuzu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
@@ -60,15 +58,12 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.birMusterininBorcDurumu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.karzararDurum.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliMusteri.resources
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.musteriArayuzu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisRapor.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisTrendiGrafik.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satılanUrunListesi.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.TarihliKarZarar.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.yeniMusteriEkleme.resources
 C:\Users\mmhas\source\repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisEkrani.resources
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.bilgileriDogrula.resources
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisArayuzu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisEkrani.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.dll
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.dll
@@ -89,7 +84,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\De
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.xml
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CopyComplete
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokAnaArayuz.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokDurum.resources
@@ -99,7 +93,6 @@ C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabani
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenu.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriMenu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenu.resources
-C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenü.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.MusteriMenu.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisMusteri.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.satisMusteri.resources
@@ -128,3 +121,6 @@ C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenüGorunum.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliTedarikci.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.tedarikcininBorcDurumu.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenüGorunum.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliTedarikci.resources
+C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.tedarikcininBorcDurumu.resources

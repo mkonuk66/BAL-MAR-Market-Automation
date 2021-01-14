@@ -30,11 +30,6 @@ namespace veritabaniProje
             stkEkle1.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void stokDurum_Load(object sender, EventArgs e)
         {
             // TODO: Bu kod satırı 'veritabaniProjeDataSetUrun.tUruns' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
