@@ -17,9 +17,8 @@ namespace veritabaniProje
     public partial class birMusterininBorcDurumu : Form
     {
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection bag = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection bag = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adtr = new SqlDataAdapter();
-        DataSet ds = new DataSet();
         public birMusterininBorcDurumu()
         {
             InitializeComponent();
@@ -34,7 +33,7 @@ namespace veritabaniProje
             label2.Text = kayitliMusteri.gonderilecekveri;
             DataTable dt = new DataTable();
             SqlDataAdapter musterisorgu = new SqlDataAdapter("select * From tMusteris Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
-            ds = new DataSet();
+            DataSet ds = new DataSet();
             bag.Open();
             musterisorgu.Fill(ds, "tMusteris");
             dt = ds.Tables["tMusteris"];
@@ -47,21 +46,21 @@ namespace veritabaniProje
             musteriGosterim.Columns[4].HeaderText = "Kayıt Tarihi";
             musteriGosterim.Columns[5].HeaderText = "Müşterinin Borcu";
             musteriGosterim.Columns[6].HeaderText = "Ödenen Miktar";
+            musteriGosterim.Columns[7].HeaderText = "Kalan Borc Miktarı";
 
             //Borc Bilgilerini Gösteriyor
 
             DataTable dt1 = new DataTable();
-            SqlDataAdapter borcsorgu = new SqlDataAdapter("select musteriId,borcTarihi,borcMiktar,urunMiktar From tBorcs Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
-            ds = new DataSet();
+            SqlDataAdapter borcsorgu = new SqlDataAdapter("select musteriId,borcTarihi,borcMiktar From tBorcs Where musteriId ='" + Convert.ToInt32(label2.Text) + "'", bag);
+            DataSet ds1 = new DataSet();
             bag.Open();
-            //borcsorgu.Fill(ds, "tBorcs");
-            dt1 = ds.Tables["tBorcs"];
-            borcGosterim.DataSource = dt;
+            borcsorgu.Fill(ds1, "tBorcs");
+            dt1 = ds1.Tables["tBorcs"];
+            borcGosterim.DataSource = dt1;
             bag.Close();
             borcGosterim.Columns[0].HeaderText = "Musteri No";
             borcGosterim.Columns[1].HeaderText = "Borc Tarihi";
             borcGosterim.Columns[2].HeaderText = "Borc Miktarı";
-            borcGosterim.Columns[3].HeaderText = "Alınan Ürün Miktarı";
 
         }
 
@@ -73,8 +72,8 @@ namespace veritabaniProje
             if (borcOdeme.Text != null && musterisorgu != null )
             {
                 musterisorgu.odenenMiktar += borcode;
-                musterisorgu.musteriBorc -= borcode;
-                MessageBox.Show("" + musterisorgu.musteriAdi + "Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                musterisorgu.kalanBorc = musterisorgu.musteriBorc - musterisorgu.odenenMiktar;
+                MessageBox.Show("" + musterisorgu.musteriAdi + " Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dbcontext.SaveChanges();
             }
             else

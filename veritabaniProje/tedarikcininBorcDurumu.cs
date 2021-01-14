@@ -15,7 +15,7 @@ namespace veritabaniProje
     {
 
         Entity.Context dbcontext = new Entity.Context();
-        SqlConnection bag = new SqlConnection(@"Server=(localdb)\mkonuk; Database =veritabaniProje; Trusted_Connection =True;");
+        SqlConnection bag = new SqlConnection(@"Server=DESKTOP-HU112LL; Database =veritabaniProje; Trusted_Connection =True;");
         SqlDataAdapter adtr = new SqlDataAdapter();
         DataSet ds = new DataSet();
 
@@ -27,27 +27,30 @@ namespace veritabaniProje
         private void tedarikcininBorcDurumu_Load(object sender, EventArgs e)
         {
             //tedarikci bilgilerini gösteriyor
-            //label2.Text = kayitliTedarikci.gonderilecekveri1;
+            label2.Text = kayitliTedarikci.gonderilecekveri1;
             DataTable dt = new DataTable();
-            SqlDataAdapter tedarikcisorgu = new SqlDataAdapter("select tedarikciId,borcMiktar,urunMiktar From tTedarikcis Where tedarikciId ='" + Convert.ToInt32(label2.Text) + "'", bag);
+            SqlDataAdapter tedarikcisorgu = new SqlDataAdapter("select tedarikciID,toplamBorc,odenenMiktar,kalanMiktar from ttedarikciOdemes Where tedarikciID ='" + Convert.ToInt32(label2.Text) + "'", bag);
             ds = new DataSet();
             bag.Open();
-            tedarikcisorgu.Fill(ds, "tTedarikcis");
-            dt = ds.Tables["tTedarikcis"];
+            tedarikcisorgu.Fill(ds, "ttedarikciOdemes");
+            dt = ds.Tables["ttedarikciOdemes"];
             tedarikciGosterim.DataSource = dt;
             bag.Close();
             tedarikciGosterim.Columns[0].HeaderText = "Tedarikci No";
             tedarikciGosterim.Columns[1].HeaderText = "Toplam Borç";
-            tedarikciGosterim.Columns[2].HeaderText = "Alınan Ürün Miktarı";
+            tedarikciGosterim.Columns[2].HeaderText = "Odenen Miktar";
+            tedarikciGosterim.Columns[3].HeaderText = "Kalan Borç Miktarı";
         }
 
         private void borcOdemeButonu_Click(object sender, EventArgs e)
         {
-            var borc = new Entity.tTedarikci();
+            int sorgulama = Convert.ToInt32(label2.Text);
+            var tedarikcisorgu = dbcontext.ttedarikciOdemes.FirstOrDefault(x => x.tedarikciID == sorgulama);
             if (borcOdeme.Text != null)
             {
-                borc.borcMiktar -= Convert.ToInt32(borcOdeme.Text);
-                MessageBox.Show("" + borc.tedarikciId + "Numaralı Tedarikçinin Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tedarikcisorgu.odenenMiktar += Convert.ToInt32(borcOdeme.Text);
+                tedarikcisorgu.kalanMiktar = tedarikcisorgu.toplamBorc - tedarikcisorgu.odenenMiktar;
+                MessageBox.Show("" + tedarikcisorgu.tedarikciID + "Numaralı Tedarikçinin Borcu Güncellendi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dbcontext.SaveChanges();
             }
             else
@@ -64,6 +67,16 @@ namespace veritabaniProje
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void borcOdeme_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

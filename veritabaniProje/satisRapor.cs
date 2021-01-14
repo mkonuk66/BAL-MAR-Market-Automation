@@ -31,7 +31,7 @@ namespace veritabaniProje
         private void satisRapor_Load(object sender, EventArgs e)
         {
             DataTable satissorgudt = new DataTable();
-            SqlDataAdapter satissorgu = new SqlDataAdapter("select urunAdi,satisMiktar,satisTutar from tSatis", baglanti);
+            SqlDataAdapter satissorgu = new SqlDataAdapter("select urunAdi,sum (satisMiktar) as miktar,sum (satisTutar) as tutar from tSatis group by urunAdi order by miktar desc", baglanti);
             baglanti.Open();
             satissorgu.Fill(satissorguds, "tSatis");
             satissorgudt = satissorguds.Tables["tSatis"];

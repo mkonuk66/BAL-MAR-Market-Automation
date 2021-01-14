@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
 using System.Data.Sql;
+using System.Text.RegularExpressions;
 
 namespace veritabaniProje
 {
@@ -33,7 +34,7 @@ namespace veritabaniProje
                 musteri.musteriAdi = textBox1.Text;
                 musteri.musteriSoyadi = textBox2.Text;
                 musteri.musteriGSM = textBox3.Text;
-                musteri.kayitTarihi = dateTimePicker1.Value;
+                musteri.kayitTarihi = dateTimePicker1.Value.ToShortDateString();
                 musteri.musteriBorc = 0;
                 dbcontext.tMusteris.Add(musteri);
                 dbcontext.SaveChanges();
@@ -97,12 +98,20 @@ namespace veritabaniProje
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = Regex.IsMatch(textBox3.Text, "[^0-9\b]+");
+            if (e.Handled == true)
+            {
+                MessageBox.Show("Sadece sayı giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

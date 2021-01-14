@@ -13,7 +13,7 @@ namespace veritabaniProje.Entity
         [Key]
         public int borcNo { get; set;}
         public int musteriId { get; set; }
-        public DateTime borcTarihi { get; set; }
+        public string borcTarihi { get; set; }
         public float borcMiktar { get; set; }
     }
 }

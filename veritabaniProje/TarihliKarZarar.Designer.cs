@@ -32,8 +32,8 @@ namespace veritabaniProje
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TarihliKarZarar));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.karzarar2 = new System.Windows.Forms.DateTimePicker();
+            this.karzarar1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.satisTrendButton = new System.Windows.Forms.Button();
@@ -56,19 +56,20 @@ namespace veritabaniProje
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker2.TabIndex = 1;
             // 
-            // dateTimePicker3
+            // karzarar2
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(296, 211);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker3.TabIndex = 2;
+            this.karzarar2.Location = new System.Drawing.Point(296, 211);
+            this.karzarar2.Name = "karzarar2";
+            this.karzarar2.Size = new System.Drawing.Size(200, 22);
+            this.karzarar2.TabIndex = 2;
             // 
-            // dateTimePicker4
+            // karzarar1
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(72, 210);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker4.TabIndex = 3;
+            this.karzarar1.Location = new System.Drawing.Point(72, 210);
+            this.karzarar1.Name = "karzarar1";
+            this.karzarar1.Size = new System.Drawing.Size(200, 22);
+            this.karzarar1.TabIndex = 3;
+            this.karzarar1.ValueChanged += new System.EventHandler(this.dateTimePicker4_ValueChanged);
             // 
             // dateTimePicker5
             // 
@@ -157,14 +158,15 @@ namespace veritabaniProje
             this.Controls.Add(this.satisTrendButton);
             this.Controls.Add(this.dateTimePicker6);
             this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.karzarar1);
+            this.Controls.Add(this.karzarar2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TarihliKarZarar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kar Zarar Arayüzü";
+            this.Load += new System.EventHandler(this.TarihliKarZarar_Load);
             this.ResumeLayout(false);
 
         }
@@ -173,8 +175,8 @@ namespace veritabaniProje
 
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker karzarar2;
+        private System.Windows.Forms.DateTimePicker karzarar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.DateTimePicker dateTimePicker6;
         private System.Windows.Forms.Button satisTrendButton;

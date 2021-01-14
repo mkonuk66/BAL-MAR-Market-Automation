@@ -23,8 +23,12 @@ namespace veritabaniProje
             trendGrafik.Show();
         }
 
+        public static string karzararilk;
+        public static string karzararson;
         private void karzararButton_Click(object sender, EventArgs e)
-        {
+        { 
+            karzararilk = karzarar1.Value.ToShortDateString();
+            karzararson = karzarar2.Value.ToShortDateString();
             karzararDurum karzarar = new karzararDurum();
             karzarar.Show();
         }
@@ -38,6 +42,16 @@ namespace veritabaniProje
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TarihliKarZarar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
