@@ -19,6 +19,7 @@ namespace veritabaniProje
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            //Şifre gizleme gösterme durumunda neler olacağı kontrolü
             if (checkBox1.Checked)
             {
                 textBox2.PasswordChar = '\0';
@@ -54,7 +55,7 @@ namespace veritabaniProje
         private void button2_Click(object sender, EventArgs e)
         {
             
-           
+           //Klasik bir giriş ekranı. Girilen değerlerin daha önce veritabanımıza kayıt edilmesini kontrol ediyoruz.
              string managerId1 = Convert.ToString(textBox1.Text);
              string managerPassword1 = Convert.ToString(textBox2.Text);
              var managerId = dbcontext.tYoneticis.FirstOrDefault(x => x.yKullaniciAdi == managerId1);
@@ -74,34 +75,16 @@ namespace veritabaniProje
 
         private void GirisEkrani_Load(object sender, EventArgs e)
         {
+            //Şifre görünümünü düzenliyor.
             textBox2.PasswordChar = '*';
-           /*
-            var yonetici1 = new Entity.tYonetici();
-            //Yoneticilerin bir kez eklenmesi için oluşturuldu.
-                yonetici1.yoneticiID = 1;
-                yonetici1.yKullaniciAdi = "yMehmetEmin";
-                yonetici1.ySifre = "1234";
-                dbcontext.tYoneticis.Add(yonetici1);
-                dbcontext.SaveChanges();
-                var yonetici2 = new Entity.tYonetici();
-                yonetici2.yoneticiID = 2;
-                yonetici2.yKullaniciAdi = "yIbrahim";
-                yonetici2.ySifre = "1234";
-                dbcontext.tYoneticis.Add(yonetici2);
-                dbcontext.SaveChanges();
-                var yonetici3 = new Entity.tYonetici();
-                yonetici3.yoneticiID = 3;
-                yonetici3.yKullaniciAdi = "yMuhammetMustafa";
-                yonetici3.ySifre = "1234";
-                dbcontext.tYoneticis.Add(yonetici3);
-                dbcontext.SaveChanges();
-                var yonetici4 = new Entity.tYonetici();
-                yonetici4.yoneticiID = 4;
-                yonetici4.yKullaniciAdi = "yOguzcan";
-                yonetici4.ySifre = "1234";
-                dbcontext.tYoneticis.Add(yonetici4);
-                dbcontext.SaveChanges();
-            //Yoneticilerin bir kez eklenmesi için oluşturuldu. */
+
+            //Yöneticinin bir kere oluşturulması için eklenmiştir.
+            //var yonetici1 = new Entity.tYonetici();
+            //yonetici1.yoneticiID = 1;
+            //yonetici1.yKullaniciAdi = "yonetici";
+            //yonetici1.ySifre = "1234";
+            //dbcontext.tYoneticis.Add(yonetici1);
+            //dbcontext.SaveChanges();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

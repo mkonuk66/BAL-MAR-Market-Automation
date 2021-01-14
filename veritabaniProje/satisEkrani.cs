@@ -36,6 +36,7 @@ namespace veritabaniProje
         }
         private void addProductButton_Click(object sender, EventArgs e)
         {
+            //Ürün miktarı ve girilen barkod numarasına göre ürünümüzü sepete ekleyip ,ürün tutarını toplam tutarımıza ekliyoruz.
             if(urunMiktar1.Text != null) {
                 long newAddmiktar = Convert.ToInt64(urunMiktar1.Text);
                 long newAddId = Convert.ToInt64(addID.Text);
@@ -61,8 +62,7 @@ namespace veritabaniProje
         }
         public void deleteProductButton_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+                //Ürün silmeyi yönetici şifremiz ile yapıyoruz. Ve toplam tutardan silinen ürünün değerini çıkarıyoruz.
                 string itemSelected = listBox1.SelectedItem.ToString();
                 string[] selected = itemSelected.Split(' ');
                 string selected1 = selected[0];
@@ -78,12 +78,6 @@ namespace veritabaniProje
                     label3.Text = "Tutar toplamı : " + totalPrice + "";
                     listBox1.Items.Remove(listBox1.SelectedItem);
                 }
-            //}
-            //catch(Exception)
-            //{
-            //    MessageBox.Show("Ürün seçilemedi!", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
         }
 
         private void satisEkrani_Load(object sender, EventArgs e)
@@ -102,12 +96,14 @@ namespace veritabaniProje
         }
         private void debtButton_Click(object sender, EventArgs e)
         {
+            //Cari satış ,satış veritabanına ekleniyor.
+            //Müşteri mevcut değilse yeni müşteri oluşturuluyor. Ardından borç ekleniyor.
+            //Mevcut bir müşteri ise borcuna ekleme yapılıyor.
             stsmusteriID = Convert.ToInt32(musArama.Text);
             var satis = new Entity.tSatis();
             var musterii = dbcontext.tMusteris.FirstOrDefault(x => x.musteriId == stsmusteriID);
             if (musterii == null)
             {
-                //TODO: Formların hepsi aynı anda çalışıyor. Birisi kapandığında diğerinin açılması gerekiyor.
                 MessageBox.Show("Lütfen yeni müşteri oluşturunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -164,7 +160,7 @@ namespace veritabaniProje
 
         private void cashButton_Click(object sender, EventArgs e)
         {
-
+            //Peşin satış veritabanına ekleniyor.
             var satis = new Entity.tSatis();
             for (int i=2; i < listBox1.Items.Count; i++)
             {
