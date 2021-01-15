@@ -267,7 +267,7 @@ namespace veritabaniProje
             // tarih
             // 
             this.tarih.AutoSize = true;
-            this.tarih.Location = new System.Drawing.Point(951, 34);
+            this.tarih.Location = new System.Drawing.Point(957, 34);
             this.tarih.Name = "tarih";
             this.tarih.Size = new System.Drawing.Size(45, 17);
             this.tarih.TabIndex = 6;

@@ -53,5 +53,10 @@ namespace veritabaniProje
             chart1.DataSource = trendgrafik.DataSource;
             chart1.DataBind();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
