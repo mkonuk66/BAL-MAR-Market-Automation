@@ -24,4 +24,8 @@ In the interface design section
 Muhammet Mustafa HASTAOĞLUGİL  (https://github.com/Muhammet-7898)- 
 Oguzcan KATAR
 
+License
+----------------------------------
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
 Thanks...
