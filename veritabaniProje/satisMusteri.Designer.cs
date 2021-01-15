@@ -77,9 +77,9 @@ namespace veritabaniProje
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(432, -1);
+            this.button2.Location = new System.Drawing.Point(431, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 50);
+            this.button2.Size = new System.Drawing.Size(58, 58);
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);

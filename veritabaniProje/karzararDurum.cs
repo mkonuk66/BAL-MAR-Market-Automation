@@ -80,5 +80,10 @@ namespace veritabaniProje
                 netKar.Text = netKar1.ToString() + " ₺ kardasınız.";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
