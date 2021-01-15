@@ -16,15 +16,9 @@ C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Deb
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
 C:\Users\ASUS\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.pdb
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csprojAssemblyReference.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.Properties.Resources.resources
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.GenerateResource.cache
 C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csproj.CoreCompileInputs.cache
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.exe
-C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.pdb
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.stokEkle.resources
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe.config
 C:\Users\mmhas\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\veritabaniProje.exe
@@ -123,3 +117,9 @@ C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\De
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.AnaMenüGorunum.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.kayitliTedarikci.resources
 C:\Users\Mehmet Emin KONUK\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.tedarikcininBorcDurumu.resources
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\BAL-MAR.exe.config
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\BAL-MAR.exe
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\bin\Debug\BAL-MAR.pdb
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\veritabaniProje.csprojAssemblyReference.cache
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\BAL-MAR.exe
+C:\Users\googl\Source\Repos\mkonuk66\veritabaniFinalProje\veritabaniProje\obj\Debug\BAL-MAR.pdb

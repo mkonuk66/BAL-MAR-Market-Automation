@@ -48,7 +48,7 @@ namespace veritabaniProje
         {
             sidepanel.Height = musteributon.Height;
             sidepanel.Top = musteributon.Top;
-            musteriMenu1.BringToFront();
+           musteriMenu1.BringToFront();
         }
 
         private void kapatmabutonu_Click(object sender, EventArgs e)
@@ -90,6 +90,16 @@ namespace veritabaniProje
         }
 
         private void borcIslemleri1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void borcIslemleri1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musteriMenu1_Load(object sender, EventArgs e)
         {
 
         }

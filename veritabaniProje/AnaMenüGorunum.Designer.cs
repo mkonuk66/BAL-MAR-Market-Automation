@@ -50,12 +50,12 @@ namespace veritabaniProje
             this.tarih_saat_bilgi = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.anaMenu1 = new veritabaniProje.AnaMenu();
-            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
-            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.stokIslemleri1 = new veritabaniProje.StokIslemleri();
+            this.satisİslemleri1 = new veritabaniProje.Satisİslemleri();
             this.raporAlim1 = new veritabaniProje.RaporAlim();
             this.borcIslemleri1 = new veritabaniProje.BorcIslemleri();
+            this.anaMenu1 = new veritabaniProje.AnaMenu();
+            this.musteriMenu1 = new veritabaniProje.MusteriMenu();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -305,61 +305,61 @@ namespace veritabaniProje
             this.label3.TabIndex = 12;
             this.label3.Text = "BAL-MAR LTD. ŞTİ TARAFINDAN YAPILMIŞTIR.\r\n";
             // 
-            // anaMenu1
-            // 
-            this.anaMenu1.Location = new System.Drawing.Point(203, 150);
-            this.anaMenu1.Name = "anaMenu1";
-            this.anaMenu1.Size = new System.Drawing.Size(982, 431);
-            this.anaMenu1.TabIndex = 13;
-            // 
-            // satisİslemleri1
-            // 
-            this.satisİslemleri1.Location = new System.Drawing.Point(202, 168);
-            this.satisİslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.satisİslemleri1.Name = "satisİslemleri1";
-            this.satisİslemleri1.Size = new System.Drawing.Size(983, 411);
-            this.satisİslemleri1.TabIndex = 14;
-            // 
-            // musteriMenu1
-            // 
-            this.musteriMenu1.Location = new System.Drawing.Point(202, 150);
-            this.musteriMenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.musteriMenu1.Name = "musteriMenu1";
-            this.musteriMenu1.Size = new System.Drawing.Size(994, 431);
-            this.musteriMenu1.TabIndex = 15;
-            // 
             // stokIslemleri1
             // 
             this.stokIslemleri1.Location = new System.Drawing.Point(202, 148);
             this.stokIslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stokIslemleri1.Name = "stokIslemleri1";
             this.stokIslemleri1.Size = new System.Drawing.Size(982, 431);
-            this.stokIslemleri1.TabIndex = 16;
+            this.stokIslemleri1.TabIndex = 18;
+            // 
+            // satisİslemleri1
+            // 
+            this.satisİslemleri1.Location = new System.Drawing.Point(266, 168);
+            this.satisİslemleri1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.satisİslemleri1.Name = "satisİslemleri1";
+            this.satisİslemleri1.Size = new System.Drawing.Size(845, 402);
+            this.satisİslemleri1.TabIndex = 17;
             // 
             // raporAlim1
             // 
-            this.raporAlim1.Location = new System.Drawing.Point(202, 147);
+            this.raporAlim1.Location = new System.Drawing.Point(202, 150);
             this.raporAlim1.Name = "raporAlim1";
             this.raporAlim1.Size = new System.Drawing.Size(982, 431);
-            this.raporAlim1.TabIndex = 17;
+            this.raporAlim1.TabIndex = 16;
             // 
             // borcIslemleri1
             // 
             this.borcIslemleri1.Location = new System.Drawing.Point(202, 150);
             this.borcIslemleri1.Name = "borcIslemleri1";
             this.borcIslemleri1.Size = new System.Drawing.Size(982, 431);
-            this.borcIslemleri1.TabIndex = 18;
+            this.borcIslemleri1.TabIndex = 14;
+            // 
+            // anaMenu1
+            // 
+            this.anaMenu1.Location = new System.Drawing.Point(202, 150);
+            this.anaMenu1.Name = "anaMenu1";
+            this.anaMenu1.Size = new System.Drawing.Size(982, 431);
+            this.anaMenu1.TabIndex = 13;
+            // 
+            // musteriMenu1
+            // 
+            this.musteriMenu1.Location = new System.Drawing.Point(202, 150);
+            this.musteriMenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.musteriMenu1.Name = "musteriMenu1";
+            this.musteriMenu1.Size = new System.Drawing.Size(982, 431);
+            this.musteriMenu1.TabIndex = 19;
             // 
             // AnaMenüGorunum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 581);
-            this.Controls.Add(this.borcIslemleri1);
-            this.Controls.Add(this.raporAlim1);
-            this.Controls.Add(this.stokIslemleri1);
             this.Controls.Add(this.musteriMenu1);
+            this.Controls.Add(this.stokIslemleri1);
             this.Controls.Add(this.satisİslemleri1);
+            this.Controls.Add(this.raporAlim1);
+            this.Controls.Add(this.borcIslemleri1);
             this.Controls.Add(this.anaMenu1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tarih_saat_bilgi);
@@ -407,10 +407,10 @@ namespace veritabaniProje
         private System.Windows.Forms.Button borcButon;
         private System.Windows.Forms.Button satisButon;
         private AnaMenu anaMenu1;
-        private Satisİslemleri satisİslemleri1;
-        private MusteriMenu musteriMenu1;
-        private StokIslemleri stokIslemleri1;
-        private RaporAlim raporAlim1;
         private BorcIslemleri borcIslemleri1;
+        private RaporAlim raporAlim1;
+        private Satisİslemleri satisİslemleri1;
+        private StokIslemleri stokIslemleri1;
+        private MusteriMenu musteriMenu1;
     }
 }
