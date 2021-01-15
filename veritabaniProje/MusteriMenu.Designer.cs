@@ -60,17 +60,17 @@ namespace veritabaniProje
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(299, 29);
+            this.panel1.Location = new System.Drawing.Point(288, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 59);
+            this.panel1.Size = new System.Drawing.Size(275, 56);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(13, 15);
+            this.label1.Location = new System.Drawing.Point(-5, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(259, 29);
             this.label1.TabIndex = 1;
@@ -250,7 +250,7 @@ namespace veritabaniProje
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(580, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(601, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 77);
