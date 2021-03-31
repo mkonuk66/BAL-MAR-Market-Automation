@@ -17,7 +17,7 @@ Authors
 In the database section
 ----------------------------------
 Mehmet Emin KONUK [go to github profile](https://github.com/mkonuk66) -
-İbrahim ÖZDEMİR
+İbrahim ÖZDEMİR [go to github profile](https://github.com/ibrahmozdemir1)
 
 In the interface design section
 ----------------------------------
